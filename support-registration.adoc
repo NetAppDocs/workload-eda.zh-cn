@@ -1,0 +1,115 @@
+---
+sidebar: sidebar 
+permalink: support-registration.html 
+keywords: support registration, register for support, support, nss account, add nss account 
+summary: 在向NetApp技术支持开具支持案例之前，您需要将NetApp支持站点帐户添加到 Workload Factory，然后注册以获得支持。 
+---
+= 注册即可获得NetApp Workload Factory for EDA 的支持
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+在向NetApp技术支持开具支持案例之前，您需要将NetApp支持站点帐户添加到 Workload Factory，然后注册以获得支持。
+
+需要注册支持才能获得针对NetApp Workload Factory及其存储解决方案和服务的技术支持。您必须通过NetApp Console注册才能获得支持，NetApp 控制台是一个独立于 Workload Factory 的基于 Web 的控制台。
+
+注册支持服务并不会自动启用NetApp对云提供商文件服务的支持。有关云提供商文件服务、其基础设施或使用该服务的任何解决方案的技术支持，请参阅该产品的 Workload Factory 文档中的“获取帮助”部分。
+
+link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/start/concept-fsx-aws.html#getting-help["适用于ONTAP 的Amazon FSx"^]
+
+
+
+== 支持注册概述
+
+注册您的帐户 ID 支持订阅（您的 20 位 960xxxxxxxxx 序列号位于NetApp Console的“支持资源”页面上）将作为您的唯一支持订阅 ID。每个NetApp账户级别的支持订阅都必须注册。
+
+注册后即可使用诸如提交支持工单和自动生成案例等功能。注册是通过向NetApp Console添加NetApp支持站点 (NSS) 帐户来完成的，如下所述。
+
+
+
+== 注册您的帐户以获得NetApp支持
+
+要注册支持并激活支持权限，您帐户中的一个用户必须将NetApp支持站点帐户与其NetApp Console登录关联。您注册NetApp支持的方式取决于您是否已经拥有NetApp支持站点 (NSS) 帐户。
+
+
+
+=== 拥有 NSS 帐户的现有客户
+
+如果您是拥有 NSS 帐户的NetApp客户，您只需通过NetApp Console注册即可获得支持。
+
+.步骤
+. 在 Workload Factory 控制台的右上角，选择“帮助 > 支持”。
++
+选择此选项将在新的浏览器标签页中打开NetApp Console并加载支持仪表板。
+
+. 从NetApp Console菜单中，选择“管理”，然后选择“凭据”。
+. 选择*用户凭证*。
+. 选择*添加 NSS 凭据*并按照NetApp支持站点 (NSS) 身份验证提示进行操作。
+. 要确认注册过程是否成功，请选择“帮助”图标，然后选择“*支持*”。
++
+“资源”页面应该显示您的帐户已注册以获得支持。
+
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-support-registration.png["屏幕截图显示了帐户序列号、绿色复选框和“已注册以获得支持”字样。"]
+
++
+请注意，如果其他NetApp Console用户尚未将NetApp支持站点帐户与其NetApp Console登录关联，则他们将看不到此相同的支持注册状态。但这并不意味着您的NetApp帐户未注册以获得支持。只要账户中有一个用户按照这些步骤操作过，那么你的账户就注册成功了。
+
+
+
+
+
+=== 现有客户但没有 NSS 账户
+
+如果您是NetApp 的现有客户，拥有现有许可证和序列号，但没有 NSS 帐户，则需要创建一个 NSS 帐户并将其与您的NetApp Console登录关联。
+
+.步骤
+. 通过完成以下操作创建NetApp支持站点帐户 https://mysupport.netapp.com/site/user/registration["NetApp支持站点用户注册表"^]
++
+.. 请务必选择适当的用户级别，通常为* NetApp客户/最终用户*。
+.. 请务必复制上面使用的NetApp帐户序列号 (960xxxx) 到序列号字段中。这将加快账户处理速度。
+
+
+. 按照以下步骤将您的新 NSS 帐户与您的NetApp Console登录信息关联。 <<拥有 NSS 帐户的现有客户>>。
+
+
+
+
+=== NetApp全新产品
+
+如果您是NetApp新用户并且没有 NSS 帐户，请按照以下步骤操作。
+
+.步骤
+. 在 Workload Factory 控制台的右上角，选择“帮助 > 支持”。
++
+选择此选项将在新的浏览器标签页中打开NetApp Console并加载支持仪表板。
+
+. 请在支持资源页面查找您的帐户 ID 序列号。
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-serial-number.png["帮助菜单的屏幕截图，其中支持是第一个选项"]
+
+. 导航至 https://register.netapp.com["NetApp 的支持注册网站"^]并选择*我不是注册的NetApp客户*。
+. 填写必填字段（带有红色星号的字段）。
+. 在*产品线*字段中，选择*云管理器*，然后选择适用的计费提供商。
+. 从上面的步骤 2 复制您的帐户序列号，完成安全检查，然后确认您已阅读 NetApp 的全球数据隐私政策。
++
+一封电子邮件会立即发送到提供的邮箱以完成此安全交易。如果几分钟内没有收到验证电子邮件，请务必检查您的垃圾邮件文件夹。
+
+. 从电子邮件中确认操作。
++
+确认向NetApp提交您的请求并建议您创建NetApp支持站点帐户。
+
+. 通过完成以下操作创建NetApp支持站点帐户 https://mysupport.netapp.com/site/user/registration["NetApp支持站点用户注册表"^]
++
+.. 请务必选择适当的用户级别，通常为* NetApp客户/最终用户*。
+.. 请务必复制上面用于序列号字段的帐户序列号（960xxxx）。这将加快账户处理速度。
+
+
+
+
+.完成后
+NetApp应该在此过程中与您联系。这是针对新用户的一次性入职培训。
+
+获取NetApp支持站点帐户后，请按照以下步骤将该帐户与您的NetApp Console登录信息关联。 <<拥有 NSS 帐户的现有客户>>。

@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: integrate-perforce.html 
+keywords: software builders, integrate, integration, Perforce, EDA, electronic design automation 
+summary: 了解如何将EDA与Perforce集成。 
+---
+= 将 EDA 与 Perforce 集成
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+将 EDA 与 Perforce Helix Visual Client (P4V) 集成，以便开发人员可以使用 Perforce CLI 管理您的工作区。这使得开发人员能够快速地在项目和工作区之间切换，从而节省开发时间。
+
+.步骤
+. 下载 https://builders.console.workloads.netapp.com/p4v["P4V集成文件"^]。
+. 打开 P4V，然后转到“工具”>“管理工具”>“HTML 选项卡”。
+. 选择“导入 HTML 选项卡”。
+. 选择 P4V 集成 XML 文件，然后选择“导入”。
+. 转到“视图”>“工作负载工厂”。
+
+
+.结果
+NetApp Workload Factory for EDA Web UI 在 P4V 客户端中显示为 HTML 选项卡。
+
+.接下来会发生什么？
+link:manage-projects.html["使用迁移顾问创建 Amazon EC2 部署计划"]。

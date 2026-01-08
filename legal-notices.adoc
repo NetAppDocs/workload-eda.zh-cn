@@ -1,0 +1,50 @@
+---
+permalink: legal-notices.html 
+sidebar: sidebar 
+keywords:  
+summary:  
+---
+= NetApp Workload Factory for EDA 的法律声明
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+法律声明提供版权声明、商标、专利等信息的访问权限。
+
+
+
+== 版权
+
+link:https://www.netapp.com/company/legal/copyright/["https://www.netapp.com/company/legal/copyright/"^]
+
+
+
+== 商标
+
+NETAPP、NETAPP 徽标以及NetApp商标页面上列出的标记均为NetApp, Inc. 的商标。其他公司和产品名称可能是其各自所有者的商标。
+
+link:https://www.netapp.com/company/legal/trademarks/["https://www.netapp.com/company/legal/trademarks/"^]
+
+
+
+== 专利
+
+NetApp目前拥有的专利列表可在以下网址找到：
+
+link:https://www.netapp.com/pdf.html?item=/media/11887-patentspage.pdf["https://www.netapp.com/pdf.html?item=/media/11887-patentspage.pdf"^]
+
+
+
+== 隐私政策
+
+link:https://www.netapp.com/company/legal/privacy-policy/["https://www.netapp.com/company/legal/privacy-policy/"^]
+
+
+
+== 开源
+
+通知文件提供有关NetApp软件中使用的第三方版权和许可的信息。
+
+https://docs.netapp.com/us-en/workload-family/media/workload-factory-notice.pdf["NetApp Workload Factory"^]

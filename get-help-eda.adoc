@@ -1,0 +1,165 @@
+---
+sidebar: sidebar 
+permalink: get-help-eda.html 
+keywords: help, ticket, open support case, support, netapp support, technical support, call support, phone number, open ticket, web ticket, open an issue 
+summary: 'NetApp以多种方式为 Workload Factory 及其云服务提供支持。我们提供全天候 (24x7) 的丰富免费自助支持选项，例如知识库 (KB) 文章和社区论坛。您的支持注册包含通过网络工单系统提供的远程技术支持。' 
+---
+= 获取有关 Workload Factory for EDA 的帮助
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp以多种方式为 Workload Factory 及其云服务提供支持。我们提供全天候 (24x7) 的丰富免费自助支持选项，例如知识库 (KB) 文章和社区论坛。您的支持注册包含通过网络工单系统提供的远程技术支持。
+
+
+
+== 获取对ONTAP的 FSx 支持
+
+有关 FSx for ONTAP、其基础架构或使用该服务的任何解决方案的技术支持，请参阅该产品的 Workload Factory 文档中的“获取帮助”部分。
+
+link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/start/concept-fsx-aws.html#getting-help["适用于ONTAP 的Amazon FSx"^]
+
+要获得有关 Workload Factory 及其存储解决方案和服务的技术支持，请使用下面描述的支持选项。
+
+
+
+== 使用自助选项
+
+这些选项每周 7 天、每天 24 小时免费提供：
+
+* 文档
++
+您当前正在查看的 Workload Factory 文档。
+
+* https://kb.netapp.com["知识库"^]
++
+搜索 Workload Factory 知识库，查找有助于解决问题的文章。
+
+* http://community.netapp.com/["社区"^]
++
+加入 Workload Factory 社区，即可关注正在进行的讨论或创建新的讨论。
+
+
+
+
+
+== 向NetApp支持创建案例
+
+除了上述自助支持选项之外，您还可以在激活支持后与NetApp支持专家合作解决任何问题。
+
+.开始之前
+要使用“创建案例”功能，您必须先注册获得支持，并将您的NetApp支持站点凭据与您的 Workload Factory 登录信息关联起来。link:support-registration.html["了解如何注册以获得支持"]。
+
+.步骤
+. 在 Workload Factory 控制台的右上角，选择“帮助 > 支持”。
++
+选择此选项将在新的浏览器标签页中打开NetApp Console并加载支持仪表板。
+
+. 在“*资源*”页面上，选择“技术支持”下的可用选项之一：
++
+.. 如果您想通过电话与某人交谈，请选择“致电我们”。您将被引导至 netapp.com 上的一个页面，其中列出了您可以拨打的电话号码。
+.. 选择“创建案例”向NetApp支持专家开具一张票：
++
+*** *服务*：选择 *工作负载工厂*。
+*** *案例优先级*：选择案例的优先级，可以是低、中、高或严重。
++
+要了解有关这些优先事项的更多详细信息，请将鼠标悬停在字段名称旁边的信息图标上。
+
+*** *问题描述*：提供问题的详细描述，包括任何适用的错误消息或您执行的故障排除步骤。
+*** *其他电子邮件地址*：如果您想让其他人知道此问题，请输入其他电子邮件地址。
+*** *附件（可选）*：一次最多上传五个附件。
++
+每个附件文件大小限制为 25 MB。支持以下文件扩展名：txt、log、pdf、jpg/jpeg、rtf、doc/docx、xls/xlsx 和 csv。
+
+
+
+
+
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-create-case.png["创建案例表单的屏幕截图，可让您向NetApp支持创建案例。"]
+
+
+
+.完成后
+将会出现一个弹出窗口，其中显示您的支持案例编号。NetApp支持专家将审查您的案例并尽快回复您。
+
+要查看支持案例的历史记录，您可以选择*设置>时间线*并查找名为“创建支持案例”的操作。最右边的按钮可让您展开操作以查看详细信息。
+
+尝试创建案例时，您可能会遇到以下错误消息：
+
+“您无权针对所选服务创建案例”
+
+此错误可能意味着 NSS 帐户及其关联的记录公司与NetApp Console帐户序列号的记录公司不是同一公司）。960xxxx）或系统序列号。您可以通过以下方式寻求帮助：
+
+* 使用产品内聊天
+* 提交非技术案例 https://mysupport.netapp.com/site/help[]
+
+
+
+
+== 管理您的支持案例（预览）
+
+您可以直接从NetApp Console查看和管理正在进行和已解决的支持案例。您可以管理与您的 NSS 帐户和公司相关的案例。
+
+案例管理目前可作为预览版使用。我们计划在即将发布的版本中完善这种体验并增加增强功能。请使用产品内聊天向我们发送反馈。
+
+请注意以下事项：
+
+* 页面顶部的案例管理仪表板提供两种视图：
++
+** 左侧视图显示了您提供的用户 NSS 帐户在过去 3 个月内打开的案件总数。
+** 右侧的视图根据您的用户 NSS 帐户显示了过去 3 个月内贵公司级别开设的案件总数。
+
+
++
+表中的结果反映了与您选择的视图相关的案例。
+
+* 您可以添加或删除感兴趣的列，并且可以过滤优先级和状态等列的内容。其他列仅提供排序功能。
++
+请查看以下步骤以了解更多详细信息。
+
+* 在每个案件级别，我们提供更新案件记录或关闭尚未关闭或待关闭状态的案件的功能。
+
+
+.步骤
+. 在 Workload Factory 控制台的右上角，选择“帮助 > 支持”。
++
+选择此选项将打开NetApp Console的新浏览器标签页并加载支持仪表板。
+
+. 选择“案例管理”，如果出现提示，请将您的 NSS 帐户添加到NetApp Console。
++
+“案例管理”页面显示与您的NetApp Console用户帐户关联的 NSS 帐户相关的未结案例。这与*NSS 管理*页面顶部显示的 NSS 帐户相同。
+
+. （可选）修改表中显示的信息：
++
+** 在“组织的案例”下，选择“查看”以查看与您的公司相关的所有案例。
+** 通过选择精确的日期范围或选择不同的时间范围来修改日期范围。
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-case-management-date-range.png["案例管理页面表格上方选项的屏幕截图，可让您选择确切的日期范围或过去 7 天、30 天或 3 个月。"]
+
+** 过滤列的内容。
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-case-management-filter.png["状态列中的过滤选项的屏幕截图，可让您过滤出符合特定状态（例如“活动”或“已关闭”）的案例。"]
+
+** 通过选择image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/icon-table-columns.png["表格中出现的加号图标"]然后选择您想要显示的列。
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-case-management-columns.png["屏幕截图显示了您可以在表格中显示的列。"]
+
+
+
+. 通过选择管理现有案例image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/icon-table-action.png["表格最后一列中出现的带有三个点的图标"]并选择其中一个可用选项：
++
+** *查看案例*：查看有关特定案例的完整详细信息。
+** *更新案例说明*：提供有关您的问题的更多详细信息，或选择*上传文件*以附加最多五个文件。
++
+每个附件文件大小限制为 25 MB。支持以下文件扩展名：txt、log、pdf、jpg/jpeg、rtf、doc/docx、xls/xlsx 和 csv。
+
+** *结案*：提供有关结案原因的详细信息，然后选择*结案*。
+
+
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-case-management-actions.png["屏幕截图显示了选择表格最后一列的菜单后可以采取的操作。"]
+
+

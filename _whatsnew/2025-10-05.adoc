@@ -1,0 +1,9 @@
+= BlueXP workload factory现为NetApp Workload Factory
+:allow-uri-read: 
+
+
+
+
+=== BlueXP workload factory现为NetApp Workload Factory
+
+BlueXP已重命名并重新设计，以更好地反映其在管理数据基础设施中的作用。因此， BlueXP workload factory已重命名为NetApp Workload Factory。

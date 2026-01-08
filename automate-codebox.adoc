@@ -1,0 +1,16 @@
+---
+sidebar: sidebar 
+permalink: automate-codebox.html 
+keywords: automation, code automation, automate, codebox 
+summary: 使用 Codebox，您可以自动执行主机部署、数据库创建等操作。 
+---
+= 使用 Codebox 实现 EDA 工作负载任务自动化
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+使用 Codebox，您可以自动执行项目创建和数据保护操作。Codebox 是一个基础设施即代码 (IaC) 辅助工具，可帮助您生成代码以执行 Workload Factory 支持的任何操作。
+
+了解更多 link:https://docs.netapp.com/us-en/workload-setup-admin/codebox-automation.html["Codebox 自动化"^] 以及如何使用它。

@@ -1,0 +1,60 @@
+---
+settings:
+  name: EDA workloads
+  internal:
+    pdf_enabled: true
+    termcheck_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  rss_page: whats-new.html
+  release_notes_autogen:
+    release_notes_repo: workload-relnotes
+  langs: zh-cn,us-en,de-de,es-es,fr-fr,it-it,pt-br,ja-jp,ko-kr,zh-tw
+sidebar:
+  entries:
+  - title: EDA 工作负载文档
+    url: "/index.html"
+  - title: 发行说明
+    entries:
+    - title: 什么是新的
+      url: "/whats-new.html"
+    - title: 已知限制
+      url: "/known-limitations.html"
+  - title: 开始使用
+    entries:
+    - title: 了解NetApp Workload Factory for EDA
+      url: "/learn-eda.html"
+    - title: 快速启动
+      url: "/quick-start-eda.html"
+  - title: 使用项目仪表板
+    entries:
+    - title: 使用仪表板
+      url: "/task-configure-dashboard.html"
+  - title: 使用 Perforce 集成
+    entries:
+    - title: 了解 Perforce 集成
+      url: "/learn-eda-workloads.html"
+    - title: 要求
+      url: "/requirements-eda.html"
+    - title: 项目管理
+      url: "/manage-projects.html"
+    - title: 管理项目版本
+      url: "/version-projects.html"
+    - title: 创建工作区
+      url: "/create-workspaces.html"
+    - title: 使用 Codebox 实现自动化
+      url: "/automate-codebox.html"
+    - title: 与 Perforce 集成
+      url: "/integrate-perforce.html"
+  - title: 知识和支持
+    entries:
+    - title: 注册以获得支持
+      url: "/support-registration.html"
+    - title: 获取帮助
+      url: "/get-help-eda.html"
+  - title: 法律声明
+    url: "/legal-notices.html"
+product-family:
+  name: NetApp Workload Factory
+  repo: workload-family

@@ -1,0 +1,58 @@
+---
+sidebar: sidebar 
+permalink: version-projects.html 
+keywords: snapshot, clone, project, protect, API, version, versions, versioning 
+summary: 使用快照和克隆来管理 EDA 项目的版本。 
+---
+= 管理用于EDA项目的NetApp Workload Factory版本
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+通过直接从 Workload Factory 创建按需快照和克隆，使用不同版本的 EDA 项目。项目的快照和克隆存储在创建该项目时与其关联的文件系统中。您还可以使用以下方式管理快照和克隆： https://console.workloads.netapp.com/api-doc["Workload Factory REST API"^]。
+
+
+
+== 创建项目快照
+
+您可以按照以下步骤创建项目快照。
+
+.步骤
+. 使用以下任一方式登录 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主机体验"^]。
+. 选择菜单 image:workloads-menu-icon.png["汉堡菜单图标用于导航至存储、EDA、AI、数据库、VMware 和管理等工作负载。"] 然后选择 *EDA*。
+. 选择 *CI/CD*。
+. 选择“转到项目页面”。
+. 在“项目”页面上，选择 image:icon-action.png["选项按钮"] 针对您想要创建快照的项目。
+. 在出现的菜单中，选择“创建快照”。
+. 在“创建快照”对话框中，为快照选择一个名称，然后选择“创建”。
+
+
+
+
+== 创建项目克隆
+
+按照以下步骤从快照克隆 EDA 项目。创建克隆时，会创建一个新的可编辑卷来包含该克隆。
+
+.步骤
+. 使用以下任一方式登录 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主机体验"^]。
+. 选择菜单 image:workloads-menu-icon.png["汉堡菜单图标用于导航至存储、EDA、AI、数据库、VMware 和管理等工作负载。"] 然后选择 *EDA*。
+. 选择 *CI/CD*。
+. 选择“转到项目页面”。
+. 在“项目”页面上，选择 image:icon-action.png["选项按钮"] 你想克隆的项目。
+. 在出现的菜单中，选择“创建克隆”。
+. 在“创建克隆”对话框中，执行以下操作：
++
+.. 请输入克隆体的名称。
++
+克隆文件的默认名称是项目名称加上当前日期和时间的后缀。
+
+.. 选择一个快照作为克隆的基础。
+.. 选择“*创建*”。
+
+
+
+
+.结果
+工作负载工厂会创建一个项目的新克隆，该克隆会作为新项目出现在“项目”页面上。

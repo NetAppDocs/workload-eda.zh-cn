@@ -1,0 +1,39 @@
+---
+indexpage:
+  title: NetApp Workload Factory EDA 文档
+  lead: 在NetApp Workload Factory中简化 EDA 存储操作，优化性能，与 IaC 集成以实现存储参数自动化，并确保运行状况良好。
+  tiles:
+  - title: 开始使用
+    links:
+    - title: 发行说明
+      url: "/whats-new.html"
+    - title: 了解NetApp Workload Factory for EDA
+      url: "/learn-eda.html"
+    - title: 快速启动
+      url: "/quick-start-eda.html"
+  - title: 使用项目仪表板
+    links:
+    - title: 使用仪表板
+      url: "/task-configure-dashboard.html"
+  - title: 使用 Perforce 集成
+    links:
+    - title: 了解 Perforce 集成
+      url: "/learn-eda-workloads.html"
+    - title: 要求
+      url: "/requirements-eda.html"
+    - title: 使用 Codebox 实现自动化
+      url: "/automate-codebox.html"
+  - title: 知识和支持
+    links:
+    - title: 注册以获得支持
+      url: "/support-registration.html"
+    - title: 获取帮助
+      url: "/get-help-eda.html"
+  - title: 博客和社区
+    links:
+    - title: NetApp Console
+      url: https://www.netapp.com/console
+    - title: NetApp Data Services
+      url: https://www.netapp.com/data-services/
+    - title: NetApp 社区
+      url: https://community.netapp.com/

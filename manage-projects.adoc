@@ -1,0 +1,134 @@
+---
+sidebar: sidebar 
+permalink: manage-projects.html 
+keywords: Microsoft SQL Server instance, server instance, manage host, view host, database host, database instance, manage, unmanage 
+summary: 在 Workload Factory for Databases 中管理 Microsoft SQL Server 实例。 
+---
+= 管理EDA项目
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以管理 EDA 项目，以控制NetApp Workload Factory for EDA 中每个项目的代码和工件的管理方式。
+
+
+
+== 创建项目
+
+您可以创建一个新的 EDA 项目，以便利用 Amazon FSX for NetApp ONTAP文件系统的数据保护功能来保护您的代码和工件。步骤
+
+. 使用以下任一方式登录 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主机体验"^]。
+. 选择菜单 image:workloads-menu-icon.png["汉堡菜单图标用于导航至存储、EDA、AI、数据库、VMware 和管理等工作负载。"] 然后选择 *EDA*。
+. 选择 *CI/CD*。
+. 选择“创建项目”。
+. 在“创建项目”页面上，提供以下信息：
++
+.. 项目名称：请输入项目名称。
+.. *项目描述*：请输入项目描述。
+.. *文件系统*：请提供以下信息：
++
+... *凭证*：选择要使用的亚马逊 AWS 凭证。EDA 使用这些凭证来发现可用于此项目的 FSx for ONTAP文件系统，并创建项目的克隆和快照。
+... *区域*：选择此 FSx for ONTAP文件系统所在的区域。
+... *FSx for ONTAP文件系统*：选择要与此项目一起使用的 FSx for ONTAP文件系统。
++
+您只能选择已配置链接的文件系统。 https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["了解有关链接的更多信息"^]。
+
+... *选择一个卷*：选择一个卷来存储项目；EDA 使用此卷作为软件存储库。
++
+您只能选择配置为 NFS 共享的卷。
+
+
+
+.. *运营策略*：对项目克隆数量进行限制：
++
+... *最长保留天数*：输入克隆体应保留的最长天数。天数过后，工作负载工厂会删除克隆文件。
+... *每个用户或组的最大克隆数*：输入可以为用户或组配置的最大克隆数。
+... *最大克隆大小（GiB）*：输入项目克隆的最大大小（GiB）。
+
+
+.. *访问策略*：明确授予特定用户或用户组项目访问权限：
++
+... *策略执行范围*：输入单个 IP 地址或 IP 地址范围，以将项目访问权限限制为仅允许这些 IP 地址或范围。
++
+例如： `172.16.0.0/24`
+
+... *用户或组标识符*：输入用户或组标识符，以将项目访问权限限制为仅限这些用户或组。
++
+例如： `User1234`
+
+
+
+
+
+. 选择“*创建*”。
+
+
+.结果
+项目已创建，并显示在“项目”页面的项目列表中。
+
+
+
+== 查看现有项目
+
+您可以按照以下步骤查看在NetApp Workload Factory for EDA 中创建的现有项目。
+
+.步骤
+. 使用以下任一方式登录 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主机体验"^]。
+. 选择菜单 image:workloads-menu-icon.png["汉堡菜单图标用于导航至存储、EDA、AI、数据库、VMware 和管理等工作负载。"] 然后选择 *EDA*。
+. 选择 *CI/CD*。
+. 选择“转到项目页面”。
+. 查看“项目”页面上列出的现有项目。
+
+
+
+
+== 编辑项目
+
+您可以随时编辑项目的设置。
+
+.步骤
+. 使用以下任一方式登录 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主机体验"^]。
+. 选择菜单 image:workloads-menu-icon.png["汉堡菜单图标用于导航至存储、EDA、AI、数据库、VMware 和管理等工作负载。"] 然后选择 *EDA*。
+. 选择 *CI/CD*。
+. 选择“转到项目页面”。
+. 在“项目”页面上，选择 image:icon-action.png["选项按钮"] 针对您想要编辑的项目。
+. 对项目配置进行必要的更改。
+. 选择*保存*。
+
+
+
+
+== 查看项目的工作区
+
+项目的克隆或快照称为工作区。创建工作区后，只要项目运行策略允许，工作区就会一直保留。您可以按照以下步骤查看项目的现有工作区。
+
+.步骤
+. 使用以下任一方式登录 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主机体验"^]。
+. 选择菜单 image:workloads-menu-icon.png["汉堡菜单图标用于导航至存储、EDA、AI、数据库、VMware 和管理等工作负载。"] 然后选择 *EDA*。
+. 选择 *CI/CD*。
+. 选择“转到项目页面”。
+. 在“项目”页面上，选择一个项目，然后选择“查看”。
+. 查看此项目所有工作区的状态和详细信息。
+. 如果看到工作区的警报或警告，请将鼠标悬停在警报或警告图标上以查看原因。
+
+
+
+
+== 删除项目
+
+按照以下步骤，即可在不再需要时删除项目。
+
+.步骤
+. 使用以下任一方式登录 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主机体验"^]。
+. 选择菜单 image:workloads-menu-icon.png["汉堡菜单图标用于导航至存储、EDA、AI、数据库、VMware 和管理等工作负载。"] 然后选择 *EDA*。
+. 选择 *CI/CD*。
+. 选择“转到项目页面”。
+. 在“项目”页面上，选择 image:icon-action.png["选项按钮"] 针对您想要删除的项目。
+. 选择*删除*。
+. 在确认对话框中，选择“删除”。
+
+
+.结果
+项目已被删除，与该项目相关的任何代码或工件都将从卷中删除。项目快照和克隆版本将被保留。

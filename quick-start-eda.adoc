@@ -1,0 +1,52 @@
+---
+sidebar: sidebar 
+permalink: quick-start-eda.html 
+keywords: requirements, permissions, eda, builders, quick start, electronic design automation 
+summary: 数据库有三种不同的模式，每种模式的要求都不同。 
+---
+= EDA 快速入门
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+开始创建EDA项目。管理员和团队负责人可以使用 EDA 来管理开发团队的项目和工作区。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"] 登录 Workload Factory
+[role="quick-margin-para"]
+你需要 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["在 Workload Factory 上注册一个帐户"^] 并使用以下任一方式登录： https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主机体验"^]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"]添加凭据和权限
+[role="quick-margin-para"]
+选择符合您需求的权限策略。
+
+[role="quick-margin-para"]
+如果您选择不授予权限，您可以开始使用 Workload Factory for EDA 来复制部分完成的代码示例。
+
+[role="quick-margin-para"]
+如果您选择授予权限，则需要手动向帐户添加凭据，包括选择工作负载功能（例如 EDA 和 AI），并为所需的权限创建 IAM 策略。
+
+[role="quick-margin-para"]
+https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["了解如何添加凭据和权限"^]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 设置环境以满足EDA要求
+[role="quick-margin-para"]
+您需要一个已部署并已发现的 FSx for ONTAP文件系统，其中至少包含一个已配置为 NFS 共享的卷。
+
+[role="quick-margin-para"]
+link:requirements-eda.html["了解更多关于EDA要求的信息"^]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四个"] 配置项目仪表板
+[role="quick-margin-para"]
+配置项目仪表板以监控系统运行状况、性能和存储使用情况，从而有效地优化您的 EDA 环境。
+
+[role="quick-margin-para"]
+link:task-configure-dashboard.html["了解如何配置项目仪表板"^]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"] 与其他服务集成
+[role="quick-margin-para"]
+使用工作负载工厂 REST API 将 EDA 与其他服务（例如服务门户或 Perforce Helix Core）集成。
+
+[role="quick-margin-para"]
+link:integrate-perforce.html["了解如何将 EDA 与 Perforce 集成"^]。

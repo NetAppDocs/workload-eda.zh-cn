@@ -1,0 +1,11 @@
+= 克隆支持
+:allow-uri-read: 
+
+
+
+
+=== 克隆支持
+
+现在您可以在BlueXP Workload Factory for Builders 中克隆项目。克隆项目时，Builders 会根据快照创建一个新项目，其配置与原始项目相同。克隆功能可用于快速创建类似项目或用于测试目的。您可以按照 Builders 中的说明挂载新的项目克隆。
+
+https://docs.netapp.com/us-en/workload-builders/version-projects.html["管理BlueXP Workload Factory for Builders 项目的版本"]

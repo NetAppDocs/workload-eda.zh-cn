@@ -1,0 +1,70 @@
+---
+sidebar: sidebar 
+permalink: task-configure-dashboard.html 
+keywords: configure, dashboard, AWS tags, CloudWatch, FSx for ONTAP, Workload Factory, EDA, electronic design automation 
+summary: 通过添加标签来配置您的EDA仪表板，以收集指标。 
+---
+= 使用仪表板
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+首次登录 EDA 时，您可以使用仪表板来观察 FSx for ONTAP文件系统和卷中的项目使用情况。仪表盘包含几个默认筛选器，您可以使用这些筛选器来自定义显示的信息。此外，您还可以创建和应用自己的 AWS 标签，以便根据您特定的业务需求来组织和筛选数据。
+
+该仪表盘可帮助您监控存储使用情况，包括已分配容量、已用容量、吞吐量和 IOPS。
+
+收集的 CloudWatch 指标包括：
+
+* 已配置容量：表示已配置存储容量的卷级指标。
+* 已用容量：表示已用存储空间的卷级指标。
+* 平均/最大吞吐量：计算方法为指定时间段内 DataReadBytes 和 DataWriteBytes 之和的平均值或最大值。
+* 平均/最大 IOPS：计算方法为：在指定时间段内，数据读取操作、数据写入操作和元数据操作的总和的平均值或最大值。
+
+
+
+
+== 设置仪表板
+
+要有效使用仪表板，请根据您的业务需求，在 FSx for ONTAP卷上配置 AWS 标签，例如代表项目或业务部门的标签。详情请见 <<配置自定义过滤器>>。
+
+AWS 标签是 AWS 资源的元数据。它们可以帮助您以不同的方式对 AWS 资源进行分类，例如按项目、应用程序或业务部门。有关标签的更多详细信息，请参阅 https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practices/what-are-tags.html["什么是标签？"^] 和  https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReference/overview.html["AWS 资源组标记 API 参考"^]。
+
+配置完成后，在“标签配置”页面中提供 AWS 标签密钥名称和要在控制面板中显示的相应标签。
+
+应用这些标签后，Workload Factory 开始收集和显示相关的 CloudWatch 指标。
+
+您的仪表盘将成为一个动态工具，可以根据您的组织需求来组织、跟踪成本和筛选资源。
+
+
+
+=== 配置自定义过滤器
+
+. 使用以下任一方式登录 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主机体验"^]。
+. 选择菜单 image:workloads-menu-icon.png["汉堡菜单图标用于导航至存储、EDA、AI、数据库、VMware 和管理等工作负载。"] 然后选择 *EDA*。
++
+如果您尚未配置仪表板，系统会自动提示您进行配置。
+
+. 对于每个需要的筛选器，添加筛选器标签名称和要与其关联的 AWS 标签键名称。
+. 选择*应用*。
+. 应用任何标签或筛选器后，要查看更改，请选择仪表板上的刷新图标。配置了新筛选器的动态仪表板将显示在您的 EDA 项目仪表板中。
+. 要稍后编辑仪表板配置，请选择“配置”。
+
+
+
+
+=== 筛选仪表板
+
+您可以通过选择以下一个或多个默认筛选器以及您创建的任何自定义筛选器来筛选仪表板上显示的信息：
+
+* 凭据
+* 地区
+* 文件系统
+* 卷类型
+* 时间范围
+
+
+选择所需的筛选条件后，点击刷新图标即可更新仪表盘信息。
+
+要了解卡片上显示的信息的说明，请选择该卡片的信息图标。
