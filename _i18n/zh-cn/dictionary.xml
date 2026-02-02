@@ -351,17 +351,13 @@
   <block id="cc8b0535948da368f832027c19b7f853" category="list-text">请务必复制上面用于序列号字段的帐户序列号（960xxxx）。这将加快账户处理速度。</block>
   <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">NetApp应该在此过程中与您联系。这是针对新用户的一次性入职培训。</block>
   <block id="f335678326583cea28377216c5515221" category="paragraph">获取NetApp支持站点帐户后，请按照以下步骤将该帐户与您的NetApp Console登录信息关联。 <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>。</block>
-  <block id="487644be42ec68bfbe1af8bedccf87d4" category="summary">通过添加标签来配置您的EDA仪表板，以收集指标。</block>
   <block id="b5ca39077f3b34df657d01b0e4e66348" category="doc">使用仪表板</block>
-  <block id="9f87c2937598d5a669f7fda9b2860b22" category="paragraph">首次登录 EDA 时，您可以使用仪表板来观察 FSx for ONTAP文件系统和卷中的项目使用情况。仪表盘包含几个默认筛选器，您可以使用这些筛选器来自定义显示的信息。此外，您还可以创建和应用自己的 AWS 标签，以便根据您特定的业务需求来组织和筛选数据。</block>
-  <block id="9108e435212992e269c4a0e10c304297" category="paragraph">该仪表盘可帮助您监控存储使用情况，包括已分配容量、已用容量、吞吐量和 IOPS。</block>
   <block id="00909736de459ef354dd54f7a12c7137" category="paragraph">收集的 CloudWatch 指标包括：</block>
   <block id="83ec7827b9a51abd480f21f9797d1c3b" category="list-text">已配置容量：表示已配置存储容量的卷级指标。</block>
   <block id="99051abc318cae9824d95692d1c95b25" category="list-text">已用容量：表示已用存储空间的卷级指标。</block>
   <block id="ff1cfca20a1660c53ade527b17be8ad8" category="list-text">平均/最大吞吐量：计算方法为指定时间段内 DataReadBytes 和 DataWriteBytes 之和的平均值或最大值。</block>
   <block id="a0932dae893409aa61370e810d740d59" category="list-text">平均/最大 IOPS：计算方法为：在指定时间段内，数据读取操作、数据写入操作和元数据操作的总和的平均值或最大值。</block>
   <block id="c4d073c70378b04dc94a31c6e002190c" category="section-title">设置仪表板</block>
-  <block id="4a77707914ca5addc817ef4b8452e03d" category="paragraph">要有效使用仪表板，请根据您的业务需求，在 FSx for ONTAP卷上配置 AWS 标签，例如代表项目或业务部门的标签。详情请见 <block ref="56431a7f0461e9258a1144a0e01a6b8d" category="inline-xref-macro-rx"></block>。</block>
   <block id="4c6f0009ac1f9c550c3c27ca47734a94" category="inline-link">什么是标签？</block>
   <block id="6ec564eeb8bbd7d65ea723d7377e4535" category="inline-link">AWS 资源组标记 API 参考</block>
   <block id="3c533aef31dd27afb54ebf253685f3c2" category="paragraph">AWS 标签是 AWS 资源的元数据。它们可以帮助您以不同的方式对 AWS 资源进行分类，例如按项目、应用程序或业务部门。有关标签的更多详细信息，请参阅<block ref="3a728828042c1a731e3aa740ed780475" category="inline-link-rx"></block> 和 <block ref="53b3c63786d21199a28ae32477919693" category="inline-link-rx"></block>。</block>
@@ -370,12 +366,10 @@
   <block id="40dded464250d8f5174e221d1ee142f9" category="paragraph">您的仪表盘将成为一个动态工具，可以根据您的组织需求来组织、跟踪成本和筛选资源。</block>
   <block id="976e508c4d7059185077a486bc23c939" category="section-title">配置自定义过滤器</block>
   <block id="0de06b59453acb74b09edb405890d19b" category="paragraph">如果您尚未配置仪表板，系统会自动提示您进行配置。</block>
-  <block id="b5aff8f837547a2440ebe2a08de996e4" category="list-text">对于每个需要的筛选器，添加筛选器标签名称和要与其关联的 AWS 标签键名称。</block>
   <block id="24347b3ddf5a25cc9c27e54ae285ade1" category="list-text">选择*应用*。</block>
   <block id="cd272c40b08a69d4fcdc74ed592a2f25" category="list-text">应用任何标签或筛选器后，要查看更改，请选择仪表板上的刷新图标。配置了新筛选器的动态仪表板将显示在您的 EDA 项目仪表板中。</block>
   <block id="365caa3dff9ac22391eab30998fdad59" category="list-text">要稍后编辑仪表板配置，请选择“配置”。</block>
   <block id="26949f06981e97a3e3cda29668de2aff" category="section-title">筛选仪表板</block>
-  <block id="6e25e66f3be3bae488d3ee4d44bfdd2d" category="paragraph">您可以通过选择以下一个或多个默认筛选器以及您创建的任何自定义筛选器来筛选仪表板上显示的信息：</block>
   <block id="2daf1cb573c2c61422faf64610cf9402" category="list-text">凭据</block>
   <block id="f447ac856e7e72435904956e3b15f433" category="list-text">地区</block>
   <block id="53b936091a984a22f4042eeb94499891" category="list-text">文件系统</block>
@@ -404,7 +398,6 @@
   <block id="91ff6a222c07990103d82fb8831e3c69" category="summary">了解 Workload Factory for EDA 的最新功能。</block>
   <block id="8aa901901d7a7435a17fc1f732006316" category="doc">NetApp Workload Factory for EDA 有哪些新功能</block>
   <block id="ddd57eb702782b0c009fb89b951edaae" category="paragraph">了解 Workload Factory 的 EDA 功能有哪些新特性。</block>
-  <block id="0ccb64fb4de18921b08df0c5dcb5549f" category="section-title">2026年1月4日</block>
   <block id="992efefab3dd15099f5eff3f904d8df4" category="section-title">2025年10月5日</block>
   <block id="f6db487abe903d447c5070f569416c3a" category="section-title">2025年6月16日</block>
   <block id="dac96c84baa92faab0eb342df5283a1b" category="section-title">2025年5月4日</block>
@@ -430,4 +423,140 @@
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">什么是新的</block>
   <block id="482723983a4f2af954e36ff41e567451" category="sidebar">已知限制</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="sidebar">法律声明</block>
+  <block id="efc6f47d5e8620dbd993bbf5427fa876" category="doc">使用可自定义标签增强仪表板过滤功能</block>
+  <block id="1c074117512c813d0d3c5474c6839792" category="paragraph">现在，您可以根据 AWS 标签在 EDA 仪表板上配置最多五个自定义过滤器。每个自定义过滤器都包括标签名称、AWS 标签键和选择类型（单选或多选）。</block>
+  <block id="a290a89777e8fd7db6061c83affdbda9" category="paragraph">多选允许您同时选择多个值，而单选限制一次只能选择一个值。自定义筛选器按配置顺序显示，这样可以轻松组织最常用的筛选器。</block>
+  <block id="a9f4d955c73322ea2697149d48ca3230" category="paragraph">如果您未配置自定义筛选器，默认筛选器（文件系统、卷类型和时间范围）仍可用，因此您可以继续查看仪表板并与之交互。</block>
+  <block id="7f599cf351ac708ac51a573f45f1adfe" category="inline-link">详细了解如何配置自定义筛选器</block>
+  <block id="b4d8b5d35eb5ad238c4bc40c7bfa5cc8" category="paragraph"><block ref="0fffea6d188f5a3a46b25be10dcf1dca" category="inline-link-rx"></block>。</block>
+  <block id="5908526b06383bf6b835d957813a0a5b" category="section-title">用于细粒度性能分析的卷详细信息视图</block>
+  <block id="be14699d8f808150c6e3ec8fd5f5fb6f" category="paragraph">仪表板现在提供两种查看模式：总视图和卷视图。总视图显示所有卷的汇总指标，而卷视图显示前 10 个卷在一段时间内的单个性能。</block>
+  <block id="6828b4aa70bf0499581d68bc0a737c8a" category="paragraph">在卷视图中，交互式悬停工具提示提供每个卷的详细信息，包括卷名称、指标和特定时间的值。当相同的卷出现在多个组件中时，一致的颜色编码可以更轻松地跟踪不同指标的特定卷。</block>
+  <block id="b7259cf0b1b93b9f8f56fd85b8a2075f" category="inline-link">了解有关查看卷详细信息的更多信息</block>
+  <block id="3d218b60cf53ed75572aecfde4c1d233" category="paragraph"><block ref="fdc27d3397a23552fa2bc2b42dee0c76" category="inline-link-rx"></block>。</block>
+  <block id="a63dd8c708227f66adf2e93b1b973bfe" category="section-title">用于主动性能监控的延迟分析</block>
+  <block id="4eca5955b4d0f7b664a2f65c49306dcf" category="paragraph">延迟分析使您能够监控整个 FSx for ONTAP 文件系统的卷读取和写入延迟。您可以配置可自定义的警告和关键事件阈值，以便在影响 EDA 工作负载之前主动识别性能瓶颈。</block>
+  <block id="40a74d0e93037927ed8b742952444782" category="paragraph">延迟事件表显示所有警告和关键事件，使您能够监控卷性能并识别需要优化的卷。</block>
+  <block id="40599551b14b033049a0306f8d7e0da2" category="paragraph">此功能需要 AWS 凭据，可从 EDA 仪表板的延迟菜单中进行访问。</block>
+  <block id="195b656b2b34184ab7cb51ea0158eba0" category="inline-link">详细了解延迟分析</block>
+  <block id="3589dd4e8f5f2cbdba29810271d0f1d9" category="paragraph"><block ref="6f22f53277ef02f84f5ed64bde49085d" category="inline-link-rx"></block>。</block>
+  <block id="6b1bfc4b2985b92dcf5662055b7cd336" category="inline-link-macro">延迟监控</block>
+  <block id="6932162a874668e2d1dc901452dbb1b8" category="list-text"><block ref="fecda44c58c462f47e8a148f1d0d4382" category="inline-link-macro-rx"></block>：通过可配置的警告和关键事件阈值主动监控卷读取和写入延迟性能，以识别潜在的性能瓶颈。</block>
+  <block id="7e565772caac09d981d6b3641bb20148" category="inline-link-macro">了解延迟监控</block>
+  <block id="d3e9e776c97e0f2d8388d6d741dd47a8" category="admonition">还需要 AWS 凭据才能使用延迟监控功能，该功能收集 CloudWatch 指标以进行卷性能分析。<block ref="123cec35459a259baaf9454185c7e6c4" category="inline-link-macro-rx"></block>。</block>
+  <block id="2106cf3366c1f8905dc8d0decf2ac6cc" category="summary">通过添加标签来收集指标，配置您的 EDA 仪表板。使用单选或多选选项自定义筛选器，以满足您的业务需求。</block>
+  <block id="f085cface8e84ac185b38370c5a4aead" category="paragraph">首次登录 EDA 时，您可以使用仪表板观察整个 FSx for ONTAP 文件系统和卷的项目使用情况。仪表板包含多个默认筛选器，您可以使用这些筛选器来自定义显示的信息。此外，您可以根据您的 AWS 标签创建最多五个自定义筛选器，并可选择单个或多个选项，根据您的特定业务需求组织和筛选数据。</block>
+  <block id="9918911ccf4f48662bd23b3fa6ea97a8" category="inline-link-macro">监控卷延迟</block>
+  <block id="c09e7b1ab90792168923158989ca6297" category="paragraph">此信息板可帮助您监控已分配容量、已使用容量、吞吐量和 IOPS 的存储使用情况。有关主动延迟性能监控，请参阅<block ref="4d71518cae1e26b3714fb432b3fb2249" category="inline-link-macro-rx"></block>。</block>
+  <block id="3eeb776c775a0a186eaac0ae86ca4408" category="paragraph">为了有效地使用仪表板，请根据您的业务需求在 FSx for ONTAP 卷上配置最多五个 AWS 标签，例如代表项目或业务单元的标签。有关详细信息，请参见<block ref="56431a7f0461e9258a1144a0e01a6b8d" category="inline-xref-macro-rx"></block>。</block>
+  <block id="b915af974b3255995db1b551b1e1dcbb" category="paragraph">您可以根据 AWS 标签配置最多五个自定义过滤器。每个自定义过滤器需要三个组件：过滤器标签名称、AWS 标签键名称和选择类型（单选或多选）。如果您没有配置任何自定义过滤器，则默认过滤器（文件系统、卷类型和时间范围）仍然可用，因此您仍然可以查看仪表板并与之交互。</block>
+  <block id="27e0e44d189c553eb00dc006b35029f5" category="list-text">选择 *+ Add filters*。</block>
+  <block id="5678492274c56b0e9a6e36ba6f34b836" category="list-text">对于要创建的每个自定义筛选器（最多五个），请提供以下内容：</block>
+  <block id="7371329c5bc9fb1913a92db5445368eb" category="list-text">*Filter label name*：显示在控制面板中的显示名称。</block>
+  <block id="9dc66313c07505b9b6ee97b9490648d4" category="list-text">*AWS 标记密钥名称*：与此过滤器对应的 AWS 资源标记密钥。</block>
+  <block id="6245bc7faa3c897c2839919b1e0f6c5d" category="list-text">*多选*：选择此筛选器允许单选还是多选。选择 *多选* 时，您可以为此筛选器同时选择多个值。单选限制一次只能选择一个值。</block>
+  <block id="0be6ab8a3d394d63c0aaea5444fc4d94" category="admonition">筛选器按您配置的顺序显示在控制面板上。请考虑首先整理最常用的筛选器，以便更轻松地访问。</block>
+  <block id="58812a046615ae0cede06aa76e867511" category="paragraph">您可以通过选择自定义过滤器旁边的垃圾桶图标来删除该过滤器，然后再应用更改。</block>
+  <block id="7ad57d97a4e7251a593b560f3edd7c6c" category="paragraph">您可以使用默认筛选器和您创建的任何自定义筛选器的组合来筛选控制面板上显示的信息。</block>
+  <block id="0893a6eb6fac2bd4489c23ad574e3e32" category="paragraph">以下默认筛选器始终可用：</block>
+  <block id="b6c5b00ab5f9877d11bf9e5b5bc8b2fa" category="paragraph">除了这些默认筛选器外，您配置的自定义筛选器还会显示在控制面板上。使用筛选器时：</block>
+  <block id="0d9da1f1a6c87419d9a59e59c2f60af2" category="list-text">*多选筛选器*允许您同时选择多个值来拓宽您的视野。例如，您可以选择多个项目来查看合并指标。</block>
+  <block id="2ad8dabd47e501a4ed1c3d01be491886" category="list-text">*单选筛选器*限制您一次只能选择一个值，在需要关注特定资源或类别时非常有用。</block>
+  <block id="ec4fc4cb1b37373b785aaee6062cfec7" category="section-title">查看卷详细信息</block>
+  <block id="c42e01801b1f2ef2fbdf3f8841353b73" category="paragraph">控制面板提供两种查看模式来帮助您分析存储指标：总视图和卷视图。您可以使用控制面板上的可用选项卡在这些模式之间切换。</block>
+  <block id="ee855ba807a55874eb4b38814389078f" category="section-title">总视图</block>
+  <block id="e7dd4c9a6d36b6512dda7f2c3e278b77" category="paragraph">总计视图（默认）显示与所选筛选器匹配的所有卷的汇总指标。此视图提供整体存储性能的高级概览，显示综合容量、IOPS 和吞吐量指标。</block>
+  <block id="515b555dcf569c4cc1d2a938ae9822d3" category="section-title">卷视图</block>
+  <block id="e3f5fd2f57f7a82a665af7de374483ac" category="paragraph">卷视图显示各个卷随时间的性能表现，显示每个指标的前 10 个卷。此视图可帮助您识别驱动资源使用的特定卷，并观察其在所选时间段内的行为。</block>
+  <block id="5753fce8315ebaa06a713e75985750bf" category="paragraph">要切换到 Volume 视图，请选择仪表板上的 *Volume* 选项卡。</block>
+  <block id="f768a8e9133dfc338015fd0d83ec2cf0" category="section-title">显示的卷指标</block>
+  <block id="2347e9819148413af6cc4e5827b02d4e" category="paragraph">当您选择卷视图时，仪表板将显示卷总数中的前 10 个卷。* *卷已用容量*：显示当前已用容量最高的卷。* *IOPS*：显示所选时间段内平均 IOPS 最高的卷。* *吞吐量*：显示所选时间段内平均吞吐量最高的卷。</block>
+  <block id="286b672abb5d35bb05baef5e5758a310" category="admonition">控制面板仅显示每个指标的前 10 个卷。如果您有超过 10 个卷，某些卷可能不会显示在详细视图中。</block>
+  <block id="502ab59dcef25c014584999b381b739b" category="paragraph">当相同的卷出现在*卷使用容量*、*IOPS* 和*吞吐量*指标中时，仪表板在图例中使用一致的颜色编码，以便更轻松地跟踪不同指标中的特定卷。</block>
+  <block id="4745a2c999b128a25bda01aed19ab2f8" category="paragraph">水平轴显示时间范围，而图例显示图形中表示的所有卷（最多 10 个）。</block>
+  <block id="90681f223ffce7f43af4ac6e8572f319" category="section-title">交互式卷数据</block>
+  <block id="409e7e820a2aec1df14db5a88edd443e" category="paragraph">您可以将鼠标悬停在图形中的任何卷线上以查看详细信息：</block>
+  <block id="66098fe1f75297ccbc3e4c2332830104" category="paragraph">*卷使用容量*：显示卷名称、当时使用的容量和分配的容量。</block>
+  <block id="748334bb99d46cf2ef3aa45e610baf24" category="paragraph">*IOPS*：显示卷名称、时间范围内的平均 IOPS 以及时间范围内的最大 IOPS。</block>
+  <block id="04eeb8d03cf6b4755481c052a6e535e6" category="paragraph">*吞吐量*：显示卷名、时间范围内的平均吞吐量以及时间范围内的最大吞吐量。</block>
+  <block id="f2c7e3d31586c840e7c17c779b7d70dd" category="paragraph">这些交互式数据可帮助您分析卷性能模式，并确定潜在的瓶颈或优化机会。</block>
+  <block id="300ec882ed0bc603a8bc31f188dc28e5" category="summary">使用可配置的警告和关键事件阈值监控和分析卷延迟性能，以主动识别性能瓶颈。</block>
+  <block id="90d997e137ee990e196229395af6d6a7" category="paragraph">使用延迟分析，您可以通过跟踪 FSx for ONTAP 文件系统的读取和写入延迟指标来主动监控卷性能。配置可自定义的阈值，以便在潜在的性能瓶颈影响您的 EDA 工作负载之前识别警告和关键事件。</block>
+  <block id="3b878279a04dc47d60932cb294d96259" category="section-title">概述</block>
+  <block id="1c42660fdf55fec5341f109b1c18ae8c" category="paragraph">延迟分析收集并监控卷读取和写入操作的 CloudWatch 指标。当指定时间范围内的所有数据点都超出延迟和 IOPS 阈值时，系统会生成显示在延迟事件表中的警报。这使您能够：</block>
+  <block id="52840e6ea19e30e010425ac96fc1fd74" category="list-text">识别性能下降的卷。</block>
+  <block id="8111593c4b9e675b40060181e91582b7" category="list-text">区分警告级别和关键级别的性能问题。</block>
+  <block id="029070dac474b47b91825e694dd48f7e" category="list-text">跟踪一段时间内的延迟趋势，以优化存储配置。</block>
+  <block id="82bfba3efae839fe6bbe2de97d83c475" category="list-text">在延迟影响工作负载性能之前采取积极主动的行动。</block>
+  <block id="b18d695fc7384219d11ff79654f49701" category="paragraph">要使用延迟分析，必须在 Workload Factory 中配置 AWS 凭据。该功能需要访问与 AWS 凭据关联的所有 FSx for ONTAP 卷的 CloudWatch 指标。</block>
+  <block id="196a1b1d4d7eff75b0b7bc0f6fa282e7" category="inline-link-macro">添加 AWS 凭据</block>
+  <block id="70317e3abbdadfb99e6ea364d432bd9b" category="paragraph">如果您尚未配置 AWS 凭据，请参见 <block ref="53eda59ec5ff13cb6e6660c47027e8c7" category="inline-link-macro-rx"></block>。</block>
+  <block id="b7a6e29a17f641a5bd663b0c27c433ed" category="section-title">配置延迟阈值</block>
+  <block id="9b53289586841271ac6d175ca4a5af63" category="paragraph">您可以为警告和严重事件配置阈值。每个事件类型都包含单独的读取和写入操作阈值。系统会持续评估这些阈值，并在满足条件时生成警报。</block>
+  <block id="2542d3fbcc77fe58daf4a8287e4dc4ae" category="admonition">您必须将关键事件阈值设置为高于警告事件阈值，以确保正确的警报升级。否则，您无法保存配置。</block>
+  <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">关于此任务</block>
+  <block id="92aac57dc8699e8869b6e3f2aec6b360" category="paragraph">要触发警报，必须突破指定时间段内所有数据点的延迟阈值和 IOPS 阈值。这种双条件逻辑通过确保在重大负载下保持高延迟，有助于减少误报。</block>
+  <block id="e1cf2ece0db166d8b4c6b87f20794e11" category="inline-image-macro">汉堡菜单图标</block>
+  <block id="c625174f1f2ee54505e8df5c7884aaa1" category="list-text">选择菜单 <block ref="438b712f6e6afc173ce78a756adc207c" category="inline-image-macro-rx" type="image"></block>，然后选择 *EDA*。</block>
+  <block id="6522859d513a1a4996b48c2075e5629d" category="list-text">在 EDA 菜单中，选择*延迟*。</block>
+  <block id="e98927daa3269d89ed40e1d00b9894f4" category="list-text">在 EDA 延迟配置页面中，配置以下阈值：</block>
+  <block id="6a92339b37a09c472028f07967682c85" category="list-text">*警告事件*</block>
+  <block id="7a9ff4c8c2260709d5b8ca3ea5720d48" category="list-text">*读取延迟阈值*：输入延迟阈值（以毫秒为单位）。默认值：6 ms。</block>
+  <block id="c7ffe38ce2716364ec13888fb0fb4d18" category="list-text">*读取 IOPS 阈值*：以每秒操作数为单位输入 IOPS 阈值。默认值：100 ops/sec。</block>
+  <block id="a9c123b2457943cad2a4a7b1da9e2ba2" category="list-text">*读取时间范围*：输入以分钟为单位的时间范围（5-20）。默认值：10 分钟。</block>
+  <block id="0bb2971cdc9904893b398e127f86ccc1" category="list-text">*写入延迟阈值*：输入以毫秒为单位的延迟阈值。默认值：8 ms。</block>
+  <block id="f1d2b429b535ce1659d20f6a98f239da" category="list-text">*写入 IOPS 阈值*：以每秒操作数输入 IOPS 阈值。默认值：100 ops/sec。</block>
+  <block id="a0274640a4f41ca07311c67d74f332b1" category="list-text">*写入时间范围*：输入以分钟为单位的时间范围（5-20）。默认值：10 分钟。</block>
+  <block id="a3ca3437ce0a7bbf111f75af4d05ea72" category="list-text">*严重事件*</block>
+  <block id="fe225c18ccd35d621ab2e58cf79459b5" category="list-text">*读取延迟阈值*：输入延迟阈值（以毫秒为单位）。默认值：12 ms。</block>
+  <block id="84da8d5b9264494d5cd9cb035bc28120" category="list-text">*写入延迟阈值*：输入以毫秒为单位的延迟阈值。默认值：15 ms。</block>
+  <block id="0073a211209725d1fd56c6533d4ffec3" category="paragraph">Workload Factory 开始收集与您的 AWS 凭据关联的所有 FSx for ONTAP 卷的延迟指标。指标至少每 20 分钟收集一次。延迟事件表显示违反配置阈值的任何卷。</block>
+  <block id="6bc0e94d709a00317b3fdd4f3958342b" category="section-title">了解警报</block>
+  <block id="c00d3202c1a4245d5310c03fe4c4d124" category="paragraph">延迟分析功能使用 CloudWatch 警报来监控卷性能。了解如何触发警报有助于您配置适当的阈值并解释结果。</block>
+  <block id="ee34286f143c9ac572df816e88226163" category="section-title">收集的指标</block>
+  <block id="bea060c037959de7378c9c2f91ea4219" category="paragraph">系统会收集每个卷的以下 CloudWatch 指标：</block>
+  <block id="9115f34400f66fb673aa39683fefc0a8" category="list-text">*读取延迟阈值*：计算为 1000 * m2/(m1+0.000001)，其中 m1 = DataReadOperations，m2 = DataReadOperationTime</block>
+  <block id="507575c143ec3020fe407125ed3df334" category="list-text">*写入延迟阈值*：以 1000 * m2/(m1+0.000001) 计算，其中 m1 = DataWriteOperations，m2 = DataWriteOperationTime</block>
+  <block id="6c2de48345c28d8092d96aca583778d0" category="section-title">警报触发条件</block>
+  <block id="9242656254a25093b3f3351379ea0f02" category="paragraph">当满足以下所有条件时，将触发警报：</block>
+  <block id="186a1bcf007367f6bc6fa82ec4719e16" category="list-text">操作类型（读取或写入）超过延迟阈值。</block>
+  <block id="e276786b9c415526db7d13f4aa5efadd" category="list-text">此操作类型超出 IOPS 阈值。</block>
+  <block id="d4f2d389a3d4d575b8158ca4417bf9a5" category="list-text">对于配置时间段内的所有数据点，这两种情况都存在。</block>
+  <block id="6efa4b954c442dd4f15a0f58f1b0bd86" category="paragraph">例如，使用默认警告阈值时，只有当读取延迟超过 6 ms 且读取 IOPS 在 10 分钟时间段内的所有数据点都超过 100 ops/sec 时，读取警报才会触发。</block>
+  <block id="e0b18d5b04f677d427e5a029d591d7a9" category="section-title">事件严重性</block>
+  <block id="c5dada127d514b30222d50c180808dff" category="list-text">*警告事件*：表示可能需要注意的延迟升高。</block>
+  <block id="3b1132558500e795d2918a031b3533ea" category="list-text">*关键事件*：表示需要立即调查的严重延迟。</block>
+  <block id="a0136d636bd452e02818b34b1fb9eb98" category="section-title">查看延迟事件</block>
+  <block id="7965c28e3a946fcfe26f8d31449a72e3" category="paragraph">延迟事件表显示过去 72 小时内检测到的所有警告和关键事件。使用此表可监控卷性能并识别需要优化的卷。</block>
+  <block id="0f68b904e33d9ac04605aecc958bcf52" category="list-title">追加信息</block>
+  <block id="0fd27ce965f59d9ce188afda7be707f7" category="list-text">表中仅显示每个卷的最新违规行为。如果某个卷经历了多次违规，则仅显示最近的事件。</block>
+  <block id="7776f517a75d578f349901d6f0886405" category="list-text">事件将在 72 小时后自动删除。</block>
+  <block id="99789473cc53d4c5f2666a4ab79ebb39" category="list-text">此表最多显示 200 个事件。添加新事件时，旧事件将被删除。</block>
+  <block id="fa25e0e326e38037315b4df99a68a595" category="list-text">在 *Latency* 选项卡中，查看延迟事件表。</block>
+  <block id="dcc9848cbc440e33ab31099e592f3548" category="list-text">查看每个事件的信息，包括：</block>
+  <block id="93051970a8383738704f4809fd35779f" category="list-text">*Severity*：指示事件是 Critical 还是 Warning。</block>
+  <block id="9d0418bddad0434b22eddfa9e6ac70b3" category="list-text">*Volume name*：受影响卷的名称。</block>
+  <block id="3970adb265372ae157b79f5cf32c4654" category="list-text">*Volume ID*：受影响卷的 ID。</block>
+  <block id="94785a36456605abe135e07954560b83" category="list-text">*文件系统*：包含该卷的 FSx for ONTAP 文件系统。</block>
+  <block id="fe78c594fbd3ab20c9638e8c15888f03" category="list-text">*检测到时间*：检测到违规行为的时间</block>
+  <block id="f24df78eef3360387dd1a4f2d6a0fdb0" category="list-text">*中位数延迟*：数据泄露期间的中位数延迟值。</block>
+  <block id="ffdc22229e20f79439c83c1406c5988f" category="list-text">要对表格进行排序，请选择任意列标题。默认情况下，关键事件首先按时间排序显示，然后是按时间排序的警告事件。</block>
+  <block id="c010e7ccfe39dff8710b56fb1e570258" category="list-text">要关闭一个或多个事件，请在每个事件旁边选择 *Dismiss*。</block>
+  <block id="4592e1df7d97ccf7061a86a746d9261d" category="list-text">要向表中添加列，请选择列图标，选择列，然后选择 *Apply*。</block>
+  <block id="01bd639bef6ec9a56687ee7ffd9f246c" category="section-title">管理延迟配置</block>
+  <block id="7851fb52b1039fde0650c3e8173c2a5a" category="paragraph">完成初始配置后，您可以编辑阈值。</block>
+  <block id="6fe6ef1cbd27d3257ff9500aab5f9ab9" category="list-text">在 *Latency* 页面中，选择 *Edit*。</block>
+  <block id="d53bdccd3ec334ddfd63d2269906352a" category="list-text">根据需要修改任何阈值。</block>
+  <block id="247a926ff070f20efece2fd2ed4162c3" category="admonition">确保关键阈值保持高于警告阈值。如果配置的关键阈值低于警告阈值，则系统将显示错误。</block>
+  <block id="d3152a664d12079fbf89a50fcb166ef3" category="list-text">选择 *Apply* 以保存所做更改。</block>
+  <block id="c2ffe02d76c4f089648f1647b43e4ee5" category="section-title">最佳实践</block>
+  <block id="9034aebe9b693f759faa32d33c7d1358" category="paragraph">在配置和使用延迟分析时，请考虑以下建议：</block>
+  <block id="6a17347e669ad40689359f41fee3efc9" category="list-text">*设置实际阈值*：根据您的工作负载要求配置阈值。默认值提供了一个起点，但可能需要根据您的特定环境进行调整。</block>
+  <block id="8d2a6ec04c3428e17318eec752e34640" category="list-text">*从警告阈值开始*：在微调关键阈值之前，使用警告事件来建立基线性能预期。</block>
+  <block id="1f3a99c8bf0d4110ea6d8f943c76ad49" category="list-text">*仔细考虑时间范围*：较短的时间范围（5-10 分钟）可以更快地检测到问题，但可能会生成更多警报。较长的时间范围（15-20 分钟）可减少误报，但可能会延迟检测。</block>
+  <block id="10c6a588ad4a1a320036ec18537a9783" category="list-text">*监控趋势*：定期查看延迟事件表，以识别可能指示潜在配置问题的模式或反复出现的问题。</block>
+  <block id="582145492bc6491a13bd3c8e766df7f4" category="list-text">*协调 IOPS 和延迟阈值*：双条件逻辑意味着必须超出两者。设置非常高的 IOPS 阈值也可能会阻止警报，即使延迟有问题。</block>
+  <block id="829d4cdd3177ddf6591982d99aa444ab" category="list-text">*审查被驳回的事件*：定期审查事件被驳回的原因，以确定阈值调整或基础设施改进的机会。</block>
+  <block id="8d2488f820b40da5c2d7dfd912588e9a" category="section-title">2026 年 2 月 1 日</block>
+  <block id="2c421bc29b0b255dff7d2788d0d1a127" category="section-title">2026 年 1 月 4 日</block>
 </blocks>

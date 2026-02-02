@@ -20,5 +20,6 @@ Workload Factory for EDA 提供仪表板和存储自动化框架及实用程序�
 它提供以下服务：
 
 * link:task-configure-dashboard.html["EDA项目仪表盘"]：提供 FSx for ONTAP文件系统存储消耗的集中视图，以帮助您规划、评估成本并收集有关项目存储使用情况的信息。
+* link:task-monitor-latency.html["延迟监控"]：通过可配置的警告和关键事件阈值主动监控卷读取和写入延迟性能，以识别潜在的性能瓶颈。
 * link:learn-eda-workloads.html["CI/CD"]：利用 FSx for ONTAP卷克隆功能，简化并缩短软件构建时间。
 

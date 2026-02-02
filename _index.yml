@@ -15,6 +15,10 @@ indexpage:
     links:
     - title: 使用仪表板
       url: "/task-configure-dashboard.html"
+  - title: 监控卷延迟
+    links:
+    - title: 监控卷延迟
+      url: "/task-monitor-latency.html"
   - title: 使用 Perforce 集成
     links:
     - title: 了解 Perforce 集成

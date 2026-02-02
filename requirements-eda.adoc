@@ -19,6 +19,9 @@ AWS凭证和权限:: 您需要向 Workload Factory 添加具有读/写权限的 
 
 目前不支持基本模式和只读模式权限。
 
+
+NOTE: 还需要 AWS 凭据才能使用延迟监控功能，该功能收集 CloudWatch 指标以进行卷性能分析。link:task-monitor-latency.html["了解延迟监控"]。
+
 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["了解如何向 Workload Factory 添加 AWS 凭证"^]
 
 FSx for ONTAP文件系统:: 您至少需要一个 FSx for ONTAP文件系统：
