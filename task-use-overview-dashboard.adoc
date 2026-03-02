@@ -1,0 +1,214 @@
+---
+sidebar: sidebar 
+permalink: task-use-overview-dashboard.html 
+keywords: cluster overview, cluster dashboard, FSx for ONTAP, cluster health, cluster usage, capacity, throughput, IOPS, EMS events, latency events, performance widgets, clusters table, volume placement, scale up, scale down, CloudWatch metrics, CSV export 
+summary: 使用概述仪表板监控 FSx for ONTAP 集群的运行状况、容量和吞吐量。大规模查看集群使用情况，并就卷放置和容量扩展做出明智的决策。 
+---
+= 在 EDA 工作负载中使用概览仪表板
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+作为管理数十个 FSx for ONTAP 文件系统的 EDA 工作负载的 IT 管理员，您可以使用概述仪表板回答有关群集状态的常见日常操作问题。使用它来确定在哪里放置新的卷或作业，了解大规模的群集使用情况，并就扩展容量和提高或降低吞吐量做出明智的决策。
+
+
+
+== 概述
+
+概览控制面板提供集中式集群视图，可帮助您快速了解跨容量、吞吐量和 IOPS 的集群使用情况，并确定放置新卷或移动现有卷和 SVM 的位置。
+
+控制面板包括：
+
+* *集群运行状况状态*：在信息板顶部汇总的信息，突出显示整个集群的延迟、可用性和保护以及安全事件和容量建议。
+* *集群表*：详细的可搜索表，显示每个 FSx for ONTAP 集群的使用情况和性能指标，支持过滤、排序、分页和 CSV 导出。
+
+
+
+
+== 要求
+
+使用概览控制面板之前，请确保满足以下要求：
+
+具有查看权限的 AWS 凭据:: 您必须在 Workload Factory 中配置 AWS 凭据，至少具有常规存储的读取（查看）权限。不支持使用 _Basic_ 模式配置的凭据。
++
+--
+如果您没有配置具有查看权限的凭据，则在打开"概述"选项卡时将重定向到 AWS 凭据设置页面。
+
+如果您尚未配置 AWS 凭据，请参见 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["添加 AWS 凭据"^]。
+
+--
+激活 EDA 仪表板:: 确认具有查看权限的凭据后，您必须激活 Workload Factory 的仪表板，以开始为您的 FSx for ONTAP 文件系统收集 CloudWatch 指标。
+
+
+
+NOTE: 在您提供同意后，收集指标可能需要一些时间。正在进行初始收集时，仪表板会通知您。
+
+.步骤
+. 使用以下任一方式登录 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主机体验"^]。
+. 选择菜单 image:workloads-menu-icon.png["汉堡菜单图标"]，然后选择 *EDA*。
+. 选择 *Overview* 选项卡。
+. 如果未检测到具有查看权限的凭据，请选择 *Add credentials* 并按照提示使用查看权限配置 AWS 凭据。然后返回 *Overview* 选项卡。
+. 查看同意提示，说明将为您的 FSx for ONTAP 文件系统收集的 CloudWatch 指标。
+. 选择 *Activate* 以激活仪表板并开始收集指标。
+
+
+.结果
+Workload Factory 开始收集与您配置的 AWS 凭据相关联的所有 FSx for ONTAP 文件系统的 CloudWatch 指标。当指标可用时，概览控制面板会填充。如果收集仍在进行中，则会显示通知。
+
+
+
+== 筛选仪表板
+
+使用概览仪表板顶端的筛选器，将重点放在与当前任务相关的文件系统上。这些是 Workload Factory 级别的筛选器，适用于延迟和 ONTAP 事件信息以及集群表。
+
+可用筛选器：
+
+* *区域*：按一个或多个 AWS 区域进行筛选。
+* *AWS 账户*：按与您配置的凭据关联的一个或多个 AWS 账户进行筛选。
+
+
+更新筛选器选择时，将刷新所有信息，仅显示匹配的文件系统和群集。
+
+
+
+== 集群运行状况状态
+
+在概览仪表板的顶端，将显示筛选的群集中的事件活动和运行状况的摘要视图。仅当至少一个 FSx for ONTAP 链接与您的文件系统相关联时，才会显示此信息。如果没有可用的链接，信息将被隐藏。
+
+
+
+=== 延迟
+
+延迟部分显示在范围内跨文件系统检测到的延迟事件数。
+
+* 计数反映了 link:task-monitor-latency.html["FSx 延迟分析"] 功能生成的延迟事件。
+* 选择 *Review* 将导航到 *Latency* 选项卡。
+* 仅当启用了延迟监控时，才能查看延迟信息。如果您尚未配置延迟阈值，请选择 *Configure*。有关延迟监控的详细信息，请参阅 link:task-monitor-latency.html["FSx 延迟分析"^]。
+
+
+
+
+=== 容量
+
+容量部分显示与容量问题相关的 EMS 消息数量，以及受影响的文件系统数量。
+
+监测的 EMS 事件包括但不限于：
+
+* 聚合几乎已满
+* 聚合已满
+* 卷接近满
+* 卷已满
+* Snapshot 预留接近满
+* Snapshot 预留已满
+* 目录大小已满
+* Flex 组已满
+* 索引节点已满
+
+
+有关监测的 EMS 事件的完整列表，请参见 link:https://docs.netapp.com/us-en/ontap-cli-9171/index.html["容量事件"^]。
+
+选择 *Capacity* 将导航到 Storage workloads 中的容量分析屏幕。
+
+
+
+=== 可用性和保护
+
+可用性和保护部分显示与可用性和数据保护相关的 EMS 消息数量，以及受影响的文件系统数量。
+
+监测到的事件包括 FlexCache 和 SnapMirror 相关的 EMS 事件。
+
+选择 *Availability & protection* 将导航到 Storage workloads 中的可用性和保护分析屏幕。
+
+
+
+=== 安全及其他
+
+"安全和其他"部分显示未归类为"容量"或"可用性和保护"的事件的 EMS 消息数量，以及受影响的文件系统数量。监控的事件包括反勒索软件保护、NFS 身份验证失败等。
+
+选择 *Security & other* 将导航到 Storage workloads 中的事件分析屏幕。
+
+
+
+== Clusters 表
+
+集群表提供了与您配置的 AWS 凭据相关联的每个 FSx for ONTAP 集群的详细视图，按活动区域和 AWS 账户选择进行筛选。数据是从 CloudWatch 指标中收集的。该表支持搜索、列筛选、分页、列自定义和 CSV 导出。
+
+
+
+=== 搜索和筛选
+
+* 使用搜索按名称、文件系统 ID、区域或其他属性查找特定群集。
+* 选择任何列标题以按该列对表进行排序。
+* 使用每列筛选器控件来缩小表中的结果。
+* 表格已分页。使用表格底部的分页控件在页面之间导航。
+
+
+该表包括以下列。默认情况下显示的列显示在表中。您可以使用列选择器添加或删除非默认列。对于吞吐量列，将鼠标悬停在列标题上，以了解有关 30 天计算周期和使用公式的详细信息。
+
+[cols="30,10,60"]
+|===
+| 列 | 默认 | 说明 
+
+
+| 集群名称 | 是 | FSx for ONTAP 集群的名称。 
+
+
+| 地区 | 是 | 部署集群的 AWS 区域。 
+
+
+| AWS 帐户 | 否 | 与集群关联的 AWS 帐户。 
+
+
+| SSD 已用容量 | 是 | 当前正在使用的 SSD 存储量。 
+
+
+| 总 SSD 容量 | 是 | 配置的 SSD 存储容量总计。 
+
+
+| SSD 使用量 | 是 | 使用中的 SSD 容量百分比。使用此功能可以确定接近容量限制的集群，以免它们影响工作负载性能。 
+
+
+| 容量池 | 是 | 容量池中的存储量。 
+
+
+| 平均吞吐量 | 是 | 过去 30 天的平均吞吐量。 
+
+
+| P95 吞吐量 | 否 | 过去 30 天的第 95 百分位吞吐量。 
+
+
+| P99 吞吐量 | 是 | 过去 30 天的第 99 个百分点吞吐量。 
+
+
+| 最大吞吐量 | 否 | 过去 30 天记录的最大吞吐量。 
+
+
+| 吞吐量使用情况 (P99) | 是 | 相对于配置的吞吐量 SKU 的 P99 吞吐量。使用此选项可识别吞吐量始终接近或处于配置限制的群集。 
+
+
+| 吞吐量 SKU | 是 | 已配置的吞吐量层。将其与吞吐量使用情况进行比较，以评估当前 SKU 的大小是否适当。 
+|===
+
+
+=== 自定义列
+
+从集群表中添加或删除列：
+
+. 选择右侧表格上方的列选择器图标。
+. 选择或取消选择要显示或隐藏的列。
+. 选择*应用*。
+
+
+
+
+=== 将表导出为 CSV
+
+您可以将当前显示的表数据导出为 CSV 文件，以进行进一步分析或报告。
+
+. 应用要反映在导出中的任何筛选器或列自定义项。
+. 选择集群表上方的 image:button_download.png["下载"] 按钮。
+
+
+CSV 文件已下载，其中包含表中当前可见的所有行，仅包括当前显示的列。

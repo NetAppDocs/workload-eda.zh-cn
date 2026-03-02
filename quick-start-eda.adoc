@@ -37,14 +37,28 @@ https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["了解�
 [role="quick-margin-para"]
 link:requirements-eda.html["了解更多关于EDA要求的信息"^]。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四个"] 配置项目仪表板
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四个"] 启用概览仪表板
+[role="quick-margin-para"]
+启用概述仪表板以监控 FSx for ONTAP 集群的运行状况、容量和吞吐量。接受同意提示，允许 Workload Factory 开始收集 CloudWatch 指标。
+
+[role="quick-margin-para"]
+link:task-use-overview-dashboard.html["了解如何启用概览控制面板"^]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"] 配置项目仪表板
 [role="quick-margin-para"]
 配置项目仪表板以监控系统运行状况、性能和存储使用情况，从而有效地优化您的 EDA 环境。
 
 [role="quick-margin-para"]
 link:task-configure-dashboard.html["了解如何配置项目仪表板"^]。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"] 与其他服务集成
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["六"] 配置 FSx 延迟分析
+[role="quick-margin-para"]
+设置延迟阈值，以在影响模拟运行时间之前主动识别和解决性能问题。配置警告和关键警报，并利用自动化基本分析。
+
+[role="quick-margin-para"]
+link:task-monitor-latency.html["了解如何配置延迟监控"^]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png["七"] 与其他服务集成
 [role="quick-margin-para"]
 使用工作负载工厂 REST API 将 EDA 与其他服务（例如服务门户或 Perforce Helix Core）集成。
 
