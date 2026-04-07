@@ -37,19 +37,19 @@ _Basic_ 模式和 _Read-only_ 模式权限不支持延迟监控。
 如果您尚未配置 AWS 凭据，请参见 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["添加 AWS 凭据"^]。
 
 --
+FSx for ONTAP文件系统:: 您需要在 AWS 环境中至少部署一个带有卷的 FSx for ONTAP 文件系统。延迟监控功能会自动收集与您配置的 AWS 凭据相关联的所有卷的指标。
+链接到 FSx for ONTAP:: 要查看延迟事件表和分析面板中的基本分析见解，必须将链接与 FSx for ONTAP 文件系统关联。如果没有链接，事件仍然可以被检测到，但分析提供的见解有限。如果尚未关联任何链接，请在 EDA 中选择*关联链接*，选择是否创建新链接或关联现有链接，然后选择*继续*以自动转到 Storage workloads 中的链接创建页面。
++
+--
+有关创建和关联链接的说明，请参见 link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["创建链接"^]。
+
+--
 Amazon Bedrock 模型 ARN（可选）:: 要使用可选的 AI 代理分析功能，您必须在 Workload Factory 设置中提供 Amazon Bedrock 模型 ARN。
 +
 --
 有关更多详细信息，请参见 link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/requirements-knowledge-base.html#basic-genai-requirements["基本 GenAI 要求"^]。
 
 如果您没有配置 Bedrock 模型 ARN，您仍然可以使用延迟监控和自动化基本分析。AI 代理分析将不可用。
-
---
-FSx for ONTAP文件系统:: 您需要在 AWS 环境中至少部署一个带有卷的 FSx for ONTAP 文件系统。延迟监控功能会自动收集与您配置的 AWS 凭据相关联的所有卷的指标。
-链接到 FSx for ONTAP:: 要查看延迟事件表和分析面板中的基本分析见解，必须将链接与 FSx for ONTAP 文件系统关联。如果没有链接，事件仍然可以被检测到，但分析提供的见解有限。如果尚未关联任何链接，请在 EDA 中选择*关联链接*，选择是否创建新链接或关联现有链接，然后选择*继续*以自动转到 Storage workloads 中的链接创建页面。
-+
---
-有关创建和关联链接的说明，请参见 link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["创建链接"^]。
 
 --
 
