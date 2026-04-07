@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-configure-dashboard.html 
 keywords: configure, dashboard, AWS tags, CloudWatch, FSx for ONTAP, Workload Factory, EDA, electronic design automation, volume details, top volumes, capacity utilization, throughput utilization, IOPS utilization 
-summary: 通过添加用于收集指标的标签来配置 EDA 项目仪表板。使用单选或多选选项自定义筛选器，以满足您的业务需求。 
+summary: 通过添加用于收集指标的标签来配置 EDA Project 仪表板。使用单选或多选选项自定义筛选器，以满足您的业务需求。 
 ---
-= 使用项目仪表板
+= 使用 Project 仪表板
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -46,7 +46,7 @@ AWS 标记是 AWS 资源的元数据。它们可以帮助您以不同的方式�
 === 配置自定义过滤器
 
 
-NOTE: 只有第一个访问项目仪表板的管理员用户才能配置、添加或删除自定义筛选器。所有其他用户，包括后续管理员，都具有对筛选器的只读访问权限。
+NOTE: 只有第一个访问 Project 仪表板的管理员用户才能配置、添加或删除自定义筛选器。所有其他用户，包括后续管理员，都具有对筛选器的只读访问权限。
 
 自定义筛选器允许您根据组织的运作方式组织仪表板数据。通过将筛选器与您的项目结构、团队或成本中心保持一致，您可以快速访问所需的特定数据，而无需浏览不相关的信息。这使得容量规划、成本跟踪和性能监控更加高效。
 

@@ -17,10 +17,10 @@ summary: 在开始使用NetApp Workload Factory进行 EDA 之前，请确保 Wor
 AWS凭证和权限:: 您需要向 Workload Factory 添加具有读/写权限的 AWS 凭证，这意味着您将以读/写模式使用 Workload Factory 进行 EDA。
 
 
-目前不支持基本模式和只读模式权限。
+目前不支持 _Basic_ 模式和 _Read-only_ 模式权限。
 
 
-NOTE: 还需要 AWS 凭据才能使用延迟监控功能，该功能收集 CloudWatch 指标以进行卷性能分析。link:task-monitor-latency.html["了解延迟监控"]。
+NOTE: 还需要 AWS 凭据才能使用延迟监控功能，该功能收集用于卷性能分析的 CloudWatch 指标。要为复杂的延迟方案启用可选的 AI 代理分析，您还必须提供 Amazon Bedrock 模型 ARN。link:task-monitor-latency.html["了解延迟监控"]。
 
 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["了解如何向 Workload Factory 添加 AWS 凭证"^]
 
