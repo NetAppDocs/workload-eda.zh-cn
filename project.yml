@@ -31,10 +31,12 @@ sidebar:
     entries:
     - title: 管理 EDA 存储操作
       url: "/task-use-overview-dashboard.html"
-  - title: FSx 延迟分析
+  - title: FSx for ONTAP 延迟分析
     entries:
-    - title: 监控 FSx 卷延迟
+    - title: 监控 FSx for ONTAP 卷延迟
       url: "/task-monitor-latency.html"
+    - title: 分析延迟趋势
+      url: "/task-analyze-latency-trends.html"
   - title: 项目使用情况分析
     entries:
     - title: 分析项目存储使用情况

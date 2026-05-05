@@ -4,7 +4,7 @@ permalink: manage-projects.html
 keywords: Microsoft SQL Server instance, server instance, manage host, view host, database host, database instance, manage, unmanage 
 summary: 在 Workload Factory for Databases 中管理 Microsoft SQL Server 实例。 
 ---
-= 管理EDA项目
+= 在 Workload Factory for EDA 中管理 EDA 项目
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -17,23 +17,23 @@ summary: 在 Workload Factory for Databases 中管理 Microsoft SQL Server 实�
 
 == 创建项目
 
-您可以创建一个新的 EDA 项目，以便利用 Amazon FSX for NetApp ONTAP文件系统的数据保护功能来保护您的代码和工件。步骤
+您可以创建一个新的 EDA 项目，以便利用 FSx for ONTAP 文件系统的数据保护功能来保护您的代码和制品。.步骤
 
 . 使用以下任一方式登录 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主机体验"^]。
 . 选择菜单 image:workloads-menu-icon.png["汉堡菜单图标用于导航至存储、EDA、AI、数据库、VMware 和管理等工作负载。"] 然后选择 *EDA*。
 . 选择 *CI/CD*。
-. 选择“创建项目”。
+. 选择 *Add project*。
 . 在“创建项目”页面上，提供以下信息：
 +
 .. 项目名称：请输入项目名称。
 .. *项目描述*：请输入项目描述。
 .. *文件系统*：请提供以下信息：
 +
-... *凭证*：选择要使用的亚马逊 AWS 凭证。EDA 使用这些凭证来发现可用于此项目的 FSx for ONTAP文件系统，并创建项目的克隆和快照。
-... *区域*：选择此 FSx for ONTAP文件系统所在的区域。
-... *FSx for ONTAP文件系统*：选择要与此项目一起使用的 FSx for ONTAP文件系统。
+... *凭据*：选择要使用的 Amazon AWS 凭据。EDA 使用这些凭据来发现可用于此项目的 FSx for ONTAP 文件系统，并创建项目的克隆和快照。
+... *区域*：选择此 FSx for ONTAP 文件系统所驻留的区域。
+... *FSx for ONTAP 文件系统*：选择要与此项目一起使用的 FSx for ONTAP 文件系统。
 +
-您只能选择已配置链接的文件系统。 https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["了解有关链接的更多信息"^]。
+您只能选择配置有链接的文件系统 https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["了解有关链接的更多信息"^]。
 
 ... *选择一个卷*：选择一个卷来存储项目；EDA 使用此卷作为软件存储库。
 +

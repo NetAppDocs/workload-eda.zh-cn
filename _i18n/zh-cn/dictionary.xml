@@ -17,7 +17,6 @@
   <block id="5e3b7f958129022f75fe2931c55615b2" category="section-title">问我关于人工智能助手首页集成的问题</block>
   <block id="65bcc541760e8f25e0281edbfdfbf7f3" category="paragraph">Workload Factory 控制台主页嵌入了 Ask me AI 助手，使您可以询问有关您自己的存储环境的问题，直接从您的环境中获取个性化见解，并参考以前的对话。您可以与“问我”进行交互，以了解您的工作负载、解决问题并了解更多关于工作负载工厂的信息——所有这些都无需离开控制台。</block>
   <block id="08c1bf6e31ef174ff608b5eb3d282063" category="summary">使用 Codebox，您可以自动执行主机部署、数据库创建等操作。</block>
-  <block id="e7865839bdb0670c8ccd4e6029a8580b" category="doc">使用 Codebox 实现 EDA 工作负载任务自动化</block>
   <block id="971492a505365b895740e7ae6a7e5a70" category="paragraph">使用 Codebox，您可以自动执行项目创建和数据保护操作。Codebox 是一个基础设施即代码 (IaC) 辅助工具，可帮助您生成代码以执行 Workload Factory 支持的任何操作。</block>
   <block id="bd282943a337f4287ca0d70f9a836261" category="inline-link-macro">Codebox 自动化</block>
   <block id="7954c9f6b266222ad558a397a97a8531" category="paragraph">了解更多 <block ref="d6a91743d83ea88006a3d66c27289981" category="inline-link-macro-rx"></block> 以及如何使用它。</block>
@@ -135,11 +134,9 @@
   <block id="bf9f27fc21322ff6302a870d86e2e722" category="inline-link-macro">使用迁移顾问创建 Amazon EC2 部署计划</block>
   <block id="87ca10f516e69b36084d36d28809162e" category="paragraph"><block ref="a5520c5bc95caf26ab1a143ec38e8340" category="inline-link-macro-rx"></block>。</block>
   <block id="1eba71d64e6c5e410e558530711e835b" category="summary">已知限制标识了该产品的此版本不支持或不能与其正确互操作的平台、设备或功能。仔细审查这些限制。</block>
-  <block id="f340a055e7f6e6033a05917a218d98bf" category="doc">NetApp Workload Factory在 EDA 方面的已知局限性</block>
   <block id="406b6743d6cb27b667d9600f28f51fe8" category="section-title">需要操作员权限</block>
   <block id="c1ff9ef1c0ec2e919c5fb8f99ade5a2c" category="paragraph">NetApp Workload Factory for EDA 需要操作员权限才能正常运行。</block>
   <block id="09593340bc6b0dc8107502c02818e9b4" category="summary">了解如何在NetApp Workload Factory中使用 Perforce 集成进行 EDA 分析。</block>
-  <block id="1df0a36c15777610fdaa9898d2c03d7b" category="doc">了解NetApp Workload Factory for EDA 中 Perforce 的集成</block>
   <block id="aaece55db43004e3cc685d5bd165253e" category="paragraph">将 Perforce 与 CI/CD 管道集成，通过自动化构建、测试和部署来增强开发过程，从而实现更快、更可靠的软件交付。</block>
   <block id="e365225a054a446470ef3e9d340e350c" category="paragraph">EDA 中的持续集成和持续部署 (CI/CD) 是为软件构建者提供的快速构建环境创建工具。它能够快速搭建个人开发环境，节省时间，并为开发人员提供自助服务，同时使 DevOps 团队能够保持对基础设施的控制。使用 CI/CD，软件开发人员可以快速创建工作区，而无需专门的数据存储或了解开发基础设施。</block>
   <block id="44583f52606e67cb0d8ed1bc84bffdad" category="section-title">什么是 CI/CD？</block>
@@ -211,20 +208,13 @@
   <block id="aeb31c9f8c311597856b129ab948b4e6" category="inline-link">NetApp Workload Factory</block>
   <block id="55f7843f27571db97da76bdf68a76d22" category="paragraph"><block ref="55f7843f27571db97da76bdf68a76d22" category="inline-link-rx"></block></block>
   <block id="aee6f8bed903be1fd0e588691dc83ee2" category="summary">在 Workload Factory for Databases 中管理 Microsoft SQL Server 实例。</block>
-  <block id="542205217e86e3e0edf1c789d246d4ba" category="doc">管理EDA项目</block>
   <block id="7a96064e2353eee73d82c2c834e20b4f" category="paragraph">您可以管理 EDA 项目，以控制NetApp Workload Factory for EDA 中每个项目的代码和工件的管理方式。</block>
   <block id="be86ca474df5e14056bc0f20d2cdb767" category="section-title">创建项目</block>
-  <block id="595ed1445f27184aa0033396b3201df3" category="paragraph">您可以创建一个新的 EDA 项目，以便利用 Amazon FSX for NetApp ONTAP文件系统的数据保护功能来保护您的代码和工件。步骤</block>
-  <block id="b69f6093d3af738998065396fbb1b499" category="list-text">选择“创建项目”。</block>
   <block id="3b6aee0d7586fa2e996955209e86b05d" category="list-text">在“创建项目”页面上，提供以下信息：</block>
   <block id="7ee7bbb308ec85b0e9fa63e91fe6f62f" category="list-text">项目名称：请输入项目名称。</block>
   <block id="0cca7644aa0cba3c4f8ebb05e857a455" category="list-text">*项目描述*：请输入项目描述。</block>
   <block id="ba325028343b8f10b90df796110a4920" category="list-text">*文件系统*：请提供以下信息：</block>
-  <block id="595ae27652f3e5fcd27b27dd7e2995ec" category="list-text">*凭证*：选择要使用的亚马逊 AWS 凭证。EDA 使用这些凭证来发现可用于此项目的 FSx for ONTAP文件系统，并创建项目的克隆和快照。</block>
-  <block id="8f4fb3217144e591177c8ab486235b32" category="list-text">*区域*：选择此 FSx for ONTAP文件系统所在的区域。</block>
-  <block id="66386ee0d90d8185f4bf8daf0ad53e14" category="list-text">*FSx for ONTAP文件系统*：选择要与此项目一起使用的 FSx for ONTAP文件系统。</block>
   <block id="6015cd2e9e5bc5b037ad456163cc26cb" category="inline-link">了解有关链接的更多信息</block>
-  <block id="d81239812675b4359f2d53d5493ec461" category="paragraph">您只能选择已配置链接的文件系统。<block ref="69ba18be3e95c1116b4fd108f5c6f03b" category="inline-link-rx"></block>。</block>
   <block id="ec138dddaf46c45871ca71eed01a3e90" category="list-text">*选择一个卷*：选择一个卷来存储项目；EDA 使用此卷作为软件存储库。</block>
   <block id="73699ce7a6810990bfdfcd9d66248475" category="paragraph">您只能选择配置为 NFS 共享的卷。</block>
   <block id="54707d044b3f7dbd9190e90c0c26da4b" category="list-text">*运营策略*：对项目克隆数量进行限制：</block>
@@ -258,9 +248,6 @@
   <block id="0f024621e0673f1f4e657983682d6e72" category="list-text">选择*删除*。</block>
   <block id="8186fba50e8e4d5abb2f25404b3ac987" category="list-text">在确认对话框中，选择“删除”。</block>
   <block id="6acbdc8ddf8c914f95d450771ab7cede" category="paragraph">项目已被删除，与该项目相关的任何代码或工件都将从卷中删除。项目快照和克隆版本将被保留。</block>
-  <block id="22358702cb945913fe9b03fc1642777a" category="summary">数据库有三种不同的模式，每种模式的要求都不同。</block>
-  <block id="761a234d3f3830d5e2b894f7f8c6df06" category="doc">EDA 快速入门</block>
-  <block id="67a78d8a3f1d46031c9a29ea5fc8a03a" category="paragraph">开始创建EDA项目。管理员和团队负责人可以使用 EDA 来管理开发团队的项目和工作区。</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">一个</block>
   <block id="3d784fb83da69a092542ad97e84229a1" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 登录 Workload Factory</block>
   <block id="e3f4d5b3a0d16b68c0f95c7031bbab0f" category="inline-link">在 Workload Factory 上注册一个帐户</block>
@@ -283,7 +270,6 @@
   <block id="dce6d9a52d216801c96ea309acf6ac73" category="inline-link-macro">了解如何将 EDA 与 Perforce 集成</block>
   <block id="79d86c078f10e35b854431eab12b31a6" category="paragraph"><block ref="46b2e9ce515b7538a0db67e1aa1bc892" category="inline-link-macro-rx"></block>。</block>
   <block id="0ce746c3ad5ad5ef805497116e224e0c" category="summary">在开始使用NetApp Workload Factory进行 EDA 之前，请确保 Workload Factory 和 AWS 已正确设置。这包括拥有您的 AWS 登录凭证、已部署的 FSx for ONTAP文件系统等等。</block>
-  <block id="a464dafbec2b55bfe0812751d811de55" category="doc">联邦选举委员会 (EDA) 要求</block>
   <block id="e637e8dfaf1801d56b1ae323e4bb23fb" category="paragraph">在使用NetApp Workload Factory进行 EDA 之前，请确保 Workload Factory 和 AWS 已正确设置。这包括拥有您的 AWS 登录凭证、已部署的 FSx for ONTAP文件系统等等。</block>
   <block id="7881e5952d93ca1a1396ec11c08fa645" category="list-text">工作负载工厂登录和帐户</block>
   <block id="97911b3c54a4e826b34c1f79026316c5" category="list-text">AWS凭证和权限</block>
@@ -295,14 +281,11 @@
   <block id="f9fada3871257363b73049c3d57c6260" category="list-text">EDA 将使用文件系统来存储您创建的项目和工作区。</block>
   <block id="c076421513a5b28b674cdd0d818b4476" category="paragraph">此 FSx for ONTAP文件系统必须使用FlexVol卷。不支持FlexGroup卷。</block>
   <block id="0d8ba413f648e51fef4fb209cc7b48a1" category="list-text">您需要知道 AWS FSx for ONTAP文件系统所在的 AWS 区域、VPC 和子网。</block>
-  <block id="a0241ec69557b1efd3602bf4d51ce98e" category="list-text">文件系统中至少需要一个具有以下配置的卷：</block>
   <block id="a138b35d2cf3191dc5044ce9b7c8afc6" category="list-text">该卷必须配置为 NFS 共享。</block>
-  <block id="d22045fbfcf6f7c1c69b271245369732" category="list-text">文件系统必须配置链接。<block ref="69ba18be3e95c1116b4fd108f5c6f03b" category="inline-link-rx"></block>。</block>
   <block id="1f44141a0f383810dac8c932e0d76754" category="list-text">您需要考虑要应用于此部署中的 AWS 资源的标签键/值对（可选）。</block>
   <block id="d5858b81edfda50f75f7994c971764f0" category="inline-link">了解如何部署和管理 FSx for ONTAP文件系统</block>
   <block id="7d57ea8255b8142e76fbb442ea9a782f" category="paragraph"><block ref="7d57ea8255b8142e76fbb442ea9a782f" category="inline-link-rx"></block></block>
   <block id="b334128403ed60ff931947907046e1f0" category="summary">在向NetApp技术支持开具支持案例之前，您需要将NetApp支持站点帐户添加到 Workload Factory，然后注册以获得支持。</block>
-  <block id="ba0f011d5889db25564cd78e6f5b974f" category="doc">注册即可获得NetApp Workload Factory for EDA 的支持</block>
   <block id="3d9b602ae77ac6a4951ca31b05b6b54f" category="paragraph">需要注册支持才能获得针对NetApp Workload Factory及其存储解决方案和服务的技术支持。您必须通过NetApp Console注册才能获得支持，NetApp 控制台是一个独立于 Workload Factory 的基于 Web 的控制台。</block>
   <block id="c552970fd4dc8118ba1806da596acad9" category="paragraph">注册支持服务并不会自动启用NetApp对云提供商文件服务的支持。有关云提供商文件服务、其基础设施或使用该服务的任何解决方案的技术支持，请参阅该产品的 Workload Factory 文档中的“获取帮助”部分。</block>
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">支持注册概述</block>
@@ -368,9 +351,7 @@
   <block id="8a9876fcec3611024b1737894816d045" category="paragraph">选择所需的筛选条件后，点击刷新图标即可更新仪表盘信息。</block>
   <block id="a3f123658200529c4e7f0b941eeacf6a" category="paragraph">要了解卡片上显示的信息的说明，请选择该卡片的信息图标。</block>
   <block id="663855c524023164098db8a9a351a92a" category="summary">使用快照和克隆来管理 EDA 项目的版本。</block>
-  <block id="72cc10b2027da541649606ce0bdc96d6" category="doc">管理用于EDA项目的NetApp Workload Factory版本</block>
   <block id="0270aa16b7068d8fdfd9200b20cfc5ce" category="inline-link">Workload Factory REST API</block>
-  <block id="5c9c8db206c0c8031726241f0cedacaa" category="paragraph">通过直接从 Workload Factory 创建按需快照和克隆，使用不同版本的 EDA 项目。项目的快照和克隆存储在创建该项目时与其关联的文件系统中。您还可以使用以下方式管理快照和克隆：<block ref="fcbcfb6a9b5948c86224e0f3dc582c2b" category="inline-link-rx"></block>。</block>
   <block id="1c88041df602722b072eab90c31d79ca" category="section-title">创建项目快照</block>
   <block id="1370537941b9a464462bf9a14972eee6" category="paragraph">您可以按照以下步骤创建项目快照。</block>
   <block id="b6dd3178b375027143d1694361b475e4" category="list-text">在“项目”页面上，选择 <block ref="4dc533ba94e6ca8d1968a9d477e1cbce" category="inline-image-macro-rx" type="image"></block> 针对您想要创建快照的项目。</block>
@@ -386,7 +367,6 @@
   <block id="34ec6730fd54f4c463f31402d0ea9b83" category="list-text">选择一个快照作为克隆的基础。</block>
   <block id="c53c752e3fb8fda71f585d5e8721e833" category="paragraph">工作负载工厂会创建一个项目的新克隆，该克隆会作为新项目出现在“项目”页面上。</block>
   <block id="91ff6a222c07990103d82fb8831e3c69" category="summary">了解 Workload Factory for EDA 的最新功能。</block>
-  <block id="8aa901901d7a7435a17fc1f732006316" category="doc">NetApp Workload Factory for EDA 有哪些新功能</block>
   <block id="ddd57eb702782b0c009fb89b951edaae" category="paragraph">了解 Workload Factory 的 EDA 功能有哪些新特性。</block>
   <block id="992efefab3dd15099f5eff3f904d8df4" category="section-title">2025年10月5日</block>
   <block id="f6db487abe903d447c5070f569416c3a" category="section-title">2025年6月16日</block>
@@ -481,9 +461,7 @@
   <block id="a3ca3437ce0a7bbf111f75af4d05ea72" category="list-text">*严重事件*</block>
   <block id="fe225c18ccd35d621ab2e58cf79459b5" category="list-text">*读取延迟阈值*：输入延迟阈值（以毫秒为单位）。默认值：12 ms。</block>
   <block id="84da8d5b9264494d5cd9cb035bc28120" category="list-text">*写入延迟阈值*：输入以毫秒为单位的延迟阈值。默认值：15 ms。</block>
-  <block id="0073a211209725d1fd56c6533d4ffec3" category="paragraph">Workload Factory 开始收集与您的 AWS 凭据关联的所有 FSx for ONTAP 卷的延迟指标。指标至少每 20 分钟收集一次。延迟事件表显示违反配置阈值的任何卷。</block>
   <block id="6bc0e94d709a00317b3fdd4f3958342b" category="section-title">了解警报</block>
-  <block id="c00d3202c1a4245d5310c03fe4c4d124" category="paragraph">延迟分析功能使用 CloudWatch 警报来监控卷性能。了解如何触发警报有助于您配置适当的阈值并解释结果。</block>
   <block id="ee34286f143c9ac572df816e88226163" category="section-title">收集的指标</block>
   <block id="bea060c037959de7378c9c2f91ea4219" category="paragraph">系统会收集每个卷的以下 CloudWatch 指标：</block>
   <block id="9115f34400f66fb673aa39683fefc0a8" category="list-text">*读取延迟阈值*：计算为 1000 * m2/(m1+0.000001)，其中 m1 = DataReadOperations，m2 = DataReadOperationTime</block>
@@ -496,13 +474,8 @@
   <block id="6efa4b954c442dd4f15a0f58f1b0bd86" category="paragraph">例如，使用默认警告阈值时，只有当读取延迟超过 6 ms 且读取 IOPS 在 10 分钟时间段内的所有数据点都超过 100 ops/sec 时，读取警报才会触发。</block>
   <block id="e0b18d5b04f677d427e5a029d591d7a9" category="section-title">事件严重性</block>
   <block id="a0136d636bd452e02818b34b1fb9eb98" category="section-title">查看延迟事件</block>
-  <block id="0fd27ce965f59d9ce188afda7be707f7" category="list-text">表中仅显示每个卷的最新违规行为。如果某个卷经历了多次违规，则仅显示最近的事件。</block>
   <block id="7776f517a75d578f349901d6f0886405" category="list-text">事件将在 72 小时后自动删除。</block>
-  <block id="99789473cc53d4c5f2666a4ab79ebb39" category="list-text">此表最多显示 200 个事件。添加新事件时，旧事件将被删除。</block>
-  <block id="fa25e0e326e38037315b4df99a68a595" category="list-text">在 *Latency* 选项卡中，查看延迟事件表。</block>
-  <block id="dcc9848cbc440e33ab31099e592f3548" category="list-text">查看每个事件的信息，包括：</block>
   <block id="fe78c594fbd3ab20c9638e8c15888f03" category="list-text">*检测到时间*：检测到违规行为的时间</block>
-  <block id="ffdc22229e20f79439c83c1406c5988f" category="list-text">要对表格进行排序，请选择任意列标题。默认情况下，关键事件首先按时间排序显示，然后是按时间排序的警告事件。</block>
   <block id="01bd639bef6ec9a56687ee7ffd9f246c" category="section-title">管理延迟配置</block>
   <block id="7851fb52b1039fde0650c3e8173c2a5a" category="paragraph">完成初始配置后，您可以编辑阈值。</block>
   <block id="6fe6ef1cbd27d3257ff9500aab5f9ab9" category="list-text">在 *Latency* 页面中，选择 *Edit*。</block>
@@ -531,13 +504,10 @@
   <block id="b365ed726bb3010ba5b4a6a1479128f9" category="paragraph">您可以通过单击新书签从任何页面打开 Ask Me。它在不中断您当前工作的情况下在侧面板中启动 Ask Me，并提供与您当前操作相关的快速解释和建议。</block>
   <block id="80dcbdee31e7f18a301f863f8b73dc64" category="inline-link-macro">详细了解 Ask Me</block>
   <block id="df84e5c661ad9c55d4921f236021aac2" category="paragraph"><block ref="df84e5c661ad9c55d4921f236021aac2" category="inline-link-macro-rx"></block></block>
-  <block id="af1eef28f8038566e17f51ba82615700" category="inline-link-macro">FSx 延迟分析</block>
   <block id="9f8fc4b6d5129d1b72493ddaf0f177cd" category="inline-link-macro">项目仪表板</block>
   <block id="2621556594828dd93047cabafe8b26f2" category="list-text"><block ref="bac4b9b5c5366540fe87e1b00f6342f2" category="inline-link-macro-rx"></block>：提供跨 FSx for ONTAP 文件系统的存储消耗集中视图，以帮助您规划、评估成本并收集跨项目的存储使用情况信息。</block>
   <block id="e6fbc0b9673f8c86726688d7607fc8f5" category="inline-image-macro">六</block>
-  <block id="036ef06a76b0cf0f6ab9f48a023460ac" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block> 配置 FSx 延迟分析</block>
   <block id="7a13522750dff612c4af95a525a5075b" category="inline-link-macro">了解如何配置延迟监控</block>
-  <block id="3bc5828357e9bc5a0fa43a8464306aef" category="paragraph"><block ref="6c39ec3dea19789c91686480a2e1a7b5" category="inline-link-macro-rx"></block>。</block>
   <block id="12e67aac3e7f9227cc35f8f047d7dc74" category="inline-image-macro">七</block>
   <block id="28d16b2155b937481f163959c1136c11" category="paragraph-title"><block ref="36915574c413876eaa75cbd48f69fd00" category="inline-image-macro-rx" type="image"></block> 与其他服务集成</block>
   <block id="0069d41df3c7692bcf3427c1413ed191" category="paragraph">作为负责监督 EDA 工作负载的 IT 管理员或项目经理，您可以使用"项目"选项卡观察和分析 FSx for ONTAP 文件系统和卷的项目使用情况。该仪表板可帮助您规划容量、评估成本并做出有关资源分配的数据驱动决策。您可以根据您的 AWS 标签创建最多五个自定义过滤器，并可选择单个或多个选项，以便根据您的特定业务需求（如项目、团队或应用程序）组织和过滤数据。</block>
@@ -551,15 +521,12 @@
   <block id="3b2e82a7db8895e573b7793ae75197df" category="paragraph">Total 视图（默认）显示与所选筛选器匹配的所有卷的汇总指标。此视图提供整体存储性能的高级概览，显示综合容量、IOPS 和吞吐量指标。使用此视图了解总体趋势，规划未来容量需求，并报告跨项目或团队的总资源消耗。</block>
   <block id="50bd9972092e5f07d70cda13706daa20" category="paragraph">Volume 视图显示各个卷随时间的性能表现，显示每个指标的前 10 个卷。此视图可帮助您识别推动资源使用的特定卷，并观察其在所选时间段内的行为。使用此视图可查找性能瓶颈，确定可能需要调整大小的卷，或确定哪些特定项目或工作负载消耗最多资源。</block>
   <block id="d9bc5fa39156750788e0c19b51ff9b90" category="paragraph">交互式悬停数据提供特定时间点的精确指标，帮助您将性能变化与特定事件或时间范围相关联。此详细信息对于排除性能问题、验证优化工作或向利益相关者解释资源使用模式很有价值。</block>
-  <block id="c71b8351410f1c02368d50df93b2ea3f" category="summary">使用可配置的警告和关键事件阈值监控和分析卷延迟性能。使用自动化基本分析来主动识别和解决性能瓶颈。</block>
-  <block id="d96fe1e44083a9dcf823433db5fb7b02" category="doc">监控 EDA 工作负载中的卷延迟</block>
   <block id="bb3f1fee880e4d3b2d95074d40c5f096" category="paragraph">要使用延迟监控和分析功能，请确保满足以下要求：</block>
   <block id="c4909262f33027f9d6430abfd14a7941" category="list-text">您必须将 AWS 凭据添加到具有读/写权限的 Workload Factory。延迟监控功能需要访问与您的 AWS 凭据关联的所有 FSx for ONTAP 卷的 CloudWatch 指标。</block>
   <block id="c2ef204dc55e5ae693bd27e7c1a816a4" category="list-text">您需要在 AWS 环境中至少部署一个带有卷的 FSx for ONTAP 文件系统。延迟监控功能会自动收集与您配置的 AWS 凭据相关联的所有卷的指标。</block>
   <block id="d65de0ffa05b31f0beebf22d3e28dbde" category="list-text">链接到 FSx for ONTAP</block>
   <block id="8997880c88dd70fe80799ee97bb7ac0c" category="inline-link-macro">创建链接</block>
   <block id="e631d9996b49ecdb5d4d4146db562c6d" category="paragraph">有关创建和关联链接的说明，请参见 <block ref="27f80dd01569e18971f783f257cc7294" category="inline-link-macro-rx"></block>。</block>
-  <block id="54d8e530acdf0c4b7b3dc9aacdf0cb74" category="section-title">了解基本分析</block>
   <block id="1ca1e4067fc4b6f31aac0c6e9c6b5efe" category="admonition">由于不同的收集方法，ONTAP QoS 分析的延迟值与 CloudWatch 数据之间可能存在轻微差异。基本分析使用 ONTAP 数据进行根本原因识别。</block>
   <block id="ce963a448d1278ae4d6db6d01991d19b" category="paragraph">控制面板包括：</block>
   <block id="bf7cc54e388f0b806386888989c37589" category="list-text">具有查看权限的 AWS 凭据</block>
@@ -573,7 +540,6 @@
   <block id="cc88c8520cacdcbd154b678b080f5359" category="list-text">*AWS 账户*：按与您配置的凭据关联的一个或多个 AWS 账户进行筛选。</block>
   <block id="f1dd68ee490b7c8bd34a8f05569cfb01" category="section-title">集群运行状况状态</block>
   <block id="26ae7bdd1d6fb8c4886e6fde8d12601c" category="section-title">延迟</block>
-  <block id="aa7b6cabe2e36a5e27d3d99844a44339" category="list-text">仅当启用了延迟监控时，才能查看延迟信息。如果您尚未配置延迟阈值，请选择 *Configure*。有关延迟监控的详细信息，请参阅 <block ref="bb13c4bd03249e499d4f9abd1d69f517" category="inline-link-macro-rx"></block>。</block>
   <block id="3b8f7696879f77dfc8c74aa8df8db24b" category="section-title">容量</block>
   <block id="596b10dc3c83c43203ecb5e35057ea82" category="list-text">目录大小已满</block>
   <block id="8e556aa1506dff11340a95a83ac47877" category="list-text">索引节点已满</block>
@@ -604,7 +570,6 @@
   <block id="2c5e7dde0b5d8fe45e7e905c674f4c31" category="section-title">2026 年 3 月 1 日</block>
   <block id="4fdbac3671b30e3a2d6d3233ee4023d0" category="sidebar">EDA 存储概述</block>
   <block id="ea637c5687abbd47d05bd10d63c621ce" category="sidebar">管理 EDA 存储操作</block>
-  <block id="159811235c973c8931bfb09d9271a253" category="sidebar">监控 FSx 卷延迟</block>
   <block id="d0efe11222ff735f348a5bd5e26ce56d" category="sidebar">项目使用情况分析</block>
   <block id="c5fc13d61eed82ccc80e74a9ac0ecd18" category="sidebar">分析项目存储使用情况</block>
   <block id="baf7dcba0c4a80ef2ec1dd0465a27ee0" category="paragraph">作为管理数十个 FSx for ONTAP 文件系统的 IT 管理员，您可以使用概述仪表板回答有关集群运行状况、利用率和卷放置的常见操作问题。</block>
@@ -631,7 +596,6 @@
   <block id="af2687c5a2b9873716f0987242df8169" category="paragraph"><block ref="2915288e95b80b72c9de65e94d4fc279" category="inline-link-rx"></block>。</block>
   <block id="903ae19f4744109bd449ffef22e131cc" category="inline-link-macro">概览信息板</block>
   <block id="ad3ee48dbaf8bd15170288a8cbaf9111" category="list-text"><block ref="c43085d6db3011d68248506cba6c2189" category="inline-link-macro-rx"></block>：提供集中式集群视图，帮助您监控 FSx for ONTAP 集群运行状况、容量和吞吐量，确定放置新卷的位置，就扩展容量和吞吐量做出明智的决策，并接收自动的容量建议。</block>
-  <block id="1d50fec2796c0c79711a5921504f8be6" category="list-text"><block ref="2a69c5ddcbc71f72803fea54e985fdc0" category="inline-link-macro-rx"></block>：通过可配置的警告和关键事件阈值，主动监控卷读取和写入延迟性能。包括使用 ONTAP QoS 延迟中心指标的自动基本分析，以及针对需要更深入识别根本原因的复杂场景的可选 AI 代理分析。</block>
   <block id="76fe6a2921854a310876f2886d0744fa" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 启用概览仪表板</block>
   <block id="208586cd32a8a0d00042653ba4659b8e" category="paragraph">启用概述仪表板以监控 FSx for ONTAP 集群的运行状况、容量和吞吐量。接受同意提示，允许 Workload Factory 开始收集 CloudWatch 指标。</block>
   <block id="c2151e2d1dba976fab30173e26e64ace" category="inline-link-macro">了解如何启用 Overview 控制面板</block>
@@ -640,43 +604,30 @@
   <block id="37be776cacb7f2116612a9a0dd1fe4be" category="paragraph">配置项目仪表板以监控系统运行状况、性能和存储使用情况，使您能够有效优化 EDA 环境。</block>
   <block id="c6be2ff5f814ccc204c4fa5cc9a26402" category="inline-link-macro">了解如何配置 Project 仪表板</block>
   <block id="5eec74fa0479342640b4f0cf89f95ace" category="paragraph"><block ref="dee2cdd0dc5bf217faec6f43b7f77ae0" category="inline-link-macro-rx"></block>。</block>
-  <block id="f825ea95c51e7db323bcf5afc1eccf71" category="paragraph">设置延迟阈值，以在影响模拟运行时间之前主动识别和解决性能问题。配置警告和关键警报，利用自动化基本分析，并可选择通过配置 Amazon Bedrock 模型 ARN 为复杂场景启用 AI-agent 分析。</block>
   <block id="92b8944386b41a864c3b42d0a5f178da" category="paragraph">目前不支持 _Basic_ 模式和 _Read-only_ 模式权限。</block>
-  <block id="46e3675e5a355e5ddd370afe3d3bb024" category="admonition">还需要 AWS 凭据才能使用延迟监控功能，该功能收集用于卷性能分析的 CloudWatch 指标。要为复杂的延迟方案启用可选的 AI 代理分析，您还必须提供 Amazon Bedrock 模型 ARN。<block ref="123cec35459a259baaf9454185c7e6c4" category="inline-link-macro-rx"></block>。</block>
   <block id="e8a5e8ec2e90f68cc56140acc19fe659" category="summary">通过添加用于收集指标的标签来配置 EDA Project 仪表板。使用单选或多选选项自定义筛选器，以满足您的业务需求。</block>
-  <block id="8d12d5ef44c0be20d992555dfe8bd5ea" category="doc">使用 Project 仪表板</block>
   <block id="e532219ff10a9efe2b7516b9eabb80ec" category="admonition">只有第一个访问 Project 仪表板的管理员用户才能配置、添加或删除自定义筛选器。所有其他用户，包括后续管理员，都具有对筛选器的只读访问权限。</block>
   <block id="2a4f511f8ad738b70bd3748a9e642173" category="paragraph">作为管理 EDA 工作负载的 IT 管理员或 DevOps 工程师，您可以使用延迟分析来监控 FSx for ONTAP 卷的读写延迟。配置警告和关键阈值以尽早检测性能问题。发生事件时，Workload Factory 提供自动化的基本分析，您可以选择运行 AI 代理分析，了解根本原因详细信息、受影响的客户端和建议的补救步骤。</block>
-  <block id="689a108e68521950894e8ac6a0fc47a0" category="paragraph">延迟分析收集与您的 AWS 凭据关联的所有 FSx for ONTAP 卷上的读取和写入操作的 CloudWatch 指标。当配置时间范围内的所有数据点都超过延迟阈值和 IOPS 阈值时会生成警报。这种双条件逻辑通过确保在实际负载下保持较高的延迟来减少误报。</block>
-  <block id="212bf221315f2f291088e19612047005" category="paragraph">检测到事件时，Workload Factory 使用 ONTAP QoS 延迟中心指标运行基本分析，以确定主要延迟因素（例如，FlexCache、容量池、QoS 限制、磁盘、数据、集群或其他子系统）。</block>
-  <block id="a76fb03e89ec717d2f62c29e99f6b806" category="paragraph">对于数据和集群场景，您可以选择从延迟分析面板调用 AI 代理分析，以获取详细的根本原因解释、受影响的 EC2 客户端列表以及建议的修复步骤。</block>
   <block id="14148bac5b7c3663c54f10f09a5bd49a" category="paragraph">_Basic_ 模式和 _Read-only_ 模式权限不支持延迟监控。</block>
   <block id="289fde61867c520c9e1b763ec58e4782" category="list-text">Amazon Bedrock 模型 ARN（可选）</block>
   <block id="2c428aa993eaa904ca8a12c78bcdf21a" category="list-text">要使用可选的 AI 代理分析功能，您必须在 Workload Factory 设置中提供 Amazon Bedrock 模型 ARN。</block>
   <block id="a6390dd71ac213c8926f4e003361b1c7" category="inline-link-macro">基本 GenAI 要求</block>
   <block id="544f338acee9a38350cfd4ac8846e75e" category="paragraph">有关更多详细信息，请参见 <block ref="6c761e19260aabd782369cde93c2b1c4" category="inline-link-macro-rx"></block>。</block>
-  <block id="714634b35768346f156bd0791bc13f1b" category="paragraph">如果您没有配置 Bedrock 模型 ARN，您仍然可以使用延迟监控和自动化基本分析。AI 代理分析将不可用。</block>
-  <block id="4c7dd9b5d68b3c4e5e772a88842e087c" category="list-text">要查看延迟事件表和分析面板中的基本分析见解，必须将链接与 FSx for ONTAP 文件系统关联。如果没有链接，事件仍然可以被检测到，但分析提供的见解有限。如果尚未关联任何链接，请在 EDA 中选择*关联链接*，选择是否创建新链接或关联现有链接，然后选择*继续*以自动转到 Storage workloads 中的链接创建页面。</block>
   <block id="cb9b360ea843c63638883c1cd17f136a" category="list-text">*警告事件*：表示可能需要注意的延迟升高</block>
   <block id="a76142b21bf8fd3e217700ad47520a99" category="list-text">*关键事件*：表示需要立即调查的严重延迟</block>
-  <block id="798bca0593da51c40ef2141d8e58a22c" category="paragraph">配置读取和写入操作的警告和关键阈值。系统会持续评估阈值，并在满足条件时生成警报。</block>
   <block id="85af8e40cac423345858be0210476d20" category="list-text">选择 *Latency* 选项卡。</block>
   <block id="a336da6bfc59dea8a34a61e330a80866" category="paragraph">延迟事件表提供了过去 72 小时内检测到的所有警告和关键事件的集中视图。</block>
-  <block id="7ace6e09b4fff3abb19be79c34bbc1ff" category="list-text">即使没有链接与文件系统关联，事件也会出现在表中。查看基本分析详细信息和运行 AI 代理分析需要链接。</block>
   <block id="0dea20f75813d2ed33976d047d4feb75" category="list-text">*严重程度*：指示事件是 Critical 还是 Warning</block>
   <block id="ab9c0c767f9043ec9da24ddf4988d6df" category="list-text">*Volume name*：受影响卷的名称</block>
   <block id="6b854e2d874f08fa11e8527be7a67311" category="list-text">*Volume ID*：受影响卷的 ID</block>
   <block id="a4ea9bee29b55456bed1615792abaa8d" category="list-text">*文件系统*：包含卷的 FSx for ONTAP 文件系统</block>
   <block id="f0abce0c8eb9545d70bbad5d74599eec" category="list-text">*中位延迟 (ms)*：数据泄露期间的中位延迟值</block>
   <block id="65b8e7b4f221cb001b2617746bfea3c2" category="list-text">*% above threshold*：延迟超过配置阈值的百分比</block>
-  <block id="c8b406ee0737347eaec26ec6b4bb8dd7" category="list-text">要查看延迟事件的详细信息，请在延迟事件表的 *严重性* 列中选择该事件。这将打开该事件的延迟分析面板。</block>
   <block id="039dfdde9abd9ac1aa8a2a98cfb44323" category="inline-image-macro">操作菜单图标</block>
   <block id="8915e02d8d5fd0d498876dbe62c67555" category="list-text">要关闭一个或多个事件，请在每个事件旁边选择 <block ref="fae3e4e28bd0d43fa65e8d02aaf53cac" category="inline-image-macro-rx" type="image"></block> *Dismiss*。</block>
   <block id="d539b5c7c0d30ab9075ef09bb7eeaed1" category="inline-image-macro">列图标</block>
   <block id="628efbb82f0f8c3afdae512a42ac4ffd" category="list-text">要向表中添加列，请选择 <block ref="82e9020bee7d7516519b387592b50c34" category="inline-image-macro-rx" type="image"></block>，选择列，然后选择 *Apply*。</block>
-  <block id="3b181dc5b029a9f49372c67a9623539a" category="paragraph">基本分析可帮助您快速确定延迟问题的根本原因，而无需手动调查。当检测到延迟事件时，Workload Factory 会使用 ONTAP QoS 延迟中心指标自动执行基本分析。分析确定导致延迟的组件，并在延迟分析面板中提供简短说明。</block>
   <block id="38eacd6054dad756b607d4c8329eee03" category="section-title">延迟分析面板</block>
-  <block id="65af6daa7b3bc1df873f030e52a4c6cd" category="paragraph">在延迟事件表的 *严重性* 列中选择延迟事件会打开该事件的延迟分析面板。</block>
   <block id="5ce70a0653bfe7f6bff6e2eddd206a0e" category="list-text">*FlexCache*：来自 FlexCache 操作的延迟</block>
   <block id="68ba76b3b80fb774692fafaa3bca3244" category="list-text">*容量池*：来自容量池操作的延迟</block>
   <block id="df0c1b63249b6e6a43327ad7270f9a50" category="list-text">*QoS min*：来自 QoS 策略组下限的延迟</block>
@@ -685,10 +636,8 @@
   <block id="1b04caaa22ceaef074dc3dd87240ca56" category="list-text">*数据*：来自 WAFL 子系统的延迟，包括 CPU 处理、元数据更新和缓存管理</block>
   <block id="de3ae150d2eddb964a39576f4d93c994" category="list-text">*Cluster*：内部连接节点的延迟</block>
   <block id="214e41afc37c18a28923389d4435f505" category="list-text">*其他*：来自其他子系统（如 NVRAM 和网络）的延迟</block>
-  <block id="5b3e80a77345a3fde070c3875e367213" category="paragraph">如果配置了 Amazon Bedrock 模型 ARN，则该面板还包括为数据和群集场景运行 AI-agent 分析的选项。如果未配置 Bedrock，面板将显示指向特定文件系统的 Storage workloads 配置页面的链接，您可以在其中配置 Bedrock 访问权限。</block>
   <block id="1af9d8d07caa5522beed26e2ac87c9b0" category="section-title">运行 AI-agent 分析</block>
   <block id="b82697b621a677f2c131ea161ca15ca5" category="paragraph">虽然基本分析可以识别延迟源，但涉及数据或集群组件的复杂场景通常需要更深入的调查，以确定具体的根本原因和潜在的修复步骤。AI 代理分析通过识别霸道卷、非最优配置或基本分析无法检测到的横向扩展需求等问题，提供了更深层次的故障排除。</block>
-  <block id="db235dae74c9a799569fa1e4489546b0" category="paragraph">您必须在 Workload Factory 设置中配置 Amazon Bedrock 模型 ARN。</block>
   <block id="390b6ebb0dada50f5e02de14863d5d9a" category="paragraph">运行 AI-agent 分析时，系统会自动刷新基本分析数据，并将其用作 AI-agent 的输入。AI-agent 评估延迟场景并提供：</block>
   <block id="f825ff4432099d6f44cdb5f8f4bfc6db" category="list-text">*潜在根本原因*：导致延迟问题的详细说明</block>
   <block id="102e5bfcdb00d2737ee47f8cfa62267e" category="list-text">*受影响的客户端*：受延迟影响的 EC2 实例名称列表</block>
@@ -699,18 +648,10 @@
   <block id="7b4aa399068fb6652866c4a35815dac2" category="list-text">FlexGroup 重新平衡需求（针对集群延迟）</block>
   <block id="7b9daeff6b6cce80aff1d790b8c602de" category="list-text">横向扩展要求（用于集群延迟）</block>
   <block id="e38b13dd2c91516a7427e9ddddaee80a" category="list-text">在 *延迟* 选项卡中，找到要分析的事件。</block>
-  <block id="42b7829927e2fa6f02a6e4ba2b9ec5c4" category="list-text">在延迟事件表的 *严重性* 列中，选择一个延迟事件以打开该事件的分析面板。</block>
-  <block id="13d475257a740ba4ce84906a2bafa093" category="paragraph">如果没有链接与文件系统关联，则会显示提示，要求您将链接与受影响的文件系统关联。选择提示以重定向到该文件系统的链接设置页面。工具提示解释了重定向，并指出关联链接和配置 Bedrock 访问（推荐）可以实现完整的事件分析。</block>
-  <block id="456a8fbc2d19dbd69f55af63c28595bd" category="list-text">在分析面板中，查看基本分析结果以了解延迟源。</block>
-  <block id="982100e600eb543d7485fe38c9894e28" category="list-text">如果延迟源被标识为数据或集群，请选择 *分析*。</block>
-  <block id="fdfbcf69c9e66f145ac674d580b525aa" category="list-text">查看 AI-agent 分析结果，包括：</block>
-  <block id="90eebe71ac2449100110ef08efa3640f" category="list-text">根本原因解释</block>
-  <block id="e3a0a543235123ca6d6b552288ef2b74" category="list-text">可能的修复步骤</block>
   <block id="55778645f90c4570ed888c2e7a8fd0cd" category="list-text">实施建议的修正步骤以解决延迟问题。</block>
   <block id="eef392bb1b41a4e082bfc98d04dc9517" category="list-text">修复后，监控延迟事件表以验证问题已解决。</block>
   <block id="f425eb4d55adb205ccf2c677df8ee7a9" category="list-text">*战略性地使用 AI 代理分析*：对基本分析推荐的数据和集群场景运行 AI 代理分析。AI 代理分析为需要详细故障排除的复杂性能问题提供更深入的见解。</block>
   <block id="8d2d238b8187f64d495cfc9978b55898" category="summary">使用概述仪表板监控 FSx for ONTAP 文件系统的运行状况、容量和吞吐量。大规模查看存储使用情况，并就卷放置和容量扩展做出明智的决策。</block>
-  <block id="6c636a9a325c9ce22f7136ea460fdb4f" category="doc">在 EDA 工作负载中使用概览仪表板</block>
   <block id="027bcc17ae543ed5fe33c2d273a75b59" category="paragraph">作为管理跨多个 FSx for ONTAP 文件系统（ONTAP 群集）的 EDA 工作负载的 IT 管理员，您可以使用概述仪表板快速评估群集健康状况和使用情况。使用它来决定在哪里放置新的卷或作业，确定移动卷或 SVM 的候选对象，并确定何时扩展容量或吞吐量。</block>
   <block id="000c45e9b90aaab86ef0c09071b10409" category="paragraph">概览仪表板为您的 FSx for ONTAP 集群提供了集中视图，包括容量和吞吐量。使用它来放置新卷、重新平衡工作负载并规划容量或吞吐量扩展。</block>
   <block id="cb545ee4a07ff5112b26d255e807b577" category="list-text">*集群运行状况状态*：在信息中心顶部汇总的信息，突出显示整个文件系统的延迟事件、SSD 利用率和容量建议以及 ONTAP EMS 事件。</block>
@@ -763,4 +704,139 @@
   <block id="ee6f79302596ffa7d6d6cdb31d87b1de" category="paragraph">使用 *SSD 使用情况* 来识别接近容量限制的文件系统。使用 *吞吐量使用率 (P99)* 将吞吐量需求与配置的吞吐量 SKU 进行比较。将鼠标悬停在吞吐量列标题上以获取计算详细信息。</block>
   <block id="87805a3d803959d3dcd34427a660d169" category="admonition">具有活动容量建议的文件系统在表中显示灯泡指示器。选择任何文件系统名称以查看该文件系统的 SSD 容量指标、历史使用趋势和容量建议。</block>
   <block id="6f600db4b9fe06680f2ac280db49796a" category="section-title">2026 年 4 月 6 日</block>
+  <block id="97c13014b9e16335b445d04850fb955f" category="doc">延迟事件的电子邮件和 SNS 通知</block>
+  <block id="c31a2fa4340e87df74fd4add6857d037" category="paragraph">现在，当在 FSx for ONTAP 卷上检测到延迟事件时，您可以接收自动通知。在 Workload Factory 设置中配置电子邮件或 Amazon SNS 通知，以便在卷违反配置的延迟阈值时接收实时警报。</block>
+  <block id="64252b5e1bc1f93bfafd01c34fd0860b" category="paragraph">通知按文件系统发送，包括有关所有受影响卷、严重性级别、阈值比较的详细信息，以及直接链接到 Latency 页面进行调查。</block>
+  <block id="95e7f36fe4398f41dfcbc5591df71f8d" category="inline-link">了解如何配置延迟通知</block>
+  <block id="547067437333ccf9f6257f448035fd15" category="paragraph"><block ref="2a3ce45bc4405505b722625836bbe768" category="inline-link-rx"></block>。</block>
+  <block id="f18c989c700bb32f3bcb80ace5539b64" category="section-title">使用交互式图形实现延迟趋势可视化</block>
+  <block id="11ef7238b057019c31802d06c0bf5b75" category="paragraph">延迟分析面板现在包括一个选项卡式界面，用于全面的延迟分析：</block>
+  <block id="eb39bcaa5c101fc5087275547ab8e3e6" category="list-text">*概述*：查看自动基本分析结果，显示哪个组件导致延迟</block>
+  <block id="142deff8a2ec74d2d2667eca22500eab" category="list-text">*随着时间的推移*：使用跨多个时间范围（1 小时、3 小时、12 小时、24 小时或 72 小时）的交互式图表可视化卷延迟行为</block>
+  <block id="5ff8bee829d6ed38b529ef851b350ad1" category="paragraph">*随着时间的推移*选项卡显示原始 CloudWatch 延迟数据（读取或写入，具体取决于触发的警报），以及警告和关键阈值线、违规指标和每个违规行为的详细指标。</block>
+  <block id="7eec84a410cc084b608a43e90acfccd1" category="paragraph">这种全面的可视化可帮助您识别模式，了解延迟问题是重复出现还是孤立存在，并就补救措施做出更明智的决策。</block>
+  <block id="7d36db06649fc95af5dde34418ae17ae" category="inline-link">了解如何分析延迟趋势</block>
+  <block id="89bed93f6bbf811d8bd82c2b7fbc1dea" category="paragraph"><block ref="ed7c0b83df2858b326a608c49012d510" category="inline-link-rx"></block>。</block>
+  <block id="1b7cd457fc475dbfd2701715e71744fd" category="doc">使用 Codebox 自动化 EDA 工作负载</block>
+  <block id="791db8833b44f1d41d04a774478eca01" category="doc">将 Workload Factory for EDA 与 Perforce 集成</block>
+  <block id="bd454b1eeeb8c3bf10186291d2f90f87" category="doc">Workload Factory for EDA 中的已知限制</block>
+  <block id="11aaba4197d60cd84ae00b147f30a239" category="doc">了解 Workload Factory for EDA 中的 Perforce 集成</block>
+  <block id="05e71e57ff2860f766cafa61669afd90" category="doc">了解 Workload Factory for EDA</block>
+  <block id="60476976a2c1ab2169570786b32dba09" category="list-text"><block ref="4d71518cae1e26b3714fb432b3fb2249" category="inline-link-macro-rx"></block>：通过可配置的警告和关键事件阈值，主动监控卷读取和写入延迟性能。检测到事件时接收电子邮件或 SNS 通知。包括使用 ONTAP QoS 延迟中心指标的自动基本分析，以及针对需要更深入识别根本原因的复杂场景的可选 AI 代理分析。</block>
+  <block id="4f4aa40f24b705f5a6b2c8eddeef1e5e" category="inline-link-macro">分析延迟趋势</block>
+  <block id="ac4297ca80ae5408e173c35ab73d1280" category="list-text"><block ref="6ebd25eb4c135c18dd20612e63ec5166" category="inline-link-macro-rx"></block>：使用交互式延迟图来可视化一段时间内的延迟行为，识别模式，了解性能问题是重复出现还是孤立的，并做出有关补救的数据驱动决策。</block>
+  <block id="91a16b40f1b5f0084e50d6535c5f55b4" category="doc">在 Workload Factory for EDA 中管理 EDA 项目</block>
+  <block id="cecbffda9cc78eb8d6a8d543df4aa712" category="paragraph">您可以创建一个新的 EDA 项目，以便利用 FSx for ONTAP 文件系统的数据保护功能来保护您的代码和制品。.步骤</block>
+  <block id="59178bd9ff8874d092f5bfbdecf79b81" category="list-text">选择 *Add project*。</block>
+  <block id="1ecd985fc0693d958ad07611d2deb457" category="list-text">*凭据*：选择要使用的 Amazon AWS 凭据。EDA 使用这些凭据来发现可用于此项目的 FSx for ONTAP 文件系统，并创建项目的克隆和快照。</block>
+  <block id="060b67e800a6d9a85b502dd348d56951" category="list-text">*区域*：选择此 FSx for ONTAP 文件系统所驻留的区域。</block>
+  <block id="e79582136788303ae03dfadcec648921" category="list-text">*FSx for ONTAP 文件系统*：选择要与此项目一起使用的 FSx for ONTAP 文件系统。</block>
+  <block id="f84de4f2f9588a1f1267bf2c1f67bba6" category="paragraph">您只能选择配置有链接的文件系统<block ref="69ba18be3e95c1116b4fd108f5c6f03b" category="inline-link-rx"></block>。</block>
+  <block id="d336a06e84d74c4a2d8a59e458f6a7c1" category="summary">通过设置环境、启用监控仪表板和配置延迟分析，开始使用 Workload Factory for EDA。</block>
+  <block id="2edaf9b54abbf5ae956607d1cce3419f" category="doc">Workload Factory for EDA 快速入门</block>
+  <block id="0595b103e9174c24b7fffa0491687cc5" category="paragraph">通过设置环境、启用监控仪表板和配置延迟分析来优化 FSx for ONTAP 性能以支持 EDA 工作负载，从而开始使用 Workload Factory for EDA。</block>
+  <block id="47fc6ce38b51022ce7378bb818bcbdbc" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block> 为 ONTAP 延迟分析配置 FSx</block>
+  <block id="71385bd4e1d4e5dbe86dc9b6f19b8d0b" category="paragraph">设置延迟阈值，以在影响模拟运行时间之前主动识别和解决性能问题。配置警告和关键警报，设置电子邮件或 SNS 通知以接收实时警报，利用自动化基本分析，并可选择通过配置 Amazon Bedrock 模型 ARN 为复杂场景启用 AI 代理分析。</block>
+  <block id="e92f1fd565b0115330969e68f1df5c93" category="inline-link-macro">分析延迟趋势</block>
+  <block id="2d6493eae43920f1f398fd04ec507f90" category="paragraph"><block ref="6c39ec3dea19789c91686480a2e1a7b5" category="inline-link-macro-rx"></block>。检测到事件后，您可以<block ref="17d96e1b2696eabecce662ae85cda8e7" category="inline-link-macro-rx"></block>使用交互式图形。</block>
+  <block id="b888e1d990c199d358b31e27c7359f42" category="doc">EDA 的 Workload Factory 要求</block>
+  <block id="4a3f64eab77f5b895962c42b557e049a" category="admonition">使用延迟监控功能也需要 AWS 凭证，该功能会收集 CloudWatch 指标用于卷性能分析。要接收延迟事件的通知，请在 Workload Factory 设置中配置通知偏好。如需为复杂延迟场景启用可选的 AI-agent 分析，还必须提供 Amazon Bedrock 模型 ARN。<block ref="123cec35459a259baaf9454185c7e6c4" category="inline-link-macro-rx"></block>。</block>
+  <block id="656ff150d41fa1c0fc581a7d9317539b" category="list-text">文件系统中至少需要一个具有以下配置的卷：</block>
+  <block id="203f7d7dafc1c11f2f80c2510b54a471" category="list-text">必须使用链接对文件系统进行配置<block ref="69ba18be3e95c1116b4fd108f5c6f03b" category="inline-link-rx"></block>。</block>
+  <block id="5aef21820caef7c0f864852459c0e5f6" category="doc">注册 Workload Factory for EDA 支持</block>
+  <block id="41de4d3965fbdf03451b2ecaee5868c7" category="summary">使用交互式延迟图来分析一段时间内的卷延迟趋势，识别模式并跟踪补救有效性。</block>
+  <block id="7710e3af23bbd50fdc1e743685f0d33f" category="doc">分析 Workload Factory 中 EDA 的延迟趋势</block>
+  <block id="156ab2ccf351bba06d7f02e1ec744738" category="paragraph">检测到延迟事件后，您可以使用交互式图表分析一段时间内的卷延迟行为。这有助于您识别模式，了解性能问题是重复出现还是孤立存在，并做出有关补救的数据驱动决策。</block>
+  <block id="a84cf3e93039b68c477a75d0719fe3b4" category="inline-link-macro">已配置延迟监控</block>
+  <block id="b701766ddd7336d0a918a31e319d2571" category="paragraph">您必须具有 <block ref="440ca031eed7454e03c10d86a7d6dd9c" category="inline-link-macro-rx"></block> 并且至少检测到一个延迟事件。</block>
+  <block id="4c3f875147f0522c1d3edae65b6aa9b4" category="paragraph">延迟图提供了卷延迟行为随时间的可视化表示。</block>
+  <block id="bb50ee329f41648c14ad144ed9d1cdb6" category="paragraph">延迟图显示受影响卷的 CloudWatch 延迟数据。该图表基于触发事件的警报自动显示读取延迟或写入延迟。您可以调整时间范围以查看不同时期的延迟行为。</block>
+  <block id="1e050c450cfafbc3c2fda5ecebd63af7" category="paragraph">其中包括：</block>
+  <block id="f03c16f986b72acbbdf628dfd10a0b51" category="list-text">*延迟指标行*：显示随时间推移从 CloudWatch 收集的实际延迟值（以毫秒为单位）</block>
+  <block id="064a04ae1c8486ab33731c46e16abac9" category="list-text">*阈值线*：虚线水平线表示您配置的警告和临界阈值</block>
+  <block id="f247d21c54dee6a9da91ec04bea153d4" category="list-text">*违规指标*：显示时间段内超出阈值的时间和次数的可视标记</block>
+  <block id="49ea2afc06991af328a208ffc74482e5" category="list-text">*违规详细信息*：对于每个违规行为，查看中位延迟值、高于阈值的百分比、QoS 延迟中心数据和检测时间</block>
+  <block id="fec795816c8e9333dd5705b026e4ec1f" category="list-text">在 *Latency* 选项卡中，从事件表中选择延迟事件。</block>
+  <block id="0200e9f9651c0f9055af3ded58c679fe" category="paragraph">延迟分析面板打开。</block>
+  <block id="8ea49b1b8804030fecb789ed69b3cfe9" category="list-text">选择 *Over time* 选项卡。</block>
+  <block id="e1910deb08cddd0290229b853b206bd8" category="list-text">查看显示过去 3 小时延迟数据的默认图形视图。</block>
+  <block id="ace589dd459188c9daef10587e3d2d84" category="list-text">更改时间范围以分析不同的时期并识别模式。</block>
+  <block id="92f4dcf159ac91d85d16636551b8aa6a" category="list-text">观察相对于阈值线的延迟趋势线。</block>
+  <block id="adddb6f86948c81a28a630bf5670f578" category="list-text">查看图表上的违规指标：</block>
+  <block id="66e5eeaa9c5a5e85f002a526f487eb9f" category="paragraph">当在显示的时间段内多次超出阈值时，违规标记表示何时超出阈值。</block>
+  <block id="7b51c983f61adc3fc3762edefb24a139" category="list-text">要查看违规详情，请将鼠标悬停在违规指示器上或选择违规指示器。</block>
+  <block id="ab9d5820afcd30d44b00f88542fb3ed7" category="list-text">查看违规计数摘要：</block>
+  <block id="42f95c5c49ae4bfc59a3331fe794cec9" category="paragraph">此图形显示了所选时间段内检测到的警告或严重违规总数。</block>
+  <block id="e97d67b4026b09dfe5111a6baff734ef" category="list-text">使用图形洞察来：</block>
+  <block id="e6457816dd203346decc0f7bdbdaea16" category="list-text">确定延迟问题是孤立的还是重复发生的</block>
+  <block id="c1c5e009e9c61c517e422eaa4c74d9f3" category="list-text">识别与高延迟相关的一天中的时间模式</block>
+  <block id="86fed5ffa42593b5101b7ad513d49455" category="list-text">评估延迟峰值是短暂的还是持续的</block>
+  <block id="c8d51a833ee2014de902d1b9c1dc0873" category="list-text">将延迟事件与工作负载模式或系统更改相关联</block>
+  <block id="0abcfc51827656f379392888538d542a" category="paragraph">随着时间的推移，您可以全面了解卷延迟行为，帮助您在是否需要立即补救、是否需要调整阈值或是否需要调查基础架构问题方面做出明智的决策。</block>
+  <block id="10019e7ce311e2d67a73e473efe11bce" category="admonition">延迟图显示 CloudWatch 指标数据，由于收集方法不同，这些数据可能与 ONTAP QoS 延迟中心数据略有不同。提供这两个数据源是为了进行全面分析。</block>
+  <block id="21468bcc44334c21cf2648bb0c3286b5" category="section-title">图形解释</block>
+  <block id="010dcaeaa54e0eae36c515aeeb05d93b" category="paragraph">在分析延迟趋势时，请考虑以下建议：</block>
+  <block id="da4cbffca80b5fcc48303a9607a2df01" category="list-text">*使用多个时间范围*：查看不同时间范围的图表，以区分孤立的峰值和持续的性能下降。从 24H 视图开始了解上下文，然后放大到较短的时间段以分析特定事件，或扩展到 72H 以识别每日模式。</block>
+  <block id="2efe84d84a5ebc28d037f7b8aa8f15c7" category="list-text">*直观地比较阈值*：使用图表上的阈值线来评估您配置的警告和关键值是否适合您的工作负载模式。如果延迟频繁接近但未超过阈值，请考虑您的阈值是否设置得太高。如果您看到许多不影响操作的短暂阈值交叉，则您的阈值可能过于敏感。</block>
+  <block id="349c1be118a8dc9b143ce40e9e857c35" category="list-text">*识别每日模式*：使用 24H 和 72H 视图来识别一天中的时间模式。如果延迟峰值发生在可预测的时间，您可以在非高峰期间主动安排资源密集型操作，或添加容量以处理峰值负载。</block>
+  <block id="2a4a2c3acb655929dec3604e91b0b330" category="list-text">*区分峰值类型*：短暂、尖锐的峰值表示暂时性问题（如临时资源争用），而持续的延迟较高则表明系统性问题（如容量限制或配置问题）。每种情况都需要不同的补救方法。</block>
+  <block id="28e474bab8647ecce9f08a9afd675d51" category="list-text">*更改后监控趋势*：在调整阈值、添加容量或更改配置后，监控图表至少 72 小时，以确认您的更改具有所需的效果。</block>
+  <block id="6dbd7482391c0182c5dea0993791246b" category="doc">使用 Workload Factory 中的项目仪表板进行 EDA</block>
+  <block id="80a2bede41d4c6da374d247221296718" category="summary">使用可配置的警告和关键事件阈值监控卷延迟性能。使用自动化基本分析和 AI 代理分析来主动识别和解决性能瓶颈。</block>
+  <block id="2e83aef101312851fc79c1478837c2b4" category="doc">监控 Workload Factory for EDA 中的卷延迟</block>
+  <block id="9d504bf7450321a349bb17f0e68762ae" category="paragraph">延迟分析收集与您的 AWS 凭据关联的所有 FSx for ONTAP 卷上的读取和写入操作的 CloudWatch 指标。当配置时间范围内的所有数据点都超过延迟阈值和 IOPS 阈值时会生成警报。这通过确保在实际负载下保持较高的延迟来减少误报。您可以查看所有检测到的事件，如果您已配置通知，则会收到电子邮件或 Amazon SNS 通知，其中包含有关受影响卷的详细信息。</block>
+  <block id="6920ac32a3375288ebdf06facc39e6af" category="paragraph">检测到事件时，Workload Factory 使用 ONTAP QoS 延迟中心指标运行基本分析，以确定主要延迟因素（例如，FlexCache、容量池、QoS 限制、磁盘、数据、集群或其他子系统）。然后，您可以<block ref="672f9645415c0125cfd8e23383946617" category="inline-link-macro-rx"></block>使用交互式图表。</block>
+  <block id="d149e138ca1f3814e3ddc350907b4b4f" category="paragraph">对于数据和集群场景，您可以选择运行 AI 代理分析，以获取详细的根本原因解释、受影响的 EC2 客户端列表以及建议的修复步骤。</block>
+  <block id="27e09936f431721e0ec32c3d3d21885c" category="list-text">要查看基本分析见解，您必须将链接与 FSx for ONTAP 文件系统关联。如果没有链接，事件仍然可以被检测到，但分析提供的见解有限。如果尚未关联任何链接，请在 EDA 中选择*关联链接*，选择是否创建新链接或关联现有链接，然后选择*继续*以自动转到 Storage workloads 中的链接创建页面。</block>
+  <block id="7096afe055eda8f68401dc699f62aa71" category="paragraph">如果您不配置 Bedrock 模型 ARN，您仍然可以使用延迟监控和自动化基本分析，但 AI 代理分析不可用。</block>
+  <block id="1068f745b93ee031c494800d88399506" category="list-text">通知配置（可选）</block>
+  <block id="bccf4a154062c04971c782a1a33ba164" category="list-text">要在检测到延迟事件时接收电子邮件或 Amazon SNS 通知，请在 Workload Factory 设置中配置通知首选项。有关详细信息，请参见 <block ref="6c57f686ffc3c80537465140f26ad896" category="inline-xref-macro-rx"></block>。</block>
+  <block id="d51cdc3a782f07f214d065d32392cd4a" category="paragraph">延迟分析使用 CloudWatch 警报来监控卷性能。了解如何触发警报有助于您配置适当的阈值并解释结果。</block>
+  <block id="38f4c4b38520d15824f4ab473c208770" category="paragraph">您可以为读取和写入操作配置警告和关键阈值。系统会持续评估阈值，并在满足条件时生成警报。</block>
+  <block id="061b69757df18e0f80dd6951d4a87bc0" category="paragraph">Workload Factory 开始收集与您的 AWS 凭据关联的所有 FSx for ONTAP 卷的延迟指标。指标至少每 20 分钟收集一次。任何超出您配置的阈值的卷都会显示。</block>
+  <block id="e47a2805498d3bd68e7615f5a9695ad0" category="list-text">仅显示每个卷的最新违规行为。如果某个卷经历了多次违规，则仅显示最近的事件。</block>
+  <block id="e83c229f37cf36a4d502c243dffb6c3d" category="list-text">最多显示 200 个事件。随着新事件的添加，旧事件将被删除。</block>
+  <block id="b028238b7d6c951434ecd797dfecd43f" category="list-text">即使没有链接与文件系统关联，也会显示事件。查看基本分析详细信息和运行 AI 代理分析需要链接。</block>
+  <block id="81db793f48cabf755c5da85566220fe0" category="list-text">在 *Latency* 选项卡中，查看每个事件的信息，包括：</block>
+  <block id="391d5001f0e7f63a7def2cbcdfbf9795" category="list-text">要查看延迟事件的详细信息，请在 *Severity* 列中选择该事件。这将打开该事件的延迟分析面板。</block>
+  <block id="256e5511799cf87e5ea3d5686def55a5" category="list-text">要对表格进行排序，请选择任意列标题。默认情况下，将首先显示按时间排序的关键事件，然后显示按时间排序的警告事件。</block>
+  <block id="8f366b4a3c1ee9db68d65977ad160a9e" category="list-text">要分析一段时间内的延迟趋势，请选择一个事件以打开延迟分析面板。使用 *Over time* 选项卡查看交互式延迟图。有关详细信息，请参阅 <block ref="6ebd25eb4c135c18dd20612e63ec5166" category="inline-link-macro-rx"></block>。</block>
+  <block id="5bf8d268567f0e7ee71b32158e4a1593" category="section-title">分析延迟事件</block>
+  <block id="e819192d011b6b3e3f4bbd9fc359c099" category="paragraph">基本分析可帮助您快速确定延迟问题的根本原因，而无需手动调查。当检测到延迟事件时，Workload Factory 会使用 ONTAP QoS 延迟中心指标自动执行基本分析。分析确定了导致延迟的组件并提供了简短的描述。</block>
+  <block id="1bd47873c66482991cb879180d2867cc" category="paragraph">在 *严重性* 列中选择一个延迟事件，以打开该事件的延迟分析面板。该面板包括提供延迟事件不同视图的选项卡：</block>
+  <block id="c2fb795bc2e1a609303d9e00777fdb2e" category="list-text">*概述*：显示基本分析结果，显示哪个组件导致了延迟</block>
+  <block id="748595841e3c3b1b5183a7d6077dffdd" category="list-text">*随着时间的推移*：显示具有历史数据的交互式延迟图</block>
+  <block id="7bc1f28b4c89677e5f6cfb8399c63ac9" category="paragraph">*概述* 选项卡显示自动化基本分析的结果，确定导致延迟的组件：</block>
+  <block id="c9a0323fbd3e3be5e48738ff08051151" category="paragraph">如果配置了 Amazon Bedrock 模型 ARN，*概述*选项卡还包括一个选项，用于对数据和群集场景运行 AI 代理分析。如果未配置 Bedrock，则选项卡将显示指向特定文件系统的 Storage workloads 配置页面的链接，您可以在其中配置 Bedrock 访问权限。</block>
+  <block id="7f5bfa6c2ae6835ebe3f8cfab65e7d77" category="section-title">随着时间的推移</block>
+  <block id="88b98d83646123ee99ac10d567d7bad8" category="paragraph">*Over time* 选项卡显示一个交互式延迟图表，显示受影响卷随着时间推移的 CloudWatch 延迟指标。该图显示了读取或写入延迟，具体取决于触发事件的警报类型。您可以选择不同的时间范围（1H、3H、12H、24H、72H）来查看不同时间段的延迟行为。</block>
+  <block id="b938fe219e0d3269febbb2f4ce0e4d4f" category="paragraph">有关使用图形的详细说明，请参见 <block ref="6ebd25eb4c135c18dd20612e63ec5166" category="inline-link-macro-rx"></block>。</block>
+  <block id="46a6c0f7d8d51bac15ceada497addbb0" category="paragraph">在 Workload Factory 设置中配置 Amazon Bedrock 模型 ARN，请参见<block ref="6c761e19260aabd782369cde93c2b1c4" category="inline-link-macro-rx"></block>。</block>
+  <block id="2f4239783073f0a94706e2317e78bba8" category="list-text">在 *Severity* 列中，选择一个延迟事件以打开该事件的分析面板。</block>
+  <block id="354b602de39fd16c2e8213c6420af87b" category="paragraph">如果没有链接与文件系统关联，则会显示提示，要求您将链接与受影响的文件系统关联。选择提示以重定向到该文件系统的链接设置页面。</block>
+  <block id="6b11475664ca5049823829bb74e3334d" category="list-text">查看 *Overview* 选项卡以了解基本分析结果并识别延迟源。</block>
+  <block id="f59e8b0685757d07e5ad61ebc46a87c4" category="list-text">如果延迟源被识别为数据或集群，请选择 *分析* 以运行 AI-agent 分析。</block>
+  <block id="a34b99c45f1060fa36c26445937a8916" category="list-text">查看 AI-agent 分析结果。</block>
+  <block id="42ca2768ba0de807a5ef846dc69d0aad" category="section-title">配置延迟通知</block>
+  <block id="b113e6e3f414df97faffdf304f96cdea" category="inline-link-macro">配置通知设置</block>
+  <block id="3d6c653a360d87aa37c2b5f066b22cf0" category="paragraph">您可以配置电子邮件或 Amazon SNS 通知，以便在检测到延迟事件时接收警报。每次卷突破您配置的阈值时都会发送通知，从而实时了解性能问题。要启用通知，请参见 <block ref="760d5a248a4ffda4abc117648b19c119" category="inline-link-macro-rx"></block>。</block>
+  <block id="fc5cf4b9e620903fdc3e72c98ed92e50" category="paragraph">延迟通知是根据每个文件系统发送的。当文件系统中的一个或多个卷违反延迟阈值时，您会收到列出所有受影响卷的单个通知。</block>
+  <block id="d161804a8b38f48ce78c8bdf17d57cef" category="admonition">如果受影响的卷超过 10 个，电子邮件将显示前 10 个卷，并指示受影响的其他卷的数量。您可以在 Workload Factory 控制台中查看所有受影响的卷。</block>
+  <block id="8f54abe0ef3af482bad46fd8ebb01724" category="paragraph">通知包括：</block>
+  <block id="9575316a51e8af711966e6ef73e107a8" category="list-text">文件系统详细信息</block>
+  <block id="6e5e5a57e2d312d021faf48fbf359263" category="list-text">违反阈值的卷列表</block>
+  <block id="29e5a7a6d5b174fac3e647e10a8e3d8f" category="list-text">事件严重性（Warning 或 Critical）</block>
+  <block id="f44901cc21e17ffa2243cecaabcb0d12" category="list-text">延迟值和阈值比较</block>
+  <block id="c95bd15aedfd92163fb52171e80e4aad" category="list-text">直接链接到延迟页面进行调查</block>
+  <block id="daab441d1213ea1ae747f6f3fc4f0f86" category="paragraph">通知渠道：</block>
+  <block id="d3ac5879c6e6d4037eeb5996a078c1eb" category="list-text">*电子邮件*：发送到 Workload Factory 通知设置中配置的电子邮件地址</block>
+  <block id="521affd4c31056b034895f68689c40d6" category="list-text">*Amazon SNS*：发布到您配置的 SNS 主题，以便与其他系统集成</block>
+  <block id="8fe1d189cc79e42edfd18c2ab7312a9b" category="paragraph">有关分析延迟趋势的最佳实践，请参见 <block ref="80a684273373f0a4a9c65645f4543291" category="inline-link-macro-rx"></block>。</block>
+  <block id="f2abe5914eba19478c3b813d9def8548" category="inline-link-macro">FSx for ONTAP 延迟分析</block>
+  <block id="00972c5586727b10755c077cb571302f" category="list-text">仅当启用了延迟监控时，才能查看延迟信息。如果您尚未配置延迟阈值，请选择 *Configure*。有关延迟监控的详细信息，请参阅 <block ref="e98e4afc77d2de893746a62416cafbb2" category="inline-link-macro-rx"></block>。</block>
+  <block id="228ef1bb0e07fcafe49318ab6cd2b44e" category="doc">管理 EDA 项目的 Workload Factory 版本</block>
+  <block id="533773babd56d9aeab3d01b7003792d3" category="paragraph">通过直接从 Workload Factory 创建按需快照和克隆，处理 EDA 项目的不同版本。项目的快照和克隆存储在创建项目时与项目关联的文件系统中。您还可以使用<block ref="fcbcfb6a9b5948c86224e0f3dc582c2b" category="inline-link-rx"></block>管理快照和克隆。</block>
+  <block id="cccb746459589dc88647e759315c1e14" category="doc">Workload Factory for EDA 的新增功能</block>
+  <block id="a2129af669bcf43206fc6eda2e181958" category="section-title">2026 年 5 月 3 日</block>
+  <block id="bef2ad04af6788871805dcd9435635f7" category="sidebar">监控 FSx for ONTAP 卷延迟</block>
 </blocks>

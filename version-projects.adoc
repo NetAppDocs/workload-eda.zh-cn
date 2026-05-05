@@ -4,14 +4,14 @@ permalink: version-projects.html
 keywords: snapshot, clone, project, protect, API, version, versions, versioning 
 summary: 使用快照和克隆来管理 EDA 项目的版本。 
 ---
-= 管理用于EDA项目的NetApp Workload Factory版本
+= 管理 EDA 项目的 Workload Factory 版本
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-通过直接从 Workload Factory 创建按需快照和克隆，使用不同版本的 EDA 项目。项目的快照和克隆存储在创建该项目时与其关联的文件系统中。您还可以使用以下方式管理快照和克隆： https://console.workloads.netapp.com/api-doc["Workload Factory REST API"^]。
+通过直接从 Workload Factory 创建按需快照和克隆，处理 EDA 项目的不同版本。项目的快照和克隆存储在创建项目时与项目关联的文件系统中。您还可以使用 https://console.workloads.netapp.com/api-doc["Workload Factory REST API"^]管理快照和克隆。
 
 
 
