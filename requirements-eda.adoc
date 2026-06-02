@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: requirements-eda.html 
-keywords: Builders, FSx, project, projects. eda, electronic design automation, requirements, setup, workload factory 
+keywords: Builders, FSx, project, projects. eda, electronic design automation, requirements, setup, Workload Factory 
 summary: 在开始使用NetApp Workload Factory进行 EDA 之前，请确保 Workload Factory 和 AWS 已正确设置。这包括拥有您的 AWS 登录凭证、已部署的 FSx for ONTAP文件系统等等。 
 ---
 = EDA 的 Workload Factory 要求
@@ -13,14 +13,14 @@ summary: 在开始使用NetApp Workload Factory进行 EDA 之前，请确保 Wor
 [role="lead"]
 在使用NetApp Workload Factory进行 EDA 之前，请确保 Workload Factory 和 AWS 已正确设置。这包括拥有您的 AWS 登录凭证、已部署的 FSx for ONTAP文件系统等等。
 
-工作负载工厂登录和帐户:: 你需要 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["在 Workload Factory 上注册一个帐户"^] 并使用以下任一方式登录： https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主机体验"^]。
+Workload Factory 登录和帐户:: 你需要 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["在 Workload Factory 上注册一个帐户"^] 并使用以下任一方式登录： https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主机体验"^]。
 AWS凭证和权限:: 您需要向 Workload Factory 添加具有读/写权限的 AWS 凭证，这意味着您将以读/写模式使用 Workload Factory 进行 EDA。
 
 
 目前不支持 _Basic_ 模式和 _Read-only_ 模式权限。
 
 
-NOTE: 使用延迟监控功能也需要 AWS 凭证，该功能会收集 CloudWatch 指标用于卷性能分析。要接收延迟事件的通知，请在 Workload Factory 设置中配置通知偏好。如需为复杂延迟场景启用可选的 AI-agent 分析，还必须提供 Amazon Bedrock 模型 ARN。link:task-monitor-latency.html["了解延迟监控"]。
+NOTE: 使用延迟监控功能也需要 AWS 凭证，该功能会收集 CloudWatch 指标用于卷性能分析。要接收延迟事件的通知，请在 Workload Factory 设置中配置通知偏好。如需为复杂延迟场景启用可选的 AI-agent 分析，还必须提供 Amazon Bedrock 模型 ARN。link:learn-latency-monitoring.html["了解延迟监控"]。
 
 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["了解如何向 Workload Factory 添加 AWS 凭证"^]
 

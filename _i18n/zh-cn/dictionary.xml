@@ -159,7 +159,6 @@
   <block id="a087ba044cc23ff2c6dc451db3a70ced" category="section-title">EDA 中的项目和工作区</block>
   <block id="427ad364fcc508c8123dff592683a053" category="paragraph">您可以创建一个项目，并分配一个卷来表示您的软件环境及其工件。每次创建新版本的软件时，都需要重新同步卷数据并创建项目快照，以将卷状态标记为已知版本。项目源卷可能会进行滚动更新，并有多个快照来标记多个版本。您可以立即将每个快照用作即时克隆，即可供开发人员、QA 或构建流程使用的专用或共享可编辑存储库。在特定软件版本中，克隆体就是一个工作区。</block>
   <block id="5354d1e9ecaabd928d4235d17bb92d9e" category="section-title">使用 Workload Factory Codebox 实现自动化</block>
-  <block id="e8d2772773d0b560ee5057d9b413b85b" category="paragraph">Workload factory 通过 _Codebox_ 引入了内置自动化功能。Codebox 提供以下自动化优势：</block>
   <block id="f1214f35af0ff103c79251078e169af6" category="list-text">*代码片段生成*：在资源创建期间生成基础设施即代码 (IaC) 片段，从而实现与现有编排工作流的无缝集成。</block>
   <block id="3b9355b880979c4a10f7d88ded288364" category="list-text">*基础设施即代码辅助工具*：Codebox 是一个基础设施即代码 (IaC) 辅助工具，可帮助开发人员和 DevOps 生成代码以执行 Workload Factory 支持的任何操作。</block>
   <block id="d8135e6fae6748dcba5e9d108c9af427" category="list-text">*代码查看器和自动化目录*：Codebox 提供了一个代码查看器，用于快速分析自动化，以及一个自动化目录，用于将来快速重用。</block>
@@ -172,7 +171,6 @@
   <block id="10476aa104cddb6c41cdc64fc271134e" category="paragraph">在所有支持 FSx for ONTAP 的商业区域，EDA 均受支持。<block ref="54b85ac4e794c565ea8c7aad421e6e67" category="inline-link-rx"></block></block>
   <block id="186585d175a4fff1722ac82a5520c584" category="paragraph">以下 AWS 区域不受支持：</block>
   <block id="cc6dcf46ebcb08f1caa420526cc0ab18" category="list-text">中国地区</block>
-  <block id="1411debdb32e6b128ca27ec92a708cbd" category="list-text">GovCloud（美国）区域</block>
   <block id="ecd96786b112acf6970d6aaf3be575ca" category="list-text">秘密云</block>
   <block id="151ef168e17772f7a361db78a0c86552" category="list-text">绝密云</block>
   <block id="20c404f3ca0633629eee9b1b4ccd6737" category="section-title">获取帮助</block>
@@ -266,12 +264,10 @@
   <block id="10b5ea1be0d70891fd944479056f796a" category="paragraph"><block ref="52ec48856eba661b3a8f3a8489ac6cc4" category="inline-link-macro-rx"></block>。</block>
   <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">四个</block>
   <block id="e5d9de39f7ca1ba2637e5640af3ae8aa" category="inline-image-macro">五</block>
-  <block id="816e9ad4acc00dc8e266d7bd5cec516b" category="paragraph">使用工作负载工厂 REST API 将 EDA 与其他服务（例如服务门户或 Perforce Helix Core）集成。</block>
   <block id="dce6d9a52d216801c96ea309acf6ac73" category="inline-link-macro">了解如何将 EDA 与 Perforce 集成</block>
   <block id="79d86c078f10e35b854431eab12b31a6" category="paragraph"><block ref="46b2e9ce515b7538a0db67e1aa1bc892" category="inline-link-macro-rx"></block>。</block>
   <block id="0ce746c3ad5ad5ef805497116e224e0c" category="summary">在开始使用NetApp Workload Factory进行 EDA 之前，请确保 Workload Factory 和 AWS 已正确设置。这包括拥有您的 AWS 登录凭证、已部署的 FSx for ONTAP文件系统等等。</block>
   <block id="e637e8dfaf1801d56b1ae323e4bb23fb" category="paragraph">在使用NetApp Workload Factory进行 EDA 之前，请确保 Workload Factory 和 AWS 已正确设置。这包括拥有您的 AWS 登录凭证、已部署的 FSx for ONTAP文件系统等等。</block>
-  <block id="7881e5952d93ca1a1396ec11c08fa645" category="list-text">工作负载工厂登录和帐户</block>
   <block id="97911b3c54a4e826b34c1f79026316c5" category="list-text">AWS凭证和权限</block>
   <block id="42f4fbe9bc96b7b414265e0b938084d8" category="list-text">您需要向 Workload Factory 添加具有读/写权限的 AWS 凭证，这意味着您将以读/写模式使用 Workload Factory 进行 EDA。</block>
   <block id="b6358992bb0152c2af9f3e2e315ef468" category="inline-link">了解如何向 Workload Factory 添加 AWS 凭证</block>
@@ -326,29 +322,13 @@
   <block id="cc8b0535948da368f832027c19b7f853" category="list-text">请务必复制上面用于序列号字段的帐户序列号（960xxxx）。这将加快账户处理速度。</block>
   <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">NetApp应该在此过程中与您联系。这是针对新用户的一次性入职培训。</block>
   <block id="f335678326583cea28377216c5515221" category="paragraph">获取NetApp支持站点帐户后，请按照以下步骤将该帐户与您的NetApp Console登录信息关联。 <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>。</block>
-  <block id="00909736de459ef354dd54f7a12c7137" category="paragraph">收集的 CloudWatch 指标包括：</block>
-  <block id="83ec7827b9a51abd480f21f9797d1c3b" category="list-text">已配置容量：表示已配置存储容量的卷级指标。</block>
-  <block id="99051abc318cae9824d95692d1c95b25" category="list-text">已用容量：表示已用存储空间的卷级指标。</block>
-  <block id="ff1cfca20a1660c53ade527b17be8ad8" category="list-text">平均/最大吞吐量：计算方法为指定时间段内 DataReadBytes 和 DataWriteBytes 之和的平均值或最大值。</block>
-  <block id="a0932dae893409aa61370e810d740d59" category="list-text">平均/最大 IOPS：计算方法为：在指定时间段内，数据读取操作、数据写入操作和元数据操作的总和的平均值或最大值。</block>
-  <block id="c4d073c70378b04dc94a31c6e002190c" category="section-title">设置仪表板</block>
   <block id="4c6f0009ac1f9c550c3c27ca47734a94" category="inline-link">什么是标签？</block>
   <block id="6ec564eeb8bbd7d65ea723d7377e4535" category="inline-link">AWS 资源组标记 API 参考</block>
-  <block id="12b1905f436fbb7db0d6037ed14f827e" category="paragraph">配置完成后，在“标签配置”页面中提供 AWS 标签密钥名称和要在控制面板中显示的相应标签。</block>
-  <block id="b7292e9663476d06f727bb41cc243d7b" category="paragraph">应用这些标签后，Workload Factory 开始收集和显示相关的 CloudWatch 指标。</block>
-  <block id="40dded464250d8f5174e221d1ee142f9" category="paragraph">您的仪表盘将成为一个动态工具，可以根据您的组织需求来组织、跟踪成本和筛选资源。</block>
   <block id="976e508c4d7059185077a486bc23c939" category="section-title">配置自定义过滤器</block>
   <block id="0de06b59453acb74b09edb405890d19b" category="paragraph">如果您尚未配置仪表板，系统会自动提示您进行配置。</block>
   <block id="24347b3ddf5a25cc9c27e54ae285ade1" category="list-text">选择*应用*。</block>
-  <block id="cd272c40b08a69d4fcdc74ed592a2f25" category="list-text">应用任何标签或筛选器后，要查看更改，请选择仪表板上的刷新图标。配置了新筛选器的动态仪表板将显示在您的 EDA 项目仪表板中。</block>
   <block id="365caa3dff9ac22391eab30998fdad59" category="list-text">要稍后编辑仪表板配置，请选择“配置”。</block>
   <block id="26949f06981e97a3e3cda29668de2aff" category="section-title">筛选仪表板</block>
-  <block id="2daf1cb573c2c61422faf64610cf9402" category="list-text">凭据</block>
-  <block id="f447ac856e7e72435904956e3b15f433" category="list-text">地区</block>
-  <block id="53b936091a984a22f4042eeb94499891" category="list-text">文件系统</block>
-  <block id="fc18634852d4299cd5f8c7ad55ddefbe" category="list-text">卷类型</block>
-  <block id="8ae4a627e28635267b1fc532c618e41b" category="list-text">时间范围</block>
-  <block id="8a9876fcec3611024b1737894816d045" category="paragraph">选择所需的筛选条件后，点击刷新图标即可更新仪表盘信息。</block>
   <block id="a3f123658200529c4e7f0b941eeacf6a" category="paragraph">要了解卡片上显示的信息的说明，请选择该卡片的信息图标。</block>
   <block id="663855c524023164098db8a9a351a92a" category="summary">使用快照和克隆来管理 EDA 项目的版本。</block>
   <block id="0270aa16b7068d8fdfd9200b20cfc5ce" category="inline-link">Workload Factory REST API</block>
@@ -365,7 +345,6 @@
   <block id="c9f8a1bc51e7ad4b5dbd3b4fd54d159e" category="list-text">请输入克隆体的名称。</block>
   <block id="ef9eed0d84a82b3fb511fd837da2eef7" category="paragraph">克隆文件的默认名称是项目名称加上当前日期和时间的后缀。</block>
   <block id="34ec6730fd54f4c463f31402d0ea9b83" category="list-text">选择一个快照作为克隆的基础。</block>
-  <block id="c53c752e3fb8fda71f585d5e8721e833" category="paragraph">工作负载工厂会创建一个项目的新克隆，该克隆会作为新项目出现在“项目”页面上。</block>
   <block id="91ff6a222c07990103d82fb8831e3c69" category="summary">了解 Workload Factory for EDA 的最新功能。</block>
   <block id="ddd57eb702782b0c009fb89b951edaae" category="paragraph">了解 Workload Factory 的 EDA 功能有哪些新特性。</block>
   <block id="992efefab3dd15099f5eff3f904d8df4" category="section-title">2025年10月5日</block>
@@ -411,37 +390,15 @@
   <block id="3589dd4e8f5f2cbdba29810271d0f1d9" category="paragraph"><block ref="6f22f53277ef02f84f5ed64bde49085d" category="inline-link-rx"></block>。</block>
   <block id="7e565772caac09d981d6b3641bb20148" category="inline-link-macro">了解延迟监控</block>
   <block id="9918911ccf4f48662bd23b3fa6ea97a8" category="inline-link-macro">监控卷延迟</block>
-  <block id="c09e7b1ab90792168923158989ca6297" category="paragraph">此信息板可帮助您监控已分配容量、已使用容量、吞吐量和 IOPS 的存储使用情况。有关主动延迟性能监控，请参阅<block ref="4d71518cae1e26b3714fb432b3fb2249" category="inline-link-macro-rx"></block>。</block>
-  <block id="3eeb776c775a0a186eaac0ae86ca4408" category="paragraph">为了有效地使用仪表板，请根据您的业务需求在 FSx for ONTAP 卷上配置最多五个 AWS 标签，例如代表项目或业务单元的标签。有关详细信息，请参见<block ref="56431a7f0461e9258a1144a0e01a6b8d" category="inline-xref-macro-rx"></block>。</block>
-  <block id="b915af974b3255995db1b551b1e1dcbb" category="paragraph">您可以根据 AWS 标签配置最多五个自定义过滤器。每个自定义过滤器需要三个组件：过滤器标签名称、AWS 标签键名称和选择类型（单选或多选）。如果您没有配置任何自定义过滤器，则默认过滤器（文件系统、卷类型和时间范围）仍然可用，因此您仍然可以查看仪表板并与之交互。</block>
   <block id="27e0e44d189c553eb00dc006b35029f5" category="list-text">选择 *+ Add filters*。</block>
-  <block id="5678492274c56b0e9a6e36ba6f34b836" category="list-text">对于要创建的每个自定义筛选器（最多五个），请提供以下内容：</block>
-  <block id="7371329c5bc9fb1913a92db5445368eb" category="list-text">*Filter label name*：显示在控制面板中的显示名称。</block>
-  <block id="9dc66313c07505b9b6ee97b9490648d4" category="list-text">*AWS 标记密钥名称*：与此过滤器对应的 AWS 资源标记密钥。</block>
-  <block id="6245bc7faa3c897c2839919b1e0f6c5d" category="list-text">*多选*：选择此筛选器允许单选还是多选。选择 *多选* 时，您可以为此筛选器同时选择多个值。单选限制一次只能选择一个值。</block>
   <block id="0be6ab8a3d394d63c0aaea5444fc4d94" category="admonition">筛选器按您配置的顺序显示在控制面板上。请考虑首先整理最常用的筛选器，以便更轻松地访问。</block>
   <block id="58812a046615ae0cede06aa76e867511" category="paragraph">您可以通过选择自定义过滤器旁边的垃圾桶图标来删除该过滤器，然后再应用更改。</block>
-  <block id="7ad57d97a4e7251a593b560f3edd7c6c" category="paragraph">您可以使用默认筛选器和您创建的任何自定义筛选器的组合来筛选控制面板上显示的信息。</block>
-  <block id="0893a6eb6fac2bd4489c23ad574e3e32" category="paragraph">以下默认筛选器始终可用：</block>
-  <block id="b6c5b00ab5f9877d11bf9e5b5bc8b2fa" category="paragraph">除了这些默认筛选器外，您配置的自定义筛选器还会显示在控制面板上。使用筛选器时：</block>
-  <block id="0d9da1f1a6c87419d9a59e59c2f60af2" category="list-text">*多选筛选器*允许您同时选择多个值来拓宽您的视野。例如，您可以选择多个项目来查看合并指标。</block>
-  <block id="2ad8dabd47e501a4ed1c3d01be491886" category="list-text">*单选筛选器*限制您一次只能选择一个值，在需要关注特定资源或类别时非常有用。</block>
   <block id="ec4fc4cb1b37373b785aaee6062cfec7" category="section-title">查看卷详细信息</block>
-  <block id="c42e01801b1f2ef2fbdf3f8841353b73" category="paragraph">控制面板提供两种查看模式来帮助您分析存储指标：总视图和卷视图。您可以使用控制面板上的可用选项卡在这些模式之间切换。</block>
   <block id="ee855ba807a55874eb4b38814389078f" category="section-title">总视图</block>
   <block id="515b555dcf569c4cc1d2a938ae9822d3" category="section-title">卷视图</block>
-  <block id="5753fce8315ebaa06a713e75985750bf" category="paragraph">要切换到 Volume 视图，请选择仪表板上的 *Volume* 选项卡。</block>
   <block id="f768a8e9133dfc338015fd0d83ec2cf0" category="section-title">显示的卷指标</block>
-  <block id="2347e9819148413af6cc4e5827b02d4e" category="paragraph">当您选择卷视图时，仪表板将显示卷总数中的前 10 个卷。* *卷已用容量*：显示当前已用容量最高的卷。* *IOPS*：显示所选时间段内平均 IOPS 最高的卷。* *吞吐量*：显示所选时间段内平均吞吐量最高的卷。</block>
   <block id="286b672abb5d35bb05baef5e5758a310" category="admonition">控制面板仅显示每个指标的前 10 个卷。如果您有超过 10 个卷，某些卷可能不会显示在详细视图中。</block>
-  <block id="502ab59dcef25c014584999b381b739b" category="paragraph">当相同的卷出现在*卷使用容量*、*IOPS* 和*吞吐量*指标中时，仪表板在图例中使用一致的颜色编码，以便更轻松地跟踪不同指标中的特定卷。</block>
-  <block id="4745a2c999b128a25bda01aed19ab2f8" category="paragraph">水平轴显示时间范围，而图例显示图形中表示的所有卷（最多 10 个）。</block>
   <block id="90681f223ffce7f43af4ac6e8572f319" category="section-title">交互式卷数据</block>
-  <block id="409e7e820a2aec1df14db5a88edd443e" category="paragraph">您可以将鼠标悬停在图形中的任何卷线上以查看详细信息：</block>
-  <block id="66098fe1f75297ccbc3e4c2332830104" category="paragraph">*卷使用容量*：显示卷名称、当时使用的容量和分配的容量。</block>
-  <block id="748334bb99d46cf2ef3aa45e610baf24" category="paragraph">*IOPS*：显示卷名称、时间范围内的平均 IOPS 以及时间范围内的最大 IOPS。</block>
-  <block id="04eeb8d03cf6b4755481c052a6e535e6" category="paragraph">*吞吐量*：显示卷名、时间范围内的平均吞吐量以及时间范围内的最大吞吐量。</block>
-  <block id="f2c7e3d31586c840e7c17c779b7d70dd" category="paragraph">这些交互式数据可帮助您分析卷性能模式，并确定潜在的瓶颈或优化机会。</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="section-title">概述</block>
   <block id="196a1b1d4d7eff75b0b7bc0f6fa282e7" category="inline-link-macro">添加 AWS 凭据</block>
   <block id="70317e3abbdadfb99e6ea364d432bd9b" category="paragraph">如果您尚未配置 AWS 凭据，请参见 <block ref="53eda59ec5ff13cb6e6660c47027e8c7" category="inline-link-macro-rx"></block>。</block>
@@ -450,17 +407,6 @@
   <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">关于此任务</block>
   <block id="e1cf2ece0db166d8b4c6b87f20794e11" category="inline-image-macro">汉堡菜单图标</block>
   <block id="c625174f1f2ee54505e8df5c7884aaa1" category="list-text">选择菜单 <block ref="438b712f6e6afc173ce78a756adc207c" category="inline-image-macro-rx" type="image"></block>，然后选择 *EDA*。</block>
-  <block id="e98927daa3269d89ed40e1d00b9894f4" category="list-text">在 EDA 延迟配置页面中，配置以下阈值：</block>
-  <block id="6a92339b37a09c472028f07967682c85" category="list-text">*警告事件*</block>
-  <block id="7a9ff4c8c2260709d5b8ca3ea5720d48" category="list-text">*读取延迟阈值*：输入延迟阈值（以毫秒为单位）。默认值：6 ms。</block>
-  <block id="c7ffe38ce2716364ec13888fb0fb4d18" category="list-text">*读取 IOPS 阈值*：以每秒操作数为单位输入 IOPS 阈值。默认值：100 ops/sec。</block>
-  <block id="a9c123b2457943cad2a4a7b1da9e2ba2" category="list-text">*读取时间范围*：输入以分钟为单位的时间范围（5-20）。默认值：10 分钟。</block>
-  <block id="0bb2971cdc9904893b398e127f86ccc1" category="list-text">*写入延迟阈值*：输入以毫秒为单位的延迟阈值。默认值：8 ms。</block>
-  <block id="f1d2b429b535ce1659d20f6a98f239da" category="list-text">*写入 IOPS 阈值*：以每秒操作数输入 IOPS 阈值。默认值：100 ops/sec。</block>
-  <block id="a0274640a4f41ca07311c67d74f332b1" category="list-text">*写入时间范围*：输入以分钟为单位的时间范围（5-20）。默认值：10 分钟。</block>
-  <block id="a3ca3437ce0a7bbf111f75af4d05ea72" category="list-text">*严重事件*</block>
-  <block id="fe225c18ccd35d621ab2e58cf79459b5" category="list-text">*读取延迟阈值*：输入延迟阈值（以毫秒为单位）。默认值：12 ms。</block>
-  <block id="84da8d5b9264494d5cd9cb035bc28120" category="list-text">*写入延迟阈值*：输入以毫秒为单位的延迟阈值。默认值：15 ms。</block>
   <block id="6bc0e94d709a00317b3fdd4f3958342b" category="section-title">了解警报</block>
   <block id="ee34286f143c9ac572df816e88226163" category="section-title">收集的指标</block>
   <block id="bea060c037959de7378c9c2f91ea4219" category="paragraph">系统会收集每个卷的以下 CloudWatch 指标：</block>
@@ -475,15 +421,12 @@
   <block id="e0b18d5b04f677d427e5a029d591d7a9" category="section-title">事件严重性</block>
   <block id="a0136d636bd452e02818b34b1fb9eb98" category="section-title">查看延迟事件</block>
   <block id="7776f517a75d578f349901d6f0886405" category="list-text">事件将在 72 小时后自动删除。</block>
-  <block id="fe78c594fbd3ab20c9638e8c15888f03" category="list-text">*检测到时间*：检测到违规行为的时间</block>
   <block id="01bd639bef6ec9a56687ee7ffd9f246c" category="section-title">管理延迟配置</block>
-  <block id="7851fb52b1039fde0650c3e8173c2a5a" category="paragraph">完成初始配置后，您可以编辑阈值。</block>
   <block id="6fe6ef1cbd27d3257ff9500aab5f9ab9" category="list-text">在 *Latency* 页面中，选择 *Edit*。</block>
   <block id="d53bdccd3ec334ddfd63d2269906352a" category="list-text">根据需要修改任何阈值。</block>
   <block id="247a926ff070f20efece2fd2ed4162c3" category="admonition">确保关键阈值保持高于警告阈值。如果配置的关键阈值低于警告阈值，则系统将显示错误。</block>
   <block id="d3152a664d12079fbf89a50fcb166ef3" category="list-text">选择 *Apply* 以保存所做更改。</block>
   <block id="c2ffe02d76c4f089648f1647b43e4ee5" category="section-title">最佳实践</block>
-  <block id="9034aebe9b693f759faa32d33c7d1358" category="paragraph">在配置和使用延迟分析时，请考虑以下建议：</block>
   <block id="6a17347e669ad40689359f41fee3efc9" category="list-text">*设置实际阈值*：根据您的工作负载要求配置阈值。默认值提供了一个起点，但可能需要根据您的特定环境进行调整。</block>
   <block id="8d2a6ec04c3428e17318eec752e34640" category="list-text">*从警告阈值开始*：在微调关键阈值之前，使用警告事件来建立基线性能预期。</block>
   <block id="1f3a99c8bf0d4110ea6d8f943c76ad49" category="list-text">*仔细考虑时间范围*：较短的时间范围（5-10 分钟）可以更快地检测到问题，但可能会生成更多警报。较长的时间范围（15-20 分钟）可减少误报，但可能会延迟检测。</block>
@@ -504,74 +447,32 @@
   <block id="b365ed726bb3010ba5b4a6a1479128f9" category="paragraph">您可以通过单击新书签从任何页面打开 Ask Me。它在不中断您当前工作的情况下在侧面板中启动 Ask Me，并提供与您当前操作相关的快速解释和建议。</block>
   <block id="80dcbdee31e7f18a301f863f8b73dc64" category="inline-link-macro">详细了解 Ask Me</block>
   <block id="df84e5c661ad9c55d4921f236021aac2" category="paragraph"><block ref="df84e5c661ad9c55d4921f236021aac2" category="inline-link-macro-rx"></block></block>
-  <block id="9f8fc4b6d5129d1b72493ddaf0f177cd" category="inline-link-macro">项目仪表板</block>
-  <block id="2621556594828dd93047cabafe8b26f2" category="list-text"><block ref="bac4b9b5c5366540fe87e1b00f6342f2" category="inline-link-macro-rx"></block>：提供跨 FSx for ONTAP 文件系统的存储消耗集中视图，以帮助您规划、评估成本并收集跨项目的存储使用情况信息。</block>
   <block id="e6fbc0b9673f8c86726688d7607fc8f5" category="inline-image-macro">六</block>
   <block id="7a13522750dff612c4af95a525a5075b" category="inline-link-macro">了解如何配置延迟监控</block>
   <block id="12e67aac3e7f9227cc35f8f047d7dc74" category="inline-image-macro">七</block>
   <block id="28d16b2155b937481f163959c1136c11" category="paragraph-title"><block ref="36915574c413876eaa75cbd48f69fd00" category="inline-image-macro-rx" type="image"></block> 与其他服务集成</block>
-  <block id="0069d41df3c7692bcf3427c1413ed191" category="paragraph">作为负责监督 EDA 工作负载的 IT 管理员或项目经理，您可以使用"项目"选项卡观察和分析 FSx for ONTAP 文件系统和卷的项目使用情况。该仪表板可帮助您规划容量、评估成本并做出有关资源分配的数据驱动决策。您可以根据您的 AWS 标签创建最多五个自定义过滤器，并可选择单个或多个选项，以便根据您的特定业务需求（如项目、团队或应用程序）组织和过滤数据。</block>
-  <block id="93dd1acc9636871cfa2441fefe5fb419" category="paragraph">仪表板提供存储使用模式的可见性，帮助您识别资源密集型项目，跟踪成本，并在容量或性能问题影响您的 EDA 模拟之前优化存储分配。</block>
-  <block id="1f50074b022d705f9703972869c8b8c2" category="paragraph">通过设置自定义筛选器，您可以查看按业务结构（如按项目、团队或应用程序）组织的指标。这种组织方式可帮助您准确跟踪成本，确定哪些项目消耗最多资源，并就资源分配和预算规划做出明智的决策。</block>
-  <block id="1df61e5b936693f0edc17d20c2d57f5e" category="paragraph">AWS 标记是 AWS 资源的元数据。它们可以帮助您以不同的方式对 AWS 资源进行分类，例如按项目、应用程序或业务部门进行分类。有关标记的详细信息，请参阅<block ref="3a728828042c1a731e3aa740ed780475" category="inline-link-rx"></block>和<block ref="53b3c63786d21199a28ae32477919693" category="inline-link-rx"></block>。</block>
   <block id="70a93a55e7195aacefbcc36526b9120a" category="paragraph">自定义筛选器允许您根据组织的运作方式组织仪表板数据。通过将筛选器与您的项目结构、团队或成本中心保持一致，您可以快速访问所需的特定数据，而无需浏览不相关的信息。这使得容量规划、成本跟踪和性能监控更加高效。</block>
   <block id="ebc79d489165a581dfeb4961b6f2036f" category="list-text">选择 *Project*。</block>
   <block id="e1d216bb41cdf9c41639ce06fa5f7892" category="paragraph">筛选可帮助您专注于存储资源的特定子集，从而更轻松地分析趋势、识别问题并为利益相关者生成报告。通过组合多个过滤器，您可以回答特定的业务问题，例如"我的 ASIC 项目团队使用了多少存储空间？"或"美国西部地区哪些卷的 IOPS 最高？"</block>
   <block id="618bee4f32c762781e00f2ae36db9103" category="paragraph">了解汇总和单个卷的性能有助于您就容量规划和性能优化做出明智的决策。"总计"视图显示总体趋势，而"卷"视图可帮助您识别可能需要注意、优化或其他资源的特定卷。</block>
-  <block id="3b2e82a7db8895e573b7793ae75197df" category="paragraph">Total 视图（默认）显示与所选筛选器匹配的所有卷的汇总指标。此视图提供整体存储性能的高级概览，显示综合容量、IOPS 和吞吐量指标。使用此视图了解总体趋势，规划未来容量需求，并报告跨项目或团队的总资源消耗。</block>
-  <block id="50bd9972092e5f07d70cda13706daa20" category="paragraph">Volume 视图显示各个卷随时间的性能表现，显示每个指标的前 10 个卷。此视图可帮助您识别推动资源使用的特定卷，并观察其在所选时间段内的行为。使用此视图可查找性能瓶颈，确定可能需要调整大小的卷，或确定哪些特定项目或工作负载消耗最多资源。</block>
   <block id="d9bc5fa39156750788e0c19b51ff9b90" category="paragraph">交互式悬停数据提供特定时间点的精确指标，帮助您将性能变化与特定事件或时间范围相关联。此详细信息对于排除性能问题、验证优化工作或向利益相关者解释资源使用模式很有价值。</block>
-  <block id="bb3f1fee880e4d3b2d95074d40c5f096" category="paragraph">要使用延迟监控和分析功能，请确保满足以下要求：</block>
   <block id="c4909262f33027f9d6430abfd14a7941" category="list-text">您必须将 AWS 凭据添加到具有读/写权限的 Workload Factory。延迟监控功能需要访问与您的 AWS 凭据关联的所有 FSx for ONTAP 卷的 CloudWatch 指标。</block>
   <block id="c2ef204dc55e5ae693bd27e7c1a816a4" category="list-text">您需要在 AWS 环境中至少部署一个带有卷的 FSx for ONTAP 文件系统。延迟监控功能会自动收集与您配置的 AWS 凭据相关联的所有卷的指标。</block>
   <block id="d65de0ffa05b31f0beebf22d3e28dbde" category="list-text">链接到 FSx for ONTAP</block>
   <block id="8997880c88dd70fe80799ee97bb7ac0c" category="inline-link-macro">创建链接</block>
   <block id="e631d9996b49ecdb5d4d4146db562c6d" category="paragraph">有关创建和关联链接的说明，请参见 <block ref="27f80dd01569e18971f783f257cc7294" category="inline-link-macro-rx"></block>。</block>
   <block id="1ca1e4067fc4b6f31aac0c6e9c6b5efe" category="admonition">由于不同的收集方法，ONTAP QoS 分析的延迟值与 CloudWatch 数据之间可能存在轻微差异。基本分析使用 ONTAP 数据进行根本原因识别。</block>
-  <block id="ce963a448d1278ae4d6db6d01991d19b" category="paragraph">控制面板包括：</block>
   <block id="bf7cc54e388f0b806386888989c37589" category="list-text">具有查看权限的 AWS 凭据</block>
   <block id="84655b4612a4abb6eb6d8897db0655a6" category="admonition">在您提供同意后，收集指标可能需要一些时间。正在进行初始收集时，仪表板会通知您。</block>
   <block id="2daabc6822724771970f17e8ae6a4cee" category="list-text">选择 *Overview* 选项卡。</block>
   <block id="a2fbf7fa6f022aa585757c4d6cf5cfbe" category="list-text">如果未检测到具有查看权限的凭据，请选择 *Add credentials* 并按照提示使用查看权限配置 AWS 凭据。然后返回 *Overview* 选项卡。</block>
   <block id="03cb5cf45e1d3709e52191d359385d38" category="list-text">查看同意提示，说明将为您的 FSx for ONTAP 文件系统收集的 CloudWatch 指标。</block>
   <block id="ee58964f46df645da6108475c6d86f30" category="list-text">选择 *Activate* 以激活仪表板并开始收集指标。</block>
-  <block id="076f6cc58ee6a014913d5c5405ce8028" category="paragraph">可用筛选器：</block>
-  <block id="e1f5223a6a7fff100d8e7f38b7321b39" category="list-text">*区域*：按一个或多个 AWS 区域进行筛选。</block>
-  <block id="cc88c8520cacdcbd154b678b080f5359" category="list-text">*AWS 账户*：按与您配置的凭据关联的一个或多个 AWS 账户进行筛选。</block>
   <block id="f1dd68ee490b7c8bd34a8f05569cfb01" category="section-title">集群运行状况状态</block>
-  <block id="26ae7bdd1d6fb8c4886e6fde8d12601c" category="section-title">延迟</block>
-  <block id="3b8f7696879f77dfc8c74aa8df8db24b" category="section-title">容量</block>
-  <block id="596b10dc3c83c43203ecb5e35057ea82" category="list-text">目录大小已满</block>
-  <block id="8e556aa1506dff11340a95a83ac47877" category="list-text">索引节点已满</block>
-  <block id="319a7785bfcc6f7c0a470154dca5433d" category="inline-link-macro">容量事件</block>
-  <block id="00607b7ab91b89088225f156c398c6d2" category="paragraph">有关监测的 EMS 事件的完整列表，请参见 <block ref="a40747a48e3f0f6173aa7b11e42e30dd" category="inline-link-macro-rx"></block>。</block>
-  <block id="6084cc2ec06c72c60a2d7fceeec8943b" category="paragraph">选择 *Capacity* 将导航到 Storage workloads 中的容量分析屏幕。</block>
-  <block id="812b62dbc874f456acb070f5f8ecf49c" category="section-title">可用性和保护</block>
-  <block id="d03926204e5f51c77414928489a670fa" category="paragraph">监测到的事件包括 FlexCache 和 SnapMirror 相关的 EMS 事件。</block>
-  <block id="d2029ab099c48ad138099bf1b3364b44" category="paragraph">选择 *Availability &amp; protection* 将导航到 Storage workloads 中的可用性和保护分析屏幕。</block>
-  <block id="b7185c6b9e81995f26cf9003aba3cfc2" category="section-title">安全及其他</block>
-  <block id="6b76ab95e7f59cec483e612f646cb2e5" category="paragraph">选择 *Security &amp; other* 将导航到 Storage workloads 中的事件分析屏幕。</block>
   <block id="92343cbd448d1ecb633a73e2ddb96510" category="section-title">Clusters 表</block>
-  <block id="4755ce9c858d32c6af3b801fa19a40b4" category="section-title">搜索和筛选</block>
-  <block id="4bcd1d96fe911e1ac9b37e82f78cc769" category="list-text">使用搜索按名称、文件系统 ID、区域或其他属性查找特定群集。</block>
-  <block id="e5e3ff7f849d4d03e6ff43e57a789165" category="list-text">选择任何列标题以按该列对表进行排序。</block>
-  <block id="352e4bc46981c9686b3bd1568c7d705f" category="list-text">使用每列筛选器控件来缩小表中的结果。</block>
-  <block id="217e5e8d4058183335421ccd86655c77" category="list-text">表格已分页。使用表格底部的分页控件在页面之间导航。</block>
-  <block id="be39bb193d872e11bb21388add6eca23" category="section-title">自定义列</block>
-  <block id="a8398be8d41d0ae61fe7c99f4c84c715" category="paragraph">从集群表中添加或删除列：</block>
-  <block id="37fea8a26e09123c44b09e72fdfb6658" category="list-text">选择右侧表格上方的列选择器图标。</block>
-  <block id="16e1af4a4ebe89d8625170b9771719fa" category="list-text">选择或取消选择要显示或隐藏的列。</block>
-  <block id="e611170230a6e8353ed957ebfb35e9ed" category="section-title">将表导出为 CSV</block>
-  <block id="ec23945650f6dd8a065ef9052e1e1fa7" category="paragraph">您可以将当前显示的表数据导出为 CSV 文件，以进行进一步分析或报告。</block>
-  <block id="344ccd95594db0b6bfcbc00e804c50d9" category="list-text">应用要反映在导出中的任何筛选器或列自定义项。</block>
-  <block id="801ab24683a4a8c433c6eb40c48bcd9d" category="inline-image-macro">下载</block>
-  <block id="e75fdb0ef1b83c160c1f3ca4bff622c5" category="list-text">选择集群表上方的 <block ref="d2e5c9ca6fcd7f605e1d5f7b4f6a6a99" category="inline-image-macro-rx" type="image"></block> 按钮。</block>
-  <block id="94fddf2754b119bd3ea2e006084f6a2d" category="paragraph">CSV 文件已下载，其中包含表中当前可见的所有行，仅包括当前显示的列。</block>
   <block id="2c5e7dde0b5d8fe45e7e905c674f4c31" category="section-title">2026 年 3 月 1 日</block>
   <block id="4fdbac3671b30e3a2d6d3233ee4023d0" category="sidebar">EDA 存储概述</block>
-  <block id="ea637c5687abbd47d05bd10d63c621ce" category="sidebar">管理 EDA 存储操作</block>
   <block id="d0efe11222ff735f348a5bd5e26ce56d" category="sidebar">项目使用情况分析</block>
-  <block id="c5fc13d61eed82ccc80e74a9ac0ecd18" category="sidebar">分析项目存储使用情况</block>
   <block id="baf7dcba0c4a80ef2ec1dd0465a27ee0" category="paragraph">作为管理数十个 FSx for ONTAP 文件系统的 IT 管理员，您可以使用概述仪表板回答有关集群运行状况、利用率和卷放置的常见操作问题。</block>
   <block id="a75658829d674de492a2dd7d0818e7ca" category="paragraph">概览控制面板包括：</block>
   <block id="bac99350c8b9abdf51c8cb6c7a0467fd" category="inline-link">详细了解 Overview 控制面板</block>
@@ -595,19 +496,9 @@
   <block id="3a0eea1249d5ea83860d68d281f6c97b" category="inline-link">详细了解 AI 代理分析</block>
   <block id="af2687c5a2b9873716f0987242df8169" category="paragraph"><block ref="2915288e95b80b72c9de65e94d4fc279" category="inline-link-rx"></block>。</block>
   <block id="903ae19f4744109bd449ffef22e131cc" category="inline-link-macro">概览信息板</block>
-  <block id="ad3ee48dbaf8bd15170288a8cbaf9111" category="list-text"><block ref="c43085d6db3011d68248506cba6c2189" category="inline-link-macro-rx"></block>：提供集中式集群视图，帮助您监控 FSx for ONTAP 集群运行状况、容量和吞吐量，确定放置新卷的位置，就扩展容量和吞吐量做出明智的决策，并接收自动的容量建议。</block>
   <block id="76fe6a2921854a310876f2886d0744fa" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 启用概览仪表板</block>
   <block id="208586cd32a8a0d00042653ba4659b8e" category="paragraph">启用概述仪表板以监控 FSx for ONTAP 集群的运行状况、容量和吞吐量。接受同意提示，允许 Workload Factory 开始收集 CloudWatch 指标。</block>
-  <block id="c2151e2d1dba976fab30173e26e64ace" category="inline-link-macro">了解如何启用 Overview 控制面板</block>
-  <block id="b624256e7cfc943995093a9c263a4c29" category="paragraph"><block ref="6607f81f673b2b1acab74297bdcef96e" category="inline-link-macro-rx"></block>。</block>
-  <block id="1cd1b3707d9ff6df30af6368c98a254e" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> 配置 Project 仪表板</block>
-  <block id="37be776cacb7f2116612a9a0dd1fe4be" category="paragraph">配置项目仪表板以监控系统运行状况、性能和存储使用情况，使您能够有效优化 EDA 环境。</block>
-  <block id="c6be2ff5f814ccc204c4fa5cc9a26402" category="inline-link-macro">了解如何配置 Project 仪表板</block>
-  <block id="5eec74fa0479342640b4f0cf89f95ace" category="paragraph"><block ref="dee2cdd0dc5bf217faec6f43b7f77ae0" category="inline-link-macro-rx"></block>。</block>
   <block id="92b8944386b41a864c3b42d0a5f178da" category="paragraph">目前不支持 _Basic_ 模式和 _Read-only_ 模式权限。</block>
-  <block id="e8a5e8ec2e90f68cc56140acc19fe659" category="summary">通过添加用于收集指标的标签来配置 EDA Project 仪表板。使用单选或多选选项自定义筛选器，以满足您的业务需求。</block>
-  <block id="e532219ff10a9efe2b7516b9eabb80ec" category="admonition">只有第一个访问 Project 仪表板的管理员用户才能配置、添加或删除自定义筛选器。所有其他用户，包括后续管理员，都具有对筛选器的只读访问权限。</block>
-  <block id="2a4f511f8ad738b70bd3748a9e642173" category="paragraph">作为管理 EDA 工作负载的 IT 管理员或 DevOps 工程师，您可以使用延迟分析来监控 FSx for ONTAP 卷的读写延迟。配置警告和关键阈值以尽早检测性能问题。发生事件时，Workload Factory 提供自动化的基本分析，您可以选择运行 AI 代理分析，了解根本原因详细信息、受影响的客户端和建议的补救步骤。</block>
   <block id="14148bac5b7c3663c54f10f09a5bd49a" category="paragraph">_Basic_ 模式和 _Read-only_ 模式权限不支持延迟监控。</block>
   <block id="289fde61867c520c9e1b763ec58e4782" category="list-text">Amazon Bedrock 模型 ARN（可选）</block>
   <block id="2c428aa993eaa904ca8a12c78bcdf21a" category="list-text">要使用可选的 AI 代理分析功能，您必须在 Workload Factory 设置中提供 Amazon Bedrock 模型 ARN。</block>
@@ -617,46 +508,20 @@
   <block id="a76142b21bf8fd3e217700ad47520a99" category="list-text">*关键事件*：表示需要立即调查的严重延迟</block>
   <block id="85af8e40cac423345858be0210476d20" category="list-text">选择 *Latency* 选项卡。</block>
   <block id="a336da6bfc59dea8a34a61e330a80866" category="paragraph">延迟事件表提供了过去 72 小时内检测到的所有警告和关键事件的集中视图。</block>
-  <block id="0dea20f75813d2ed33976d047d4feb75" category="list-text">*严重程度*：指示事件是 Critical 还是 Warning</block>
-  <block id="ab9c0c767f9043ec9da24ddf4988d6df" category="list-text">*Volume name*：受影响卷的名称</block>
-  <block id="6b854e2d874f08fa11e8527be7a67311" category="list-text">*Volume ID*：受影响卷的 ID</block>
-  <block id="a4ea9bee29b55456bed1615792abaa8d" category="list-text">*文件系统*：包含卷的 FSx for ONTAP 文件系统</block>
-  <block id="f0abce0c8eb9545d70bbad5d74599eec" category="list-text">*中位延迟 (ms)*：数据泄露期间的中位延迟值</block>
-  <block id="65b8e7b4f221cb001b2617746bfea3c2" category="list-text">*% above threshold*：延迟超过配置阈值的百分比</block>
   <block id="039dfdde9abd9ac1aa8a2a98cfb44323" category="inline-image-macro">操作菜单图标</block>
   <block id="8915e02d8d5fd0d498876dbe62c67555" category="list-text">要关闭一个或多个事件，请在每个事件旁边选择 <block ref="fae3e4e28bd0d43fa65e8d02aaf53cac" category="inline-image-macro-rx" type="image"></block> *Dismiss*。</block>
   <block id="d539b5c7c0d30ab9075ef09bb7eeaed1" category="inline-image-macro">列图标</block>
   <block id="628efbb82f0f8c3afdae512a42ac4ffd" category="list-text">要向表中添加列，请选择 <block ref="82e9020bee7d7516519b387592b50c34" category="inline-image-macro-rx" type="image"></block>，选择列，然后选择 *Apply*。</block>
   <block id="38eacd6054dad756b607d4c8329eee03" category="section-title">延迟分析面板</block>
-  <block id="5ce70a0653bfe7f6bff6e2eddd206a0e" category="list-text">*FlexCache*：来自 FlexCache 操作的延迟</block>
-  <block id="68ba76b3b80fb774692fafaa3bca3244" category="list-text">*容量池*：来自容量池操作的延迟</block>
-  <block id="df0c1b63249b6e6a43327ad7270f9a50" category="list-text">*QoS min*：来自 QoS 策略组下限的延迟</block>
-  <block id="23ddd65f9d5440568ff13b972c23e64d" category="list-text">*QoS max*：来自 QoS 策略组上限的延迟</block>
-  <block id="eb6661848ca72d51dd7462a9ecdc6c2b" category="list-text">*磁盘*：存储子系统的延迟</block>
-  <block id="1b04caaa22ceaef074dc3dd87240ca56" category="list-text">*数据*：来自 WAFL 子系统的延迟，包括 CPU 处理、元数据更新和缓存管理</block>
-  <block id="de3ae150d2eddb964a39576f4d93c994" category="list-text">*Cluster*：内部连接节点的延迟</block>
-  <block id="214e41afc37c18a28923389d4435f505" category="list-text">*其他*：来自其他子系统（如 NVRAM 和网络）的延迟</block>
   <block id="1af9d8d07caa5522beed26e2ac87c9b0" category="section-title">运行 AI-agent 分析</block>
-  <block id="b82697b621a677f2c131ea161ca15ca5" category="paragraph">虽然基本分析可以识别延迟源，但涉及数据或集群组件的复杂场景通常需要更深入的调查，以确定具体的根本原因和潜在的修复步骤。AI 代理分析通过识别霸道卷、非最优配置或基本分析无法检测到的横向扩展需求等问题，提供了更深层次的故障排除。</block>
-  <block id="390b6ebb0dada50f5e02de14863d5d9a" category="paragraph">运行 AI-agent 分析时，系统会自动刷新基本分析数据，并将其用作 AI-agent 的输入。AI-agent 评估延迟场景并提供：</block>
   <block id="f825ff4432099d6f44cdb5f8f4bfc6db" category="list-text">*潜在根本原因*：导致延迟问题的详细说明</block>
   <block id="102e5bfcdb00d2737ee47f8cfa62267e" category="list-text">*受影响的客户端*：受延迟影响的 EC2 实例名称列表</block>
   <block id="97a2c1af5741eeecb9eaa5c7c36521b7" category="list-text">*潜在的补救措施*：两个或多个具体措施来解决问题</block>
-  <block id="bb0c63ab29749b360678ffe47d4f316d" category="paragraph">AI 代理遵循基本分析指南来识别场景，例如：</block>
-  <block id="5aac3372cec1e7a6593b4badcd13ba0c" category="list-text">占用过多资源的卷（用于数据延迟）</block>
-  <block id="11f8d553328592c85be4033bc3f64803" category="list-text">非最佳挂载点配置（用于集群延迟）</block>
-  <block id="7b4aa399068fb6652866c4a35815dac2" category="list-text">FlexGroup 重新平衡需求（针对集群延迟）</block>
-  <block id="7b9daeff6b6cce80aff1d790b8c602de" category="list-text">横向扩展要求（用于集群延迟）</block>
   <block id="e38b13dd2c91516a7427e9ddddaee80a" category="list-text">在 *延迟* 选项卡中，找到要分析的事件。</block>
   <block id="55778645f90c4570ed888c2e7a8fd0cd" category="list-text">实施建议的修正步骤以解决延迟问题。</block>
   <block id="eef392bb1b41a4e082bfc98d04dc9517" category="list-text">修复后，监控延迟事件表以验证问题已解决。</block>
   <block id="f425eb4d55adb205ccf2c677df8ee7a9" category="list-text">*战略性地使用 AI 代理分析*：对基本分析推荐的数据和集群场景运行 AI 代理分析。AI 代理分析为需要详细故障排除的复杂性能问题提供更深入的见解。</block>
-  <block id="8d2d238b8187f64d495cfc9978b55898" category="summary">使用概述仪表板监控 FSx for ONTAP 文件系统的运行状况、容量和吞吐量。大规模查看存储使用情况，并就卷放置和容量扩展做出明智的决策。</block>
-  <block id="027bcc17ae543ed5fe33c2d273a75b59" category="paragraph">作为管理跨多个 FSx for ONTAP 文件系统（ONTAP 群集）的 EDA 工作负载的 IT 管理员，您可以使用概述仪表板快速评估群集健康状况和使用情况。使用它来决定在哪里放置新的卷或作业，确定移动卷或 SVM 的候选对象，并确定何时扩展容量或吞吐量。</block>
-  <block id="000c45e9b90aaab86ef0c09071b10409" category="paragraph">概览仪表板为您的 FSx for ONTAP 集群提供了集中视图，包括容量和吞吐量。使用它来放置新卷、重新平衡工作负载并规划容量或吞吐量扩展。</block>
-  <block id="cb545ee4a07ff5112b26d255e807b577" category="list-text">*集群运行状况状态*：在信息中心顶部汇总的信息，突出显示整个文件系统的延迟事件、SSD 利用率和容量建议以及 ONTAP EMS 事件。</block>
   <block id="57322efe01b3d8754cbc219dffa5e1a3" category="list-text">*集群表*：详细的可搜索表，显示每个集群的使用情况和性能指标，支持过滤、排序、分页和 CSV 导出。</block>
-  <block id="63f116ebfaf0192bfdf2f32c33c4cf78" category="paragraph">使用控制面板之前，请确保满足以下要求：</block>
   <block id="c3feff18acbe4e3addd9196da0c369bc" category="list-text">您必须至少使用常规存储的读取（查看）权限在 Workload Factory 中配置 AWS 凭据。不支持 _Basic_ 凭据。</block>
   <block id="927108002b8d97b63eeefcd5cc76ff99" category="paragraph">如果您尚未配置具有查看权限的凭据，则在打开"概述"选项卡时将重定向到 AWS 凭据设置页面。</block>
   <block id="148a662b6f742683655df7c4b27aab64" category="list-text">激活信息板</block>
@@ -664,45 +529,12 @@
   <block id="5080409a250f18c89c5d74ea0f9c644a" category="paragraph">Workload Factory 开始收集与您配置的 AWS 凭据相关联的所有 FSx for ONTAP 文件系统的 CloudWatch 指标。当指标可用时，控制面板会填充。如果收集仍在进行中，则会显示通知。</block>
   <block id="e312388a751f42d30d5641b358538e21" category="paragraph">使用仪表板顶端的筛选器将重点放在特定的文件系统上。这些筛选器适用于延迟、利用率和 ONTAP 事件部分以及群集表。</block>
   <block id="5626a4ecac9741d9b0e61d578ebf1561" category="paragraph">更新筛选器选择时，将刷新所有信息以仅显示匹配的文件系统。</block>
-  <block id="86fb615880ed0963db413aee0ea3a83f" category="paragraph">在控制面板的顶端，会显示已过滤文件系统的运行状况和活动的快照。仅当至少一个 FSx for ONTAP 链接与您的文件系统相关联时，才会显示此信息。如果没有可用的链接，信息将被隐藏。</block>
-  <block id="6d6322f83c4f5b960a36e7082d0766a5" category="list-text">*延迟*：显示在范围内跨文件系统检测到的延迟事件数。</block>
-  <block id="16b323f26f7bf7c818d3ae7714b799e0" category="list-text">*利用率*：显示 SSD 利用率状态并标识具有活动容量建议的文件系统。</block>
-  <block id="3121cd69c335b005ceb96cc87483c7b6" category="list-text">*ONTAP 事件*：显示检测到的 EMS 事件数量，按容量、可用性和保护以及安全性和其他分类。</block>
-  <block id="b6649fa5d637bc149fc487d1f6384623" category="paragraph">显示在范围内的文件系统中检测到的延迟事件数。</block>
-  <block id="04799c0bb895c60dc9316f987cb2a0d9" category="list-text">当您选择 *Review* 时，将显示 *Latency* 选项卡。</block>
-  <block id="a7d6e22f4e42b9f526689d7c05ed15ce" category="section-title">利用率</block>
-  <block id="8cdbff19eb37efa37ce19b0f67905d5f" category="paragraph">显示范围内至少有一个集群的 SSD 使用率超过 80% 的文件系统数量，以及具有活动容量建议的文件系统数量。这有助于您快速识别可能需要注意容量的文件系统。</block>
   <block id="adf40a5c785aaeef6afc57401dfa0da4" category="section-title">容量建议</block>
-  <block id="39cb2f87544e093382b57cea81963987" category="paragraph">Workload Factory 会自动为您的 EDA 库存中可见的每个 FSx for ONTAP 文件系统运行容量推荐算法。该算法每 24 小时扫描一次，并确定何时建议调整 SSD 容量。</block>
-  <block id="3a63c48dc4551e879d290e61f4b46251" category="list-text">根据您的 Workload Factory 通知设置，您将收到即时通知（电子邮件或 WAD）。在确定建议后立即发送通知，而不是等待每周摘要。</block>
-  <block id="75a1dd4d8cefe1f82520311498c853ad" category="list-text">对于具有活动推荐的任何文件系统，Clusters 表行中都会显示灯泡指示器。</block>
-  <block id="09ba3adfe9812db33e96187bdfe9a54d" category="list-text">此时将显示具有活动建议的文件系统的总数。这可确保建议可见，即使受影响的文件系统不在表的第一页。</block>
   <block id="9cc0347665febc5bdecbb8b62b56caef" category="section-title">查看和应用容量建议</block>
-  <block id="158bcc98bb34a9f1bae855b7642437cc" category="list-text">在 *Clusters* 表中，找到带有灯泡指示器的文件系统。</block>
-  <block id="46110e65a583695848fb0fd8fab2e632" category="paragraph">将鼠标悬停在灯泡指示器上可查看包含建议简要说明的工具提示。</block>
-  <block id="f9fd8bfd203c7d945711dbb97267655b" category="list-text">在表中选择集群名称以打开它并查看建议。</block>
   <block id="95f6a08d0f924200d8aedf875fe0d26f" category="list-text">查看 SSD 建议和容量图。</block>
   <block id="a91263358447ff86f00508073a54103c" category="paragraph">该建议解释了建议的变更及其背后的原因。例如：_我们建议根据您的文件系统 SSD 使用模式增加 SSD 大小。_</block>
   <block id="9a5f604071695fc8c90fa884731bdf90" category="paragraph">该图表显示了当前 SSD 使用情况以及历史趋势，并显示了容量推荐算法如何随时间调整容量。</block>
   <block id="75982876f75909a704866c60073481a4" category="list-text">在图表的右上角，选择时间范围以更改显示的时间段。默认值为一周。</block>
-  <block id="3ec3405475907b609b4da7594a8e30cf" category="section-title">ONTAP 事件</block>
-  <block id="a7211065fc175f16960b5d90d60f8c3b" category="paragraph">显示在范围内跨文件系统检测到的 EMS 事件数量，按容量、可用性和保护以及安全与其他分类。</block>
-  <block id="cbaa36e65bbbc5b0dce1a4d1c09ecbfe" category="paragraph">显示与容量问题相关的 EMS 消息的数量，以及受影响的文件系统的数量。</block>
-  <block id="9390001cdb12f5711a81d8c61b740f33" category="paragraph">监测的 EMS 事件示例包括：</block>
-  <block id="4c4d02e6bb3542318521ac7c16409b23" category="list-text">聚合接近全满/全满</block>
-  <block id="2898f5e64e26ff6b682e2302bd5a5b9a" category="list-text">卷接近全满/全满</block>
-  <block id="63063dfe876139acf73a9b4bc46a3970" category="list-text">Snapshot 预留接近全满/全满</block>
-  <block id="96d655add422c797963d6fd45958de7d" category="list-text">FlexGroup 已满</block>
-  <block id="01ead1e10839911d69ee0af73d91a868" category="paragraph">显示与可用性和数据保护相关的 EMS 消息数量，以及受影响的文件系统数量。</block>
-  <block id="52898aff9d5407cfdfb5e422469db30b" category="paragraph">显示未归类为"容量"或"可用性和保护"的事件的 EMS 消息数量，以及受影响的文件系统数量。监控的事件包括反勒索软件保护、NFS 身份验证失败等。</block>
-  <block id="f31a63d348c7c8d06fe2549282080d1b" category="paragraph">提供与您配置的 AWS 凭据相关联的每个 FSx for ONTAP 文件系统的详细视图，按活动区域和 AWS 账户选择进行筛选。数据是从 CloudWatch 指标中收集的。该表支持搜索、列筛选、分页、列自定义和 CSV 导出。</block>
-  <block id="1224e976e54b0ca1a91c88353ec21993" category="paragraph">关键指标包括：</block>
-  <block id="f28c601c40ddebcffa4ee55d24119d1f" category="list-text">名称、区域和 AWS 帐户</block>
-  <block id="aa48f7c6a56d04564740cc8156c20d7e" category="list-text">SSD 容量指标（已使用、总计和使用百分比）</block>
-  <block id="a70073688b464c695e656ad94550b9f9" category="list-text">容量池存储</block>
-  <block id="5e40fc6f7fc8cf1248e186708cd1be65" category="list-text">吞吐量指标（过去 30 天的平均值、P95、P99 和最大值）</block>
-  <block id="ee6f79302596ffa7d6d6cdb31d87b1de" category="paragraph">使用 *SSD 使用情况* 来识别接近容量限制的文件系统。使用 *吞吐量使用率 (P99)* 将吞吐量需求与配置的吞吐量 SKU 进行比较。将鼠标悬停在吞吐量列标题上以获取计算详细信息。</block>
-  <block id="87805a3d803959d3dcd34427a660d169" category="admonition">具有活动容量建议的文件系统在表中显示灯泡指示器。选择任何文件系统名称以查看该文件系统的 SSD 容量指标、历史使用趋势和容量建议。</block>
   <block id="6f600db4b9fe06680f2ac280db49796a" category="section-title">2026 年 4 月 6 日</block>
   <block id="97c13014b9e16335b445d04850fb955f" category="doc">延迟事件的电子邮件和 SNS 通知</block>
   <block id="c31a2fa4340e87df74fd4add6857d037" category="paragraph">现在，当在 FSx for ONTAP 卷上检测到延迟事件时，您可以接收自动通知。在 Workload Factory 设置中配置电子邮件或 Amazon SNS 通知，以便在卷违反配置的延迟阈值时接收实时警报。</block>
@@ -722,7 +554,6 @@
   <block id="bd454b1eeeb8c3bf10186291d2f90f87" category="doc">Workload Factory for EDA 中的已知限制</block>
   <block id="11aaba4197d60cd84ae00b147f30a239" category="doc">了解 Workload Factory for EDA 中的 Perforce 集成</block>
   <block id="05e71e57ff2860f766cafa61669afd90" category="doc">了解 Workload Factory for EDA</block>
-  <block id="60476976a2c1ab2169570786b32dba09" category="list-text"><block ref="4d71518cae1e26b3714fb432b3fb2249" category="inline-link-macro-rx"></block>：通过可配置的警告和关键事件阈值，主动监控卷读取和写入延迟性能。检测到事件时接收电子邮件或 SNS 通知。包括使用 ONTAP QoS 延迟中心指标的自动基本分析，以及针对需要更深入识别根本原因的复杂场景的可选 AI 代理分析。</block>
   <block id="4f4aa40f24b705f5a6b2c8eddeef1e5e" category="inline-link-macro">分析延迟趋势</block>
   <block id="ac4297ca80ae5408e173c35ab73d1280" category="list-text"><block ref="6ebd25eb4c135c18dd20612e63ec5166" category="inline-link-macro-rx"></block>：使用交互式延迟图来可视化一段时间内的延迟行为，识别模式，了解性能问题是重复出现还是孤立的，并做出有关补救的数据驱动决策。</block>
   <block id="91a16b40f1b5f0084e50d6535c5f55b4" category="doc">在 Workload Factory for EDA 中管理 EDA 项目</block>
@@ -738,9 +569,7 @@
   <block id="47fc6ce38b51022ce7378bb818bcbdbc" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block> 为 ONTAP 延迟分析配置 FSx</block>
   <block id="71385bd4e1d4e5dbe86dc9b6f19b8d0b" category="paragraph">设置延迟阈值，以在影响模拟运行时间之前主动识别和解决性能问题。配置警告和关键警报，设置电子邮件或 SNS 通知以接收实时警报，利用自动化基本分析，并可选择通过配置 Amazon Bedrock 模型 ARN 为复杂场景启用 AI 代理分析。</block>
   <block id="e92f1fd565b0115330969e68f1df5c93" category="inline-link-macro">分析延迟趋势</block>
-  <block id="2d6493eae43920f1f398fd04ec507f90" category="paragraph"><block ref="6c39ec3dea19789c91686480a2e1a7b5" category="inline-link-macro-rx"></block>。检测到事件后，您可以<block ref="17d96e1b2696eabecce662ae85cda8e7" category="inline-link-macro-rx"></block>使用交互式图形。</block>
   <block id="b888e1d990c199d358b31e27c7359f42" category="doc">EDA 的 Workload Factory 要求</block>
-  <block id="4a3f64eab77f5b895962c42b557e049a" category="admonition">使用延迟监控功能也需要 AWS 凭证，该功能会收集 CloudWatch 指标用于卷性能分析。要接收延迟事件的通知，请在 Workload Factory 设置中配置通知偏好。如需为复杂延迟场景启用可选的 AI-agent 分析，还必须提供 Amazon Bedrock 模型 ARN。<block ref="123cec35459a259baaf9454185c7e6c4" category="inline-link-macro-rx"></block>。</block>
   <block id="656ff150d41fa1c0fc581a7d9317539b" category="list-text">文件系统中至少需要一个具有以下配置的卷：</block>
   <block id="203f7d7dafc1c11f2f80c2510b54a471" category="list-text">必须使用链接对文件系统进行配置<block ref="69ba18be3e95c1116b4fd108f5c6f03b" category="inline-link-rx"></block>。</block>
   <block id="5aef21820caef7c0f864852459c0e5f6" category="doc">注册 Workload Factory for EDA 支持</block>
@@ -748,7 +577,6 @@
   <block id="7710e3af23bbd50fdc1e743685f0d33f" category="doc">分析 Workload Factory 中 EDA 的延迟趋势</block>
   <block id="156ab2ccf351bba06d7f02e1ec744738" category="paragraph">检测到延迟事件后，您可以使用交互式图表分析一段时间内的卷延迟行为。这有助于您识别模式，了解性能问题是重复出现还是孤立存在，并做出有关补救的数据驱动决策。</block>
   <block id="a84cf3e93039b68c477a75d0719fe3b4" category="inline-link-macro">已配置延迟监控</block>
-  <block id="b701766ddd7336d0a918a31e319d2571" category="paragraph">您必须具有 <block ref="440ca031eed7454e03c10d86a7d6dd9c" category="inline-link-macro-rx"></block> 并且至少检测到一个延迟事件。</block>
   <block id="4c3f875147f0522c1d3edae65b6aa9b4" category="paragraph">延迟图提供了卷延迟行为随时间的可视化表示。</block>
   <block id="bb50ee329f41648c14ad144ed9d1cdb6" category="paragraph">延迟图显示受影响卷的 CloudWatch 延迟数据。该图表基于触发事件的警报自动显示读取延迟或写入延迟。您可以调整时间范围以查看不同时期的延迟行为。</block>
   <block id="1e050c450cfafbc3c2fda5ecebd63af7" category="paragraph">其中包括：</block>
@@ -781,34 +609,21 @@
   <block id="349c1be118a8dc9b143ce40e9e857c35" category="list-text">*识别每日模式*：使用 24H 和 72H 视图来识别一天中的时间模式。如果延迟峰值发生在可预测的时间，您可以在非高峰期间主动安排资源密集型操作，或添加容量以处理峰值负载。</block>
   <block id="2a4a2c3acb655929dec3604e91b0b330" category="list-text">*区分峰值类型*：短暂、尖锐的峰值表示暂时性问题（如临时资源争用），而持续的延迟较高则表明系统性问题（如容量限制或配置问题）。每种情况都需要不同的补救方法。</block>
   <block id="28e474bab8647ecce9f08a9afd675d51" category="list-text">*更改后监控趋势*：在调整阈值、添加容量或更改配置后，监控图表至少 72 小时，以确认您的更改具有所需的效果。</block>
-  <block id="6dbd7482391c0182c5dea0993791246b" category="doc">使用 Workload Factory 中的项目仪表板进行 EDA</block>
-  <block id="80a2bede41d4c6da374d247221296718" category="summary">使用可配置的警告和关键事件阈值监控卷延迟性能。使用自动化基本分析和 AI 代理分析来主动识别和解决性能瓶颈。</block>
-  <block id="2e83aef101312851fc79c1478837c2b4" category="doc">监控 Workload Factory for EDA 中的卷延迟</block>
-  <block id="9d504bf7450321a349bb17f0e68762ae" category="paragraph">延迟分析收集与您的 AWS 凭据关联的所有 FSx for ONTAP 卷上的读取和写入操作的 CloudWatch 指标。当配置时间范围内的所有数据点都超过延迟阈值和 IOPS 阈值时会生成警报。这通过确保在实际负载下保持较高的延迟来减少误报。您可以查看所有检测到的事件，如果您已配置通知，则会收到电子邮件或 Amazon SNS 通知，其中包含有关受影响卷的详细信息。</block>
-  <block id="6920ac32a3375288ebdf06facc39e6af" category="paragraph">检测到事件时，Workload Factory 使用 ONTAP QoS 延迟中心指标运行基本分析，以确定主要延迟因素（例如，FlexCache、容量池、QoS 限制、磁盘、数据、集群或其他子系统）。然后，您可以<block ref="672f9645415c0125cfd8e23383946617" category="inline-link-macro-rx"></block>使用交互式图表。</block>
-  <block id="d149e138ca1f3814e3ddc350907b4b4f" category="paragraph">对于数据和集群场景，您可以选择运行 AI 代理分析，以获取详细的根本原因解释、受影响的 EC2 客户端列表以及建议的修复步骤。</block>
   <block id="27e09936f431721e0ec32c3d3d21885c" category="list-text">要查看基本分析见解，您必须将链接与 FSx for ONTAP 文件系统关联。如果没有链接，事件仍然可以被检测到，但分析提供的见解有限。如果尚未关联任何链接，请在 EDA 中选择*关联链接*，选择是否创建新链接或关联现有链接，然后选择*继续*以自动转到 Storage workloads 中的链接创建页面。</block>
   <block id="7096afe055eda8f68401dc699f62aa71" category="paragraph">如果您不配置 Bedrock 模型 ARN，您仍然可以使用延迟监控和自动化基本分析，但 AI 代理分析不可用。</block>
   <block id="1068f745b93ee031c494800d88399506" category="list-text">通知配置（可选）</block>
   <block id="bccf4a154062c04971c782a1a33ba164" category="list-text">要在检测到延迟事件时接收电子邮件或 Amazon SNS 通知，请在 Workload Factory 设置中配置通知首选项。有关详细信息，请参见 <block ref="6c57f686ffc3c80537465140f26ad896" category="inline-xref-macro-rx"></block>。</block>
-  <block id="d51cdc3a782f07f214d065d32392cd4a" category="paragraph">延迟分析使用 CloudWatch 警报来监控卷性能。了解如何触发警报有助于您配置适当的阈值并解释结果。</block>
-  <block id="38f4c4b38520d15824f4ab473c208770" category="paragraph">您可以为读取和写入操作配置警告和关键阈值。系统会持续评估阈值，并在满足条件时生成警报。</block>
-  <block id="061b69757df18e0f80dd6951d4a87bc0" category="paragraph">Workload Factory 开始收集与您的 AWS 凭据关联的所有 FSx for ONTAP 卷的延迟指标。指标至少每 20 分钟收集一次。任何超出您配置的阈值的卷都会显示。</block>
   <block id="e47a2805498d3bd68e7615f5a9695ad0" category="list-text">仅显示每个卷的最新违规行为。如果某个卷经历了多次违规，则仅显示最近的事件。</block>
   <block id="e83c229f37cf36a4d502c243dffb6c3d" category="list-text">最多显示 200 个事件。随着新事件的添加，旧事件将被删除。</block>
   <block id="b028238b7d6c951434ecd797dfecd43f" category="list-text">即使没有链接与文件系统关联，也会显示事件。查看基本分析详细信息和运行 AI 代理分析需要链接。</block>
-  <block id="81db793f48cabf755c5da85566220fe0" category="list-text">在 *Latency* 选项卡中，查看每个事件的信息，包括：</block>
   <block id="391d5001f0e7f63a7def2cbcdfbf9795" category="list-text">要查看延迟事件的详细信息，请在 *Severity* 列中选择该事件。这将打开该事件的延迟分析面板。</block>
   <block id="256e5511799cf87e5ea3d5686def55a5" category="list-text">要对表格进行排序，请选择任意列标题。默认情况下，将首先显示按时间排序的关键事件，然后显示按时间排序的警告事件。</block>
   <block id="8f366b4a3c1ee9db68d65977ad160a9e" category="list-text">要分析一段时间内的延迟趋势，请选择一个事件以打开延迟分析面板。使用 *Over time* 选项卡查看交互式延迟图。有关详细信息，请参阅 <block ref="6ebd25eb4c135c18dd20612e63ec5166" category="inline-link-macro-rx"></block>。</block>
   <block id="5bf8d268567f0e7ee71b32158e4a1593" category="section-title">分析延迟事件</block>
-  <block id="e819192d011b6b3e3f4bbd9fc359c099" category="paragraph">基本分析可帮助您快速确定延迟问题的根本原因，而无需手动调查。当检测到延迟事件时，Workload Factory 会使用 ONTAP QoS 延迟中心指标自动执行基本分析。分析确定了导致延迟的组件并提供了简短的描述。</block>
   <block id="1bd47873c66482991cb879180d2867cc" category="paragraph">在 *严重性* 列中选择一个延迟事件，以打开该事件的延迟分析面板。该面板包括提供延迟事件不同视图的选项卡：</block>
   <block id="c2fb795bc2e1a609303d9e00777fdb2e" category="list-text">*概述*：显示基本分析结果，显示哪个组件导致了延迟</block>
   <block id="748595841e3c3b1b5183a7d6077dffdd" category="list-text">*随着时间的推移*：显示具有历史数据的交互式延迟图</block>
-  <block id="7bc1f28b4c89677e5f6cfb8399c63ac9" category="paragraph">*概述* 选项卡显示自动化基本分析的结果，确定导致延迟的组件：</block>
   <block id="c9a0323fbd3e3be5e48738ff08051151" category="paragraph">如果配置了 Amazon Bedrock 模型 ARN，*概述*选项卡还包括一个选项，用于对数据和群集场景运行 AI 代理分析。如果未配置 Bedrock，则选项卡将显示指向特定文件系统的 Storage workloads 配置页面的链接，您可以在其中配置 Bedrock 访问权限。</block>
-  <block id="7f5bfa6c2ae6835ebe3f8cfab65e7d77" category="section-title">随着时间的推移</block>
   <block id="88b98d83646123ee99ac10d567d7bad8" category="paragraph">*Over time* 选项卡显示一个交互式延迟图表，显示受影响卷随着时间推移的 CloudWatch 延迟指标。该图显示了读取或写入延迟，具体取决于触发事件的警报类型。您可以选择不同的时间范围（1H、3H、12H、24H、72H）来查看不同时间段的延迟行为。</block>
   <block id="b938fe219e0d3269febbb2f4ce0e4d4f" category="paragraph">有关使用图形的详细说明，请参见 <block ref="6ebd25eb4c135c18dd20612e63ec5166" category="inline-link-macro-rx"></block>。</block>
   <block id="46a6c0f7d8d51bac15ceada497addbb0" category="paragraph">在 Workload Factory 设置中配置 Amazon Bedrock 模型 ARN，请参见<block ref="6c761e19260aabd782369cde93c2b1c4" category="inline-link-macro-rx"></block>。</block>
@@ -816,27 +631,398 @@
   <block id="354b602de39fd16c2e8213c6420af87b" category="paragraph">如果没有链接与文件系统关联，则会显示提示，要求您将链接与受影响的文件系统关联。选择提示以重定向到该文件系统的链接设置页面。</block>
   <block id="6b11475664ca5049823829bb74e3334d" category="list-text">查看 *Overview* 选项卡以了解基本分析结果并识别延迟源。</block>
   <block id="f59e8b0685757d07e5ad61ebc46a87c4" category="list-text">如果延迟源被识别为数据或集群，请选择 *分析* 以运行 AI-agent 分析。</block>
-  <block id="a34b99c45f1060fa36c26445937a8916" category="list-text">查看 AI-agent 分析结果。</block>
   <block id="42ca2768ba0de807a5ef846dc69d0aad" category="section-title">配置延迟通知</block>
   <block id="b113e6e3f414df97faffdf304f96cdea" category="inline-link-macro">配置通知设置</block>
-  <block id="3d6c653a360d87aa37c2b5f066b22cf0" category="paragraph">您可以配置电子邮件或 Amazon SNS 通知，以便在检测到延迟事件时接收警报。每次卷突破您配置的阈值时都会发送通知，从而实时了解性能问题。要启用通知，请参见 <block ref="760d5a248a4ffda4abc117648b19c119" category="inline-link-macro-rx"></block>。</block>
   <block id="fc5cf4b9e620903fdc3e72c98ed92e50" category="paragraph">延迟通知是根据每个文件系统发送的。当文件系统中的一个或多个卷违反延迟阈值时，您会收到列出所有受影响卷的单个通知。</block>
   <block id="d161804a8b38f48ce78c8bdf17d57cef" category="admonition">如果受影响的卷超过 10 个，电子邮件将显示前 10 个卷，并指示受影响的其他卷的数量。您可以在 Workload Factory 控制台中查看所有受影响的卷。</block>
-  <block id="8f54abe0ef3af482bad46fd8ebb01724" category="paragraph">通知包括：</block>
-  <block id="9575316a51e8af711966e6ef73e107a8" category="list-text">文件系统详细信息</block>
-  <block id="6e5e5a57e2d312d021faf48fbf359263" category="list-text">违反阈值的卷列表</block>
-  <block id="29e5a7a6d5b174fac3e647e10a8e3d8f" category="list-text">事件严重性（Warning 或 Critical）</block>
-  <block id="f44901cc21e17ffa2243cecaabcb0d12" category="list-text">延迟值和阈值比较</block>
-  <block id="c95bd15aedfd92163fb52171e80e4aad" category="list-text">直接链接到延迟页面进行调查</block>
   <block id="daab441d1213ea1ae747f6f3fc4f0f86" category="paragraph">通知渠道：</block>
   <block id="d3ac5879c6e6d4037eeb5996a078c1eb" category="list-text">*电子邮件*：发送到 Workload Factory 通知设置中配置的电子邮件地址</block>
   <block id="521affd4c31056b034895f68689c40d6" category="list-text">*Amazon SNS*：发布到您配置的 SNS 主题，以便与其他系统集成</block>
   <block id="8fe1d189cc79e42edfd18c2ab7312a9b" category="paragraph">有关分析延迟趋势的最佳实践，请参见 <block ref="80a684273373f0a4a9c65645f4543291" category="inline-link-macro-rx"></block>。</block>
   <block id="f2abe5914eba19478c3b813d9def8548" category="inline-link-macro">FSx for ONTAP 延迟分析</block>
-  <block id="00972c5586727b10755c077cb571302f" category="list-text">仅当启用了延迟监控时，才能查看延迟信息。如果您尚未配置延迟阈值，请选择 *Configure*。有关延迟监控的详细信息，请参阅 <block ref="e98e4afc77d2de893746a62416cafbb2" category="inline-link-macro-rx"></block>。</block>
   <block id="228ef1bb0e07fcafe49318ab6cd2b44e" category="doc">管理 EDA 项目的 Workload Factory 版本</block>
   <block id="533773babd56d9aeab3d01b7003792d3" category="paragraph">通过直接从 Workload Factory 创建按需快照和克隆，处理 EDA 项目的不同版本。项目的快照和克隆存储在创建项目时与项目关联的文件系统中。您还可以使用<block ref="fcbcfb6a9b5948c86224e0f3dc582c2b" category="inline-link-rx"></block>管理快照和克隆。</block>
   <block id="cccb746459589dc88647e759315c1e14" category="doc">Workload Factory for EDA 的新增功能</block>
   <block id="a2129af669bcf43206fc6eda2e181958" category="section-title">2026 年 5 月 3 日</block>
-  <block id="bef2ad04af6788871805dcd9435635f7" category="sidebar">监控 FSx for ONTAP 卷延迟</block>
+  <block id="4f08df9e7760628c8a0fcefa27f063f4" category="doc">SSD 容量增加管理模式和自动化</block>
+  <block id="6048180efecc25affb37f0bcfc4af51f" category="paragraph">Workload Factory 现在提供 SSD 容量增加管理模式，以匹配您的操作偏好：</block>
+  <block id="9464fbc6a7b71da353f2d54109960226" category="list-text">*自动化*</block>
+  <block id="66237dc10c2943c0563d26d3f0b6b230" category="list-text">*推荐*</block>
+  <block id="d015a34de96d3f92372df94da0f629a7" category="list-text">*无*</block>
+  <block id="7d2c5b1dd66ac2d00e2f116602f0da91" category="paragraph">当前模式及其参数显示在文件系统详细信息页面的 SSD 使用情况图表的顶端。您可以根据操作需求随时切换模式。</block>
+  <block id="df638dda507575b6f88b684af7608553" category="inline-link-macro">了解 SSD 管理模式</block>
+  <block id="8726b2b1ff09bca86dd85ada696c955e" category="paragraph"><block ref="8a69182f844b7822adef7a1894417217" category="inline-link-macro-rx"></block>。</block>
+  <block id="70a1c8861535253968956554ebf8e231" category="section-title">批量编辑 SSD 容量增加管理参数</block>
+  <block id="771b4b22f5518da40bcc1511e8f12898" category="paragraph">现在，您可以从概览仪表板调整多个文件系统的 SSD 容量增加管理参数。在群集表中选择一个或多个群集，并批量编辑阈值（10-90%）、回溯（1-200 小时）和提前（1-200 小时）值。</block>
+  <block id="012cccd7c99fecdbdf717ccb8b16b7de" category="paragraph">编辑对话框根据您的选择自动填充：如果所有选定的文件系统共享相同的参数值，则会显示这些值；否则，将使用默认值。这有助于您在整个环境中应用一致的容量设置。</block>
+  <block id="68c574408eaf57fb5b79796bef1895be" category="inline-link-macro">了解如何批量编辑参数</block>
+  <block id="ba63cd1a056bc80046c503ba2fa33773" category="paragraph"><block ref="fb2c15e1efaea436655e6825086014e4" category="inline-link-macro-rx"></block>。</block>
+  <block id="b02017def04604d515c33a15c45d2e8e" category="section-title">容量决策点可视化</block>
+  <block id="7dcdf7b0c669e34d376781ffb261c8f6" category="paragraph">SSD 使用情况图表现在显示决策点，指示何时生成容量建议或采取自动操作。</block>
+  <block id="473ad9d52a93a6904458becbb59cdb8f" category="list-text">*建议决定点*：悬停以查看时间戳、建议增加的大小和当前容量。</block>
+  <block id="e13a73a214d35af7df23610e438e2773" category="list-text">*自动化决策点*：悬停以查看时间戳、成功或失败状态、增加大小和新的聚合大小。失败的尝试包括失败原因。</block>
+  <block id="c1d04258174a29f2132edb30e198b9ea" category="paragraph">决策点可以每 30 分钟发生一次，并根据选定的时间范围单独显示或合并显示。</block>
+  <block id="77911424f819f845cb8185bc75dd9c89" category="inline-link-macro">了解容量决策点</block>
+  <block id="2470c0ea25645427c285ac2c1db0ea6d" category="paragraph"><block ref="7d345c706cc4ef56c93e61e8fef7447b" category="inline-link-macro-rx"></block>。</block>
+  <block id="6730925799427eefafa41ca821775fd8" category="section-title">Clusters 表中的链接配置状态</block>
+  <block id="00617692d401e7bead58c1c61c197639" category="paragraph">概览仪表板上的集群表现在包括一个关联链接列，该列显示是否为每个文件系统配置了 FSx for ONTAP 链接。连接状态每天验证，帮助您识别需要链接配置或可能存在连接问题的文件系统。</block>
+  <block id="14447da801a1982ce517d6e1ffb0c116" category="inline-link-macro">查看概览仪表板</block>
+  <block id="ad5ea2e791a779cc733cf94252010c1e" category="paragraph"><block ref="a3c9e85960ac01cd3d2a615266299aa4" category="inline-link-macro-rx"></block>。</block>
+  <block id="ed577820f4fec6bbade3e14c5eb7020d" category="section-title">在 NetApp Workload Factory 中支持 AWS GovCloud (US)</block>
+  <block id="8b15ccb7fd3de568f0d6670c4c2d0d62" category="paragraph">NetApp Workload Factory 支持 AWS GovCloud (US) 账户。使用 GovCloud 账户，您可以在 AWS GovCloud (US) 区域中部署和管理存储工作负载。</block>
+  <block id="d9c90e086fcb11b72cc6731b0bd016c2" category="paragraph">Workload Factory 引入了带有 _Codebox_ 的内置自动化。Codebox 具有以下自动化优势：</block>
+  <block id="b6f776883837709d25fc83d9d2eae9ff" category="list-text"><block ref="0a2d9952596b6031f65cb9a8bb255dc7" category="inline-link-macro-rx"></block>：提供集中式集群视图，帮助您监控 FSx for ONTAP 集群运行状况、容量和吞吐量，确定放置新卷的位置，就扩展容量和吞吐量做出明智的决策，并接收自动容量建议或启用自动容量扩展。查看历史决策点，了解算法在一段时间内的行为。</block>
+  <block id="1d7508bcb4a820ca6a9af1b9926be0e6" category="list-text"><block ref="d9074340a1cb29ae9597ad8cd166620b" category="inline-link-macro-rx"></block>：通过可配置的警告和关键事件阈值，主动监控卷读取和写入延迟性能。检测到事件时接收电子邮件或 SNS 通知。包括使用 ONTAP QoS 延迟中心指标的自动基本分析，以及针对需要更深入识别根本原因的复杂场景的可选 AI 代理分析。</block>
+  <block id="0cfceb8e193bd25b3a09ad13b62f4684" category="inline-link-macro">项目仪表板</block>
+  <block id="9fa0441dddab8e2759fb1bbfebda4faf" category="list-text"><block ref="7ff4753ab5f61ed770ba51580587dc9c" category="inline-link-macro-rx"></block>：提供跨 FSx for ONTAP 文件系统的存储消耗集中视图，以帮助您规划、评估成本并收集跨项目的存储使用情况信息。</block>
+  <block id="f2cc5430dea3ca6f885c8290f9743000" category="summary">了解 Workload Factory for EDA 中的延迟监控如何使用自动化基本分析和可选的 AI 代理分析，帮助您检测并分析 FSx for ONTAP 卷的性能问题。</block>
+  <block id="2582f7d825e8dd11c3d1bde9610079e8" category="doc">了解 Workload Factory for EDA 中的延迟监控</block>
+  <block id="0a23e284c5cb73333be9d5d9c4654092" category="paragraph">Workload Factory for EDA 中的延迟监控可帮助您主动识别和解决 FSx for ONTAP 卷中的性能瓶颈。系统使用 CloudWatch 指标监控读取和写入延迟，并提供自动化分析以帮助您了解性能问题的根本原因。</block>
+  <block id="970512b20a71933c564749139d8f05c4" category="section-title">延迟监控的工作原理</block>
+  <block id="edb6eb74dcbc71b9df975ad355262ab2" category="paragraph">延迟分析收集与您的 AWS 凭据关联的所有 FSx for ONTAP 卷上的读取和写入操作的 CloudWatch 指标。系统会根据可配置的阈值持续评估这些指标，以便及早发现性能问题。</block>
+  <block id="8e26fc12fc37a6dd21d91db15f0b8565" category="paragraph">当检测到延迟事件时，Workload Factory 会使用 ONTAP QoS 延迟中心指标自动执行基本分析，以确定主要延迟因素。对于涉及数据或群集组件的更复杂场景，您可以选择运行 AI-agent 分析，以获取详细的根本原因解释、受影响的客户端列表和具体的补救步骤。</block>
+  <block id="16956923f5dc480506015d938555f896" category="section-title">警报生成</block>
+  <block id="a22f40f5344eddca52dfbd9e7c04477a" category="paragraph">当延迟阈值和 IOPS 阈值都在配置的时间范围内的所有数据点上被突破时，将生成警报。这种双条件方法通过确保在实际负载下保持较高的延迟来减少误报。</block>
+  <block id="eda2fd03c3fdf667d0e9af1170fd863a" category="paragraph">您可以为以下项配置单独的阈值：</block>
+  <block id="eab33b8388cd0af9790bd6e68a7a303a" category="list-text">读取操作</block>
+  <block id="8c1dcfaaf71e238408215576c908846d" category="list-text">写入操作</block>
+  <block id="ec7060010ffc9939f6dbc9f011b152f8" category="list-text">警告严重程度</block>
+  <block id="6149f75997b892ec89443cf6333d50f4" category="list-text">严重严重性</block>
+  <block id="cad36f79ab035b587ca46e921753e244" category="paragraph">所有检测到的事件都会显示在延迟事件表中，如果您已配置通知，则会收到电子邮件或 Amazon SNS 通知，其中包含有关受影响卷的详细信息。</block>
+  <block id="1d43aee85825e8086bc1205dc0f6be98" category="paragraph">了解如何触发警报有助于您配置适当的阈值并解释结果。</block>
+  <block id="f8e5e7514e924e1f8218ff0dc23c7274" category="section-title">延迟分析</block>
+  <block id="69cdc81a75d33355f77651340a2405a9" category="paragraph">Workload Factory 提供两个级别的分析，以帮助您解决延迟问题。</block>
+  <block id="04e545346e660cc912f1cc98e3d20963" category="section-title">基本分析</block>
+  <block id="63c62594a6d9595ed1eadcbb4fa9323c" category="paragraph">检测到延迟事件时，Workload Factory 会使用 ONTAP QoS 延迟中心指标自动运行基本分析，以确定导致延迟的组件（例如，FlexCache、容量池、QoS 限制、磁盘、数据、集群或其他子系统）。此分析无需人工调查即可快速识别延迟源。</block>
+  <block id="2a227c17e2824f1e39758cecf15ea6de" category="paragraph">当您已将链接与 FSx for ONTAP 文件系统关联时，基本分析可用于所有延迟事件。如果没有链接，事件仍然可以被检测到，但分析提供的见解有限。</block>
+  <block id="375303ab8b27cea67479230165094eb4" category="section-title">AI 代理分析</block>
+  <block id="012eccf4e815963422623ec7dfcc0ada" category="paragraph">虽然基本分析确定了延迟源，但涉及数据或集群组件的复杂场景通常需要更深入的调查。AI 代理分析通过识别霸道卷、非最优配置或基本分析无法检测的横向扩展要求等问题，提供了更深入的故障排除。</block>
+  <block id="4af5e41eab4ba7a3d5a13e7f221144a6" category="paragraph">当您运行 AI-agent 分析时，系统提供：</block>
+  <block id="34fe26b2e09c3574ae8152b248fd249f" category="paragraph">AI 代理分析需要在 Workload Factory 设置中配置 Amazon Bedrock 模型 ARN。如果未配置 Bedrock，您仍然可以使用延迟监控和自动化基本分析。</block>
+  <block id="30f60d67f457bb040dffde52197a54da" category="section-title">相关信息</block>
+  <block id="8b7d52e40455ef775f8470316b16d26f" category="inline-link-macro">配置延迟监控</block>
+  <block id="ae731adc4c45bcc8cdf1b2ab6ac2654f" category="list-text"><block ref="ae731adc4c45bcc8cdf1b2ab6ac2654f" category="inline-link-macro-rx"></block></block>
+  <block id="020bb463ed0be3782ad9f2bc3c5cb62f" category="inline-link-macro">分析延迟问题</block>
+  <block id="eae40e392cce2ffde0132f5418e56ec0" category="list-text"><block ref="eae40e392cce2ffde0132f5418e56ec0" category="inline-link-macro-rx"></block></block>
+  <block id="6ebd25eb4c135c18dd20612e63ec5166" category="list-text"><block ref="6ebd25eb4c135c18dd20612e63ec5166" category="inline-link-macro-rx"></block></block>
+  <block id="1b885b89c317b247fe2d3d33ecf2f61f" category="summary">了解 Workload Factory for EDA 中的 Overview 仪表板如何帮助您大规模监控 FSx for ONTAP 集群运行状况、容量和吞吐量。</block>
+  <block id="e1a551f817ef75d24b9c2cd208f1653a" category="doc">了解 Workload Factory for EDA 中的 Overview 仪表板</block>
+  <block id="9e133f77006be15d6662dc0bed6de273" category="paragraph">Overview 控制面板为 IT 管理员跨多个 FSx for ONTAP 文件系统管理 EDA 工作负载提供了一个集中视图。使用它可以快速评估群集运行状况和使用情况，决定在哪里放置新卷或作业，确定移动卷或 SVM 的候选对象，并确定何时扩展容量或吞吐量。</block>
+  <block id="4ac6f0551e6084a8744c1be87906c4a1" category="paragraph">概述仪表板收集与您配置的 AWS 凭据相关联的所有 FSx for ONTAP 文件系统的 CloudWatch 指标。</block>
+  <block id="30ab11391ffa100456cac6f560454cbf" category="list-text">*集群运行状况状态*：顶部的摘要信息，突出显示整个文件系统的延迟事件、SSD 利用率和容量建议以及 ONTAP EMS 事件。</block>
+  <block id="1a6c0ac421125cd607ad727794088009" category="paragraph">它可以帮助您：</block>
+  <block id="3b26ead485aaabd4945f63cf3400c41f" category="list-text">放置新卷并重新平衡工作负载</block>
+  <block id="847ba2b1117f8f2db2b815fc7c73c605" category="list-text">规划容量或吞吐量扩展</block>
+  <block id="bbf4bc1a92c9c10651679ab50ca8e062" category="list-text">大规模监控集群健康状况</block>
+  <block id="f38b951b621386e6c909a467a2fc0d2c" category="list-text">就卷放置做出明智的决定</block>
+  <block id="26405e0e0947b4828ee6ed76d00837e9" category="list-text">识别接近容量限制的集群</block>
+  <block id="97c702b452a6c71f4f36f5402b29d8fd" category="section-title">信息板组件</block>
+  <block id="ad88be1e86f279e4dc2b817970253717" category="paragraph">集群运行状况状态提供已筛选文件系统的活动快照。仅当至少一个 FSx for ONTAP 链接与您的文件系统相关联时，才会显示此信息。</block>
+  <block id="c273f90bb18e2d345cad42a75c13525e" category="paragraph">健康状态包括以下方面：</block>
+  <block id="eea2274bcc20c5ab5c322a30dcee6258" category="list-text">*延迟*</block>
+  <block id="06ec85d7ef2499649ef42d2054ac226a" category="list-text">显示在范围内的文件系统中检测到的延迟事件数。仅当启用了延迟监控时，才能查看延迟信息。</block>
+  <block id="e0b6d15d08b6ac1bf0c9ca66512009b1" category="list-text">*SSD 容量管理*</block>
+  <block id="fae1127ef684baae2da0861b0a98b91c" category="list-text">显示 SSD 使用率超过 80% 的文件系统数量和具有活动容量建议的文件系统数量。这有助于您快速识别可能需要注意容量的文件系统。</block>
+  <block id="0e2625311ccf9f45cca827ce6c0e4bca" category="list-text">*ONTAP 事件*</block>
+  <block id="d7977f08ca83e47fe2459a0029ea1287" category="list-text">显示检测到的 EMS 事件数量，按容量、可用性和保护以及安全性和其他分类。</block>
+  <block id="79b87402abbc633ab610924741eb4961" category="paragraph">clusters 表提供了每个 FSx for ONTAP 文件系统的详细视图，按您的活动区域和 AWS 账户选择进行筛选。数据来自 CloudWatch 指标。</block>
+  <block id="cb1a870798ac2e8e385d6091379cea05" category="paragraph">使用此表可执行以下操作：</block>
+  <block id="dc6d89e2a5114daccecb6b3be64e07a2" category="list-text">识别接近容量限制的文件系统（SSD 使用列）</block>
+  <block id="52ffaddb041cdb3240b001532e14556c" category="list-text">将吞吐量需求与配置的吞吐量 SKU（吞吐量使用率 P99 列）进行比较</block>
+  <block id="9c26918e454ba2268c8c93c41218c570" category="list-text">跨多个集群跟踪性能指标</block>
+  <block id="ff552e5da914068f0d9d4064c2f6fb85" category="list-text">检查链接配置状态（关联链接列） - 每天验证连接有效性</block>
+  <block id="88b77b6c01adce036032ab7bf374a7a9" category="list-text">选择多个集群进行批量参数更新</block>
+  <block id="c6e9c9061d9167583226901e02ffb03e" category="section-title">SSD 容量管理</block>
+  <block id="dc7cc5bc43b6422ea3c7c545e1014b19" category="paragraph">概览仪表板提供智能 SSD 容量管理。</block>
+  <block id="f8ea6e988f609d0e7b256e12ea4d4718" category="section-title">管理模式</block>
+  <block id="fd46768670350478255cfec0f5a33103" category="list-text">Workload Factory 根据预定义的阈值和使用模式自动增加 SSD 容量。系统无需人工干预即可管理容量扩展。这对于首选自动化管理的环境非常理想。</block>
+  <block id="7fc12d608535759ae862e7d2838e4b46" category="list-text">Workload Factory 分析您的 SSD 使用模式并提供容量增加建议。您可以手动查看并应用建议。这使您可以完全控制容量决策，同时受益于自动化分析。</block>
+  <block id="68193c71c1c2705093bc19150355c135" category="list-text">不执行任何容量建议或自动操作。当您想要在没有系统帮助的情况下手动管理容量时，此功能非常有用。</block>
+  <block id="1b392af618a6d10bafe7d2c56de2a845" category="paragraph">当 Workload Factory 处于 Automate 或 Recommend 模式时，系统会自动为每个 FSx for ONTAP 文件系统运行容量推荐算法。该算法每 24 小时扫描一次，并确定何时建议调整 SSD 容量。</block>
+  <block id="139d803d0ff80ce2d01f46d74d6582f7" category="list-text">您会收到基于 Workload Factory 通知设置的即时通知</block>
+  <block id="7e150f354d44b3edc86020bd3bf482de" category="list-text">可以通过按上次 SSD 增加时间戳或上次 SSD 增加描述列筛选 Clusters 表来识别包含建议的文件系统</block>
+  <block id="b1c144fb181ff280716344ca0bf5b564" category="list-text">显示具有活动建议的文件系统总数</block>
+  <block id="68c65b2650d813b072f0481727b3e600" category="paragraph">该建议解释了建议的更改及其背后的原因，例如：_我们建议根据您的文件系统 SSD 使用模式增加 SSD 大小。_</block>
+  <block id="51f96e860aa2f93672b359fa0230786b" category="section-title">SSD 管理参数</block>
+  <block id="fbee093eee984e997fc12a059b094399" category="paragraph">参数控制容量管理系统如何分析 SSD 使用情况并采取相应措施：</block>
+  <block id="797016fdf74902992680096f55a3d63c" category="list-text">*阈值* (10-90%)</block>
+  <block id="75143f7b1829ffcffc0c76d6103f090a" category="list-text">触发容量建议或自动化操作的 SSD 使用百分比。例如，阈值为 80% 意味着 SSD 使用率达到 80% 时会出现建议或操作。在 Recommend 和 Automate 模式下均可用。</block>
+  <block id="7eb5fa704b3019bd0f6cd3883bbcf786" category="list-text">*回顾* (1-200 小时)</block>
+  <block id="9a4103f7e6d7d850b63cbe6a386c5186" category="list-text">用于分析历史 SSD 使用模式的时间段。更长的回顾期为容量决策提供了更多的历史背景。仅在 Automate 模式下可用。</block>
+  <block id="8d3fdec3e987ae5a2aa90e14c81ac557" category="list-text">*提前* (1-200 小时)</block>
+  <block id="00e09bedfec925ddc5d5fb54c9e8dd7b" category="list-text">用于预测未来容量需求的时间段。更长的未来时期计划未来的产能增长。仅在 Automate 模式下可用。</block>
+  <block id="233d0f7161a118f4bfe1fca3d54f5805" category="paragraph">您可以为每个文件系统单独配置这些参数，也可以使用批量编辑在多个文件系统中应用一致的设置。</block>
+  <block id="fa0b4e3f4266abe4ec93e3058cfcd2aa" category="section-title">了解容量决策点</block>
+  <block id="f2fc81162d0e5156b42fc0f47ab8be65" category="paragraph">SSD 使用情况图表显示决策点，指示何时生成容量建议或采取自动化操作。这些可视化指标可帮助您了解容量管理算法在一段时间内的行为。</block>
+  <block id="c27f88e562f3ed3c4000570673348297" category="list-text">*建议决策点*</block>
+  <block id="0b6f730b5d0a8331f863945678771e7e" category="list-text">当容量推荐算法确定需要额外的 SSD 容量时出现。如果 SSD 容量没有增加，这些点可能每 30 分钟发生一次。图表尽可能显示所有决策点，如果时间范围使单个点过于密集，则将其合并。</block>
+  <block id="153ea1a28a0f56dba57777e1680e1f76" category="list-text">*自动化决策点*</block>
+  <block id="c3bf00fc324bd1e2a5bea00dc59936c3" category="list-text">当自动化系统尝试增加 SSD 容量时出现。这些点指示自动化操作是成功还是失败。</block>
+  <block id="476a136a9f2f06a9618d514793b81269" category="paragraph">将决策点与历史 SSD 使用情况图表结合使用，以：</block>
+  <block id="8aa0b0a22cf225f503177c8f1de7df3c" category="list-text">了解需要调整容量的频率</block>
+  <block id="dc036d0aefd6c43f7e0e90f879128e16" category="list-text">评估自动化或推荐模式是否更适合您的工作负载模式</block>
+  <block id="274e06045627d8934cd9bb52e8c64f53" category="list-text">识别重复性容量限制</block>
+  <block id="38e979158d55ae25a36aba4d97b0a8b4" category="list-text">根据增长趋势规划未来的容量需求</block>
+  <block id="2814ccd9bf1ef1faffa5931e29ee7f74" category="list-text">对失败的自动化尝试进行故障排除</block>
+  <block id="0a77401b929110d42e7c36ac77c37872" category="inline-link-macro">激活 Overview dashboard</block>
+  <block id="b20e509aee340813d832ff54146a6123" category="list-text"><block ref="b20e509aee340813d832ff54146a6123" category="inline-link-macro-rx"></block></block>
+  <block id="a35e94495c93c5d785f8b1240c15be6a" category="inline-link-macro">使用 Overview 控制面板</block>
+  <block id="2cfa6ed38cd9b96055529b98595c7f05" category="list-text"><block ref="2cfa6ed38cd9b96055529b98595c7f05" category="inline-link-macro-rx"></block></block>
+  <block id="1fef93f9f92b01f7585a092a233eafbf" category="summary">了解 Workload Factory for EDA 中的项目仪表板如何帮助您监控和分析 FSx for ONTAP 文件系统和卷的项目存储使用情况。</block>
+  <block id="03d481d74c86f291f70a37bc6d99bacc" category="doc">了解 Workload Factory for EDA 中的项目仪表板</block>
+  <block id="1e7333346e2a9dbbcd3453a78f617b87" category="paragraph">Projects 仪表板可帮助 IT 管理员和项目经理观察和分析 FSx for ONTAP 文件系统和卷的项目使用情况。它提供了存储使用模式的可见性，帮助您识别资源密集型项目，跟踪成本，并在容量或性能问题影响您的 EDA 模拟之前优化存储分配。</block>
+  <block id="892ac5de0a553fb26263738c6b3ac6c0" category="section-title">项目仪表板的工作方式</block>
+  <block id="4f73e9ac2d9aa087a998162375a59080" category="paragraph">Projects 控制面板收集与您的 AWS 凭据关联的所有 FSx for ONTAP 卷的 CloudWatch 指标。您可以根据 AWS 标签创建最多五个自定义筛选器，以根据您的特定业务需求（如项目、团队或应用程序）组织和筛选数据。</block>
+  <block id="199a3f98999b1f3375557fad10f10de7" category="paragraph">控制面板可帮助您：</block>
+  <block id="82666dafa234f45cabe3625de34a5f75" category="list-text">规划容量并评估成本</block>
+  <block id="16274c963f4e10200a38134100c21a76" category="list-text">做出关于资源分配的数据驱动决策</block>
+  <block id="09aa814f8d07622a7bbdaa77dfccba3a" category="list-text">确定资源密集型项目</block>
+  <block id="2c8ae5e80e5e8a3ccc9b17cd544e5d66" category="list-text">跨项目或团队准确跟踪成本</block>
+  <block id="589db9e44f14d1b63fc7cd6c982d5c14" category="list-text">在发生问题之前优化存储分配</block>
+  <block id="4235b5cada2c2a7728609dad4574916b" category="paragraph">有关主动延迟性能监控，请参阅<block ref="9a573596af789d1f770a6210c953bdc7" category="inline-link-macro-rx"></block>。</block>
+  <block id="629d6be32a985512603216d463999725" category="section-title">收集的 CloudWatch 指标</block>
+  <block id="5020798659be7e61c823cd1d1929af36" category="paragraph">仪表板将收集并显示以下 CloudWatch 指标：</block>
+  <block id="ba2c3990ea90ebde8562339fd3ae3f6c" category="list-text">*已调配容量*：表示已调配存储容量的卷级指标。</block>
+  <block id="40124c0f60d4a6942c02d071872194c3" category="list-text">*已使用容量*：表示已使用存储的卷级指标。</block>
+  <block id="e0a528bf3321c5fe952d945ce552f608" category="list-text">*平均/最大吞吐量*：计算为指定时间段内 DataReadBytes 和 DataWriteBytes 之和的平均值或最大值。</block>
+  <block id="225e8943beeadd05eadea4ebe44b95ea" category="list-text">*平均/最大 IOPS*：计算为指定时间段内 DataReadOperations、DataWriteOperations 和 MetadataOperations 总和的平均值或最大值。</block>
+  <block id="634cc1e06136ed9a6cda032b40eab9e4" category="section-title">自定义筛选器</block>
+  <block id="ca7f05b533ea4f1ff83d68a0d8d24c46" category="paragraph">您最多可以根据 AWS 标签配置五个自定义过滤器。每个自定义过滤器都需要以下组件：</block>
+  <block id="5fde0a9e8a4014f645f905a61be8ace5" category="list-text">*筛选器标签名称*：显示在仪表板中的显示名称</block>
+  <block id="6b70b2d0c88a40e5e6bb99fc6a535e1a" category="list-text">*AWS 标记密钥名称*：资源上使用的实际 AWS 标记密钥</block>
+  <block id="bdd460f1f0de8e6e38647493ef8223c8" category="list-text">*选择类型*：单选或多选</block>
+  <block id="df82a7dd6fb4b7ea71df6f3a9f63e94d" category="paragraph">如果您没有配置任何自定义过滤器，则默认过滤器（文件系统、卷类型和时间范围）仍然可用，因此您仍然可以查看仪表板并与之交互。</block>
+  <block id="7361a183281559c3437dc1e10f08e1a2" category="section-title">AWS 标记</block>
+  <block id="f650a27526149ff56cf6d5c5e247d6e7" category="paragraph">AWS 标记是 AWS 资源的元数据。它们可以帮助您以不同的方式对 AWS 资源进行分类，例如按项目、应用程序或业务部门进行分类。</block>
+  <block id="6df24d81756653ed47affdce3456f625" category="paragraph">要有效使用自定义筛选器，请根据您的业务需求在 FSx for ONTAP 卷上配置 AWS 标记，例如，表示项目、团队或业务单元的标记。</block>
+  <block id="cfe6397044c28200ccf8b2d4634d45a3" category="paragraph">有关标记的详细信息，请参阅<block ref="3a728828042c1a731e3aa740ed780475" category="inline-link-rx"></block>和<block ref="53b3c63786d21199a28ae32477919693" category="inline-link-rx"></block>。</block>
+  <block id="b46f7b9a5f4cec130e128bd4b91daf6b" category="section-title">卷详细信息</block>
+  <block id="e77931f727dc31af32f0b877f5e13dee" category="paragraph">控制面板提供查看模式，可帮助您分析不同详细信息级别的存储指标。</block>
+  <block id="e7dd4c9a6d36b6512dda7f2c3e278b77" category="paragraph">Total 视图（默认）显示与所选筛选器匹配的所有卷的汇总指标。此视图提供整体存储性能的高级概览，显示综合容量、IOPS 和吞吐量指标。</block>
+  <block id="97f3bff322ad4528b8222b841b04855f" category="paragraph">使用此视图可以：</block>
+  <block id="fafa8edf50579b2cafa7ea0a24e46225" category="list-text">了解整体趋势</block>
+  <block id="e2c49ddc6ebfbc655dd8cbc99cb1ef54" category="list-text">规划未来容量需求</block>
+  <block id="9f48e65a04e08b0e8cf9dfe081309c3b" category="list-text">报告跨项目或跨团队的总资源消耗</block>
+  <block id="e3f5fd2f57f7a82a665af7de374483ac" category="paragraph">Volume 视图显示各个卷随时间的性能表现，显示每个指标的前 10 个卷。此视图可帮助您识别推动资源使用的特定卷，并观察其在所选时间段内的行为。</block>
+  <block id="ab3ee4ef1e3fb91ff912439bdc380f6f" category="list-text">查找性能瓶颈</block>
+  <block id="2a08e1425b31ef8a7a98d7e7fb553b0e" category="list-text">识别可能需要调整大小的卷</block>
+  <block id="9b0d7e13c4fe312ecf9dab076452c581" category="list-text">确定哪些特定项目或工作负载消耗的资源最多</block>
+  <block id="4ab07bb0982ff135ba0b0b745fd54c3f" category="paragraph">当您查看单个卷时，控制面板将显示每个指标的卷总数中的前 10 个卷：</block>
+  <block id="31cae1b23d85a9661c0183ea459afdf4" category="list-text">*卷已用容量*：显示当前已用容量最高的卷。</block>
+  <block id="18bc6b4cb32f09b1900c3e69f51a5832" category="list-text">*IOPS*：显示选定时间段内平均 IOPS 最高的卷。</block>
+  <block id="7dcd6b49daf4c25214e7996ae1eee8d3" category="list-text">*吞吐量*：显示选定时间段内平均吞吐量最高的卷。</block>
+  <block id="dc74be241689ed0826c350bb272ce442" category="paragraph">当相同的卷在多个指标中出现时，控制面板在图例中使用一致的颜色编码，以便更轻松地跟踪不同指标中的特定卷。</block>
+  <block id="a0ca5217fe1d64a7998e7a178761fd63" category="paragraph">将鼠标悬停在图形中的任何卷线上时，您可以查看：</block>
+  <block id="95b1e0c7f84855e8733c999d6968738b" category="list-text">*卷已用容量*：卷名称、该时间点的已用容量和已分配容量</block>
+  <block id="1f19490938ce8fa51ec88ea36ec23471" category="list-text">*IOPS*：卷名称、时间范围内的平均 IOPS 和时间范围内的最大 IOPS</block>
+  <block id="777214340a76e50a8115a46311c38612" category="list-text">*吞吐量*：卷名称、时间范围内的平均吞吐量和时间范围内的最大吞吐量</block>
+  <block id="efbd83d0c11ea6afcdd0d30684f3dde1" category="inline-link-macro">配置项目仪表板</block>
+  <block id="3b598c1b1d20faa144bd5aea06af5c7a" category="list-text"><block ref="3b598c1b1d20faa144bd5aea06af5c7a" category="inline-link-macro-rx"></block></block>
+  <block id="8c93925923e610151f40d554eb847d3d" category="inline-link-macro">使用项目仪表板</block>
+  <block id="ecd0a7e23a1fe6520b2f5f319a43a541" category="list-text"><block ref="ecd0a7e23a1fe6520b2f5f319a43a541" category="inline-link-macro-rx"></block></block>
+  <block id="9c2a400f16596db71684b7bf853679f6" category="inline-link-macro">了解如何激活 Overview 控制面板</block>
+  <block id="ba484746496fd986236ce05e4941b11e" category="paragraph"><block ref="b8ebfe6424e9d27bf3ad5b5b28bbc547" category="inline-link-macro-rx"></block>。</block>
+  <block id="6a95e8fe1af51766347f08a14a5010e7" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> 配置 Projects 仪表板</block>
+  <block id="ac8c955f7158cbf6e26b2fe132a5da5a" category="paragraph">配置项目仪表板以监控系统运行状况、性能和存储使用情况，使您能够有效优化 EDA 环境。</block>
+  <block id="cdf7ca0f732e877c2df79adf8b2dec38" category="inline-link-macro">了解如何配置 Projects 仪表板</block>
+  <block id="54aae42a8d9b94a669be4faf760989f4" category="paragraph"><block ref="df110d106150b671a1fd119c3817e75e" category="inline-link-macro-rx"></block>。</block>
+  <block id="679aabdd1ec95ed7b75c71ce374528d5" category="paragraph"><block ref="fb26305f25ca1288ccacde22bbaccb07" category="inline-link-macro-rx"></block>。检测到事件后，您可以<block ref="17d96e1b2696eabecce662ae85cda8e7" category="inline-link-macro-rx"></block>使用交互式图形。</block>
+  <block id="434c0bf5962496285865a6a2af2512b4" category="paragraph">使用 Workload Factory REST API 将 EDA 与其他服务（如服务门户或 Perforce Helix Core）集成。</block>
+  <block id="6c2ad847adbf8275a81d27b0041c2eeb" category="inline-link-macro">为 FSx for ONTAP 配置延迟监控</block>
+  <block id="33e8cd62c5bd2c372d74e35ddcd604c9" category="list-text"><block ref="33e8cd62c5bd2c372d74e35ddcd604c9" category="inline-link-macro-rx"></block></block>
+  <block id="96afe0475ccb7811d8305bfd735bda85" category="inline-link-macro">了解 EDA 工作负载</block>
+  <block id="56e2aab97773449521aa9af4ce274c35" category="list-text"><block ref="56e2aab97773449521aa9af4ce274c35" category="inline-link-macro-rx"></block></block>
+  <block id="717b1fcf2fa3f0bf03821258bbab9ebb" category="inline-link-macro">获取有关 EDA 的帮助</block>
+  <block id="3bae13d1a4785964d0f9047cf3c7501e" category="list-text"><block ref="3bae13d1a4785964d0f9047cf3c7501e" category="inline-link-macro-rx"></block></block>
+  <block id="55df1ea48b09b075b4b7dd39f32b38ee" category="list-text">Workload Factory 登录和帐户</block>
+  <block id="00ecefed795b538c02fb15b08d5063de" category="admonition">使用延迟监控功能也需要 AWS 凭证，该功能会收集 CloudWatch 指标用于卷性能分析。要接收延迟事件的通知，请在 Workload Factory 设置中配置通知偏好。如需为复杂延迟场景启用可选的 AI-agent 分析，还必须提供 Amazon Bedrock 模型 ARN。<block ref="9a573596af789d1f770a6210c953bdc7" category="inline-link-macro-rx"></block>。</block>
+  <block id="b6870950036e95a95fdae168dfdc709c" category="summary">激活概述仪表板，开始为您的 FSx for ONTAP 文件系统收集 CloudWatch 指标。</block>
+  <block id="c437f9e5b13280b7d49a32c00034ffa0" category="doc">在 Workload Factory 中激活 Overview 仪表板以进行 EDA</block>
+  <block id="9d3d0e67ac2074ab2c028c8f14aa12b2" category="paragraph">激活概述仪表板，开始收集 FSx for ONTAP 文件系统的 CloudWatch 指标。激活后，仪表板可集中监控群集运行状况、容量和吞吐量。</block>
+  <block id="2219f6b80cc5e00e73486326fcc8afbf" category="paragraph">在激活仪表板之前，请确保满足下列要求。</block>
+  <block id="cce78dc6ebbec7385a01f2146d6d01c8" category="section-title">后续步骤</block>
+  <block id="b7b10c1304f383232f064dc193d3492b" category="paragraph">激活控制面板后，您可以：</block>
+  <block id="84dbb7b1eccc71ff5f71a7198ff13b68" category="list-text"><block ref="2cfa6ed38cd9b96055529b98595c7f05" category="inline-link-macro-rx"></block> 监控集群运行状况和容量</block>
+  <block id="fdc13b7c9d56bd2522e96ae8d5d9ee87" category="list-text">配置 SSD 容量管理模式（Automate、Recommend 或 None）</block>
+  <block id="f872ab9156293273da8e58555b68ca2e" category="list-text">设置筛选器以专注于特定区域或 AWS 帐户</block>
+  <block id="526ad94042b150fca39290f6bef86a67" category="inline-link-macro">了解 Overview 控制面板</block>
+  <block id="91b5f8f96066d41fb5057458a69d5f81" category="list-text"><block ref="91b5f8f96066d41fb5057458a69d5f81" category="inline-link-macro-rx"></block></block>
+  <block id="d6ee3800554290c9e115d787e45dcdb5" category="summary">查看和分析延迟事件，以确定 FSx for ONTAP 卷的性能问题。使用自动化基本分析和可选的 AI 代理分析来确定根本原因和建议的补救措施。</block>
+  <block id="7c7708c4a86b73bb59e5e08ced5293bf" category="doc">分析 Workload Factory for EDA 中的延迟问题</block>
+  <block id="f93d776e20b3559d2e81217afec2301f" category="paragraph">查看检测到的延迟事件，并使用自动分析工具来识别根本原因并解决 FSx for ONTAP 卷中的性能瓶颈。</block>
+  <block id="ed960c97b9cba50c54da4a4beb0cddea" category="paragraph">在可以查看和分析延迟事件之前，您必须具有 <block ref="1a49b94c8c033bb71bcc3614a6b897ae" category="inline-link-macro-rx"></block>。</block>
+  <block id="c7091d0edc98eba35097c5fee111cbeb" category="list-text">查看延迟事件表中每个事件的信息。</block>
+  <block id="88fbfd6354324b9cdd705c761300b539" category="paragraph">基本分析可帮助您快速确定延迟问题的根本原因，而无需手动调查。</block>
+  <block id="1d75c8bd88c404ae20531903bd0c61be" category="section-title">概述选项卡</block>
+  <block id="52af9505de5b15077766d36819ff0cf8" category="paragraph">*概述* 选项卡显示自动化基本分析的结果，确定导致延迟的组件。</block>
+  <block id="90106254d1f94b759470c5feef52980a" category="section-title">随时间变化选项卡</block>
+  <block id="eb0d7435aac1126c7c337315ad2941fa" category="list-text">（可选）选择 *Over time* 选项卡以查看受影响卷的延迟趋势。</block>
+  <block id="ad0f0db54b5a3b206fdf8d52b0e6cc0f" category="list-text">如果延迟源需要更深入的调查（数据或集群场景），请运行 AI-agent 分析。</block>
+  <block id="687a036a8cac81738e9dbc9ed1f90a68" category="paragraph">AI 代理分析提供更深入的调查，以确定具体的根本原因和潜在的补救措施。</block>
+  <block id="d567e1f3ce7e05a07b8b9671d5273fc7" category="paragraph">运行 AI-agent 分析时，系统会自动刷新基本分析数据，并将其用作 AI-agent 的输入。</block>
+  <block id="5055db3a66918ab425f287fd06627fef" category="list-text">请查看 AI-agent 分析结果，包括：</block>
+  <block id="d5f97a1cb8e0382743f28559f0c6ace7" category="list-text">潜在根本原因解释</block>
+  <block id="0a3d11a9c21fb1f2a4dc021dc4a83aad" category="list-text">建议的修复步骤</block>
+  <block id="f6da12ee5ed910433c51d88e2e61a406" category="paragraph">在分析延迟问题时，请考虑以下建议：</block>
+  <block id="9a573596af789d1f770a6210c953bdc7" category="list-text"><block ref="9a573596af789d1f770a6210c953bdc7" category="inline-link-macro-rx"></block></block>
+  <block id="81bf6a81ce8716c79a737105001a37e5" category="paragraph">您必须具有 <block ref="1a49b94c8c033bb71bcc3614a6b897ae" category="inline-link-macro-rx"></block> 并且至少检测到一个延迟事件。</block>
+  <block id="a9146a550d659eddf2448c0081b1397f" category="summary">配置延迟监控阈值和通知设置，以检测和响应 FSx for ONTAP 卷的性能问题。</block>
+  <block id="571931ca54db28da90418e0e1aeccddb" category="doc">在 Workload Factory 中为 EDA 配置延迟监控</block>
+  <block id="7a2c73e3cf1de42d62db29556d94999d" category="paragraph">为读取和写入延迟配置警告和关键阈值，以监控 FSx for ONTAP 卷性能。设置可选的电子邮件或 Amazon SNS 通知，以便在检测到延迟事件时接收实时警报。</block>
+  <block id="b9425e1e278de08c5d7d32f2ec3fdf21" category="paragraph">在配置延迟监控之前，请确保满足下列要求。</block>
+  <block id="798bca0593da51c40ef2141d8e58a22c" category="paragraph">配置读取和写入操作的警告和关键阈值。系统会持续评估阈值，并在满足条件时生成警报。</block>
+  <block id="23c5453e58978700866d71c75dc41108" category="admonition">您在 EDA 中设置的延迟阈值默认应用于您的整个帐户。您还可以在 General Storage 工作负载中设置单个卷延迟阈值，这些卷设置对该卷具有优先级。在 EDA 中更新帐户级别阈值不会更改任何卷级别设置。</block>
+  <block id="acf76aff5d06c6d756bcfd4fb3b61d11" category="list-text">在 EDA 延迟配置页面中，为以下内容配置阈值：</block>
+  <block id="f90ba9f6de06599f5a0135783f0e0663" category="list-text">读取延迟（警告和严重）</block>
+  <block id="8529c5693a9a2cdc9f721a2297ceb4bf" category="list-text">写入延迟（警告和严重）</block>
+  <block id="763302f8ff688c0c89f9b68730bab872" category="list-text">每个的 IOPS 阈值</block>
+  <block id="8c7f651901d697c87ca383001e86c18c" category="list-text">评估的时间范围</block>
+  <block id="4bb380b53ae6059a8ca9f7c119e77bff" category="list-text">选择 *Apply* 以保存配置。</block>
+  <block id="879b218e7702810c61e8d5a32fdaeccd" category="paragraph">Workload Factory 开始收集与您的 AWS 凭据关联的所有 FSx for ONTAP 卷的延迟指标。指标至少每 20 分钟收集一次。任何超出配置阈值的卷都会显示在延迟事件表中。</block>
+  <block id="d7a09d452c3d476d55137e0a0eff281e" category="paragraph">配置电子邮件或 Amazon SNS 通知，以便在检测到延迟事件时接收警报。每次卷超出您配置的阈值时都会发送通知，从而实时了解性能问题。</block>
+  <block id="8fdf6d96070c398324fc1f3cd8bb44f5" category="paragraph">要启用通知，请参见 <block ref="760d5a248a4ffda4abc117648b19c119" category="inline-link-macro-rx"></block>。</block>
+  <block id="6e507b033fdf4e60c548939bdb29a926" category="paragraph">完成初始配置后，您可以根据需要编辑阈值。</block>
+  <block id="07ba6f406b4506df814952c513441ef3" category="paragraph">在配置延迟监控时，请考虑以下建议：</block>
+  <block id="408435491d63d2438d80b5935f332ff0" category="summary">为项目仪表板配置自定义筛选器，以按业务结构（如项目、团队或应用程序）组织指标。</block>
+  <block id="5d29144fbe1ed49d08e42f38228178d9" category="doc">在 Workload Factory 中为 EDA 配置项目仪表板</block>
+  <block id="291b19028abff726bcfa0339550dd60b" category="paragraph">为项目仪表板配置自定义筛选器，以根据您的业务结构（如项目、团队或成本中心）组织指标。这有助于您准确跟踪成本，识别哪些资源消耗最多容量，并就资源分配和预算规划做出明智的决策。通过将筛选器与您的组织运作方式保持一致，您可以快速访问相关数据，并提高容量规划、成本跟踪和性能监控的效率。</block>
+  <block id="8deb39fc950827761d4f7e5bbdb9f37a" category="admonition">只有第一个访问 Projects 仪表板的管理员用户才能配置、添加或删除自定义筛选器。所有其他用户，包括后续管理员，都具有对筛选器的只读访问权限。</block>
+  <block id="afc444ae6b2600c89778da329a1e6111" category="paragraph">您可以根据 AWS 标签配置最多五个自定义过滤器。每个自定义过滤器需要三个组件：过滤器标签名称、AWS 标签键名称和选择类型（单选或多选）。</block>
+  <block id="d4eb50f151a6322783f858b7c3c7303c" category="list-text">选择 *Projects*。</block>
+  <block id="070adb8a716d543e99ddc3e92bc71a25" category="list-text">对于要创建的每个自定义筛选器，请添加详细信息：</block>
+  <block id="743dd9050d7f1e882cf603d6ba11585a" category="list-text">筛选器标签名称（仪表板中的显示名称）</block>
+  <block id="228f79c9c15cb5e65a655a8273b2916f" category="list-text">AWS 标记密钥名称（资源上使用的实际标记密钥）</block>
+  <block id="d388088c299ac1d5afe4b497384ad6f8" category="list-text">选择类型（单选或多选）</block>
+  <block id="00b3890321528a91a32d0f48642d4b03" category="list-text">要在应用任何标签或筛选器后查看更改，请选择仪表板上的刷新图标。</block>
+  <block id="28bcfd5334aa4e7f2abb8e7d84151683" category="paragraph">应用这些标签后，Workload Factory 将开始收集和显示相关 CloudWatch 指标。您的仪表板成为一个动态工具，用于根据您的组织需求组织、跟踪成本和筛选资源。</block>
+  <block id="57ba2727dd56ad729929975ac4544628" category="inline-link-macro">了解 Projects 仪表板</block>
+  <block id="393c0c1ecdbc9253df9e2224ce340393" category="list-text"><block ref="393c0c1ecdbc9253df9e2224ce340393" category="inline-link-macro-rx"></block></block>
+  <block id="830b8c7d4b87c3891c9850421339be6d" category="summary">使用概述仪表板监控集群运行状况，查看容量建议，管理 SSD 容量设置，并分析 FSx for ONTAP 文件系统的性能趋势。</block>
+  <block id="79181b2c6ed46060150e77e4602bc886" category="doc">使用 Workload Factory 中的 Overview 仪表板进行 EDA</block>
+  <block id="3b5ede3b2845f322b52add440c0d07f9" category="paragraph">使用概览仪表板监控整个 FSx for ONTAP 文件系统的集群运行状况和容量。筛选数据、查看容量建议、管理 SSD 容量设置并分析性能趋势，以便就卷放置和容量扩展做出明智的决策。</block>
+  <block id="f4d32e19fbe53c2c3a060145a3cb089e" category="inline-link-macro">已激活 Overview dashboard</block>
+  <block id="b989d81a69fe7883dca4d1012f53d338" category="paragraph">您必须具有 <block ref="38c0848a99095f730ae7166b7cd5884e" category="inline-link-macro-rx"></block>，然后才能使用它来监控文件系统。</block>
+  <block id="e8f3159a468f02961bca7416aa632c34" category="list-text">使用可用的筛选器来缩小视图范围：</block>
+  <block id="d342482acd33d7552071f729806f7f08" category="list-text">*AWS 账户*：按与您配置的凭据关联的一个或多个 AWS 账户进行筛选</block>
+  <block id="b6c7799b0c3cb63df1897b6e33e5ffe9" category="list-text">*凭据*：如果配置了多个 AWS 凭据，请按特定 AWS 凭据进行筛选</block>
+  <block id="dd10257a52cc4af5c67ff37ab0bb4d74" category="list-text">*区域*：按一个或多个 AWS 区域筛选</block>
+  <block id="fb3123e7d905f809c3bdf82e3ceca6af" category="section-title">查看集群运行状况状态</block>
+  <block id="c25f90f05d993001b74961b028d011a1" category="paragraph">在控制面板的顶端，会显示已过滤文件系统的运行状况和活动的快照。仅当至少一个 FSx for ONTAP 链接与您的文件系统相关联时，才会显示此信息。</block>
+  <block id="7da261fafbc98c685b2c0c780ccdbcf1" category="paragraph">集群运行状况状态包括以下关键领域：</block>
+  <block id="ac97fe213f96cc9db6b4ee38d70f798b" category="list-text">*延迟*：检测到的延迟事件数量</block>
+  <block id="250cb0358f46fe26f5f0eaa93ff565d5" category="list-text">*SSD 容量模式*：SSD 利用率状态和具有活动容量建议的文件系统</block>
+  <block id="a51f6183fddbec434723cff9a6cb22f0" category="list-text">*ONTAP 事件*：按类别（容量、可用性和保护、安全性和其他）划分的 EMS 事件数量</block>
+  <block id="c569953f651916e8d6fb2a2e26996486" category="list-text">查看控制面板顶部的集群运行状况状态。</block>
+  <block id="45cd3072594a40004f1648f957b11b4f" category="list-text">要查看延迟事件：</block>
+  <block id="9bab24fe4c951c13841b658922a21a8b" category="list-text">选择 *Review* 以导航到 *Latency* 选项卡</block>
+  <block id="d88a1f1774fe796edce9fbdb30450768" category="list-text">如果未配置延迟监控，请选择 *Configure* 设置延迟阈值</block>
+  <block id="3fc40acdeffa85e640e04decb4a3c8a1" category="paragraph">有关延迟监控的详细信息，请参阅 <block ref="9fa375caf288330dba08fd0144ac3746" category="inline-link-macro-rx"></block>。</block>
+  <block id="fc28c48860928b711f31c63cbbeac8d0" category="list-text">要查看 FSx for ONTAP 文件系统的 ONTAP 事件，请选择*查看*。</block>
+  <block id="b89294c44923d00aeca4413b78b17341" category="inline-link-macro">ONTAP CLI 文档</block>
+  <block id="1c9d8ee06541dbbb5c46a2f2dcb0188e" category="paragraph">ONTAP 事件视图卡按类别（容量、可用性和保护以及安全性和其他）显示 EMS 事件的数量。有关监测的 EMS 事件的完整列表，请参见 <block ref="95232132a00f2412cfd89d25359e73da" category="inline-link-macro-rx"></block>。</block>
+  <block id="b8c00318f797849269641da1be81d959" category="paragraph">Workload Factory 自动为每个 FSx for ONTAP 文件系统运行容量推荐算法。您可以通过筛选 Clusters 表来识别具有容量建议的文件系统。</block>
+  <block id="d33ac222baabd8a5273563fe2a419ee3" category="list-text">在 *Clusters* 表中，按 *Last SSD increase timestamp* 或 *Last SSD increase description* 列进行筛选。</block>
+  <block id="a218720ad1764a3566691dfa57178ccf" category="paragraph">包含容量建议的文件系统显示在表格顶端。</block>
+  <block id="ec249c58f3b3eb7688626779c92fc2ea" category="list-text">在表格中选择一个文件系统名称以打开它并查看建议。</block>
+  <block id="76a0ca3e805dbf2778413ce26855f65b" category="paragraph">该图还显示推荐决策点和自动化决策点（如果启用了自动化模式）。将鼠标悬停在任何决策点上，以查看此时有关容量建议或自动化操作的详细信息。</block>
+  <block id="37b5b20fd94de2275a255ae79e7ac8f0" category="list-text">要应用推荐，请按照推荐消息中提供的指导进行操作。</block>
+  <block id="95138c66b91ee03084dfba9068536d5e" category="section-title">更改 SSD 管理模式</block>
+  <block id="9f4aa5d2e4e86680927fc296364f55f8" category="paragraph">更改单个文件系统的 SSD 容量管理模式，以控制是否需要手动建议或自动扩展容量。</block>
+  <block id="75bea9328c43d21648ead08a87bf10a7" category="paragraph">SSD 管理模式包括：</block>
+  <block id="0691cfb7cd3c9ba639721e8f1009e52f" category="list-text">*自动*：根据预定义的阈值自动增加 SSD 容量</block>
+  <block id="6b57222b0c56ec9d17ebe5bd0559e407" category="list-text">*推荐*：接收您手动查看和应用的容量建议</block>
+  <block id="c0b8684a43b1fa6e9f8f11645a25c575" category="list-text">*None*：无容量建议或自动操作</block>
+  <block id="1265c45931617f8276c61e909a9ca008" category="paragraph">如果选择 Automate 模式，则可以配置 Threshold、Lookback 和 Ahead 参数，以控制容量管理系统如何分析 SSD 使用情况并做出自动化决策。如果选择 Recommend 模式，则只能配置 Threshold 参数。</block>
+  <block id="aabee2ded4098c6bf74ef47a9d869f14" category="list-text">*阈值* (10-90%)：触发容量建议或自动化操作的 SSD 使用百分比</block>
+  <block id="e2ac4d7ef432e15e5c103e31a0b2f9cf" category="list-text">*Lookback* (1-200 小时)：用于分析历史 SSD 使用模式的时间段</block>
+  <block id="773c50099421b3183829965f31e9419f" category="list-text">*提前* (1-200 小时)：用于预测未来产能需求的时间段</block>
+  <block id="6d8ccfb06da581a2d86feacefa3b4869" category="inline-image-macro">操作菜单图标</block>
+  <block id="c9eecdb0eb0ca75174ea4d40e628f365" category="list-text">在 Clusters 表中找到文件系统名称。在其旁边，打开 <block ref="db26b5e8c520e1d883813594c799d7f7" category="inline-image-macro-rx" type="image"></block> 并选择 *更改 SSD 容量管理*。</block>
+  <block id="b689124bbd04a08329d8f616990fa06d" category="list-text">选择您的首选模式：</block>
+  <block id="627b9e640f1785bd7be5aff9d8741dbb" category="list-text">*None*：禁用容量管理</block>
+  <block id="496444b8d58f48ae9fb24aa5598a769e" category="list-text">*推荐*：为推荐分析设置 Threshold 参数</block>
+  <block id="e997410074a60221c4db923d26db9751" category="list-text">*Automate*：为自动容量扩展设置 Threshold、Lookback 和 Ahead 参数</block>
+  <block id="784896ec6c955c85079b2d1d64942d41" category="paragraph">文件系统立即使用新模式。如果选择"推荐"或"自动化"，系统将使用配置的参数进行容量分析和决策。</block>
+  <block id="3dea2cb2632e143a32d4bed1ffd3f529" category="section-title">批量编辑 SSD 管理参数</block>
+  <block id="926b4d933ae1585e3743dd4abed22a66" category="paragraph">同时调整多个文件系统的 SSD 容量管理参数，以在群集中应用一致的设置。</block>
+  <block id="52a98bdb03909a35ffb977120e61a393" category="paragraph">选择多个文件系统进行批量编辑时：</block>
+  <block id="40cd894006f5e1bab1c91fc0cb340bf0" category="list-text">如果所有选定的文件系统具有相同的参数值，则这些值在编辑对话框中显示为默认值</block>
+  <block id="f7cf43c095a54eebd8a941b76f91053c" category="list-text">如果任何选定的文件系统处于 None 模式，则在对话框中填充默认值</block>
+  <block id="4d6c46a1be81647fb17efde513e4d6b8" category="list-text">如果所选文件系统的参数值不同，则在对话框中填充默认值</block>
+  <block id="cc009bfb1b3b40af528a54a164d8b953" category="list-text">从 *概述* 选项卡中，选择要在表中编辑的文件系统。</block>
+  <block id="8cd7391e66f29fd726ffdf9a59961f54" category="admonition">您可以选择单个文件系统，也可以使用标题复选框来选择所有可见的文件系统。</block>
+  <block id="b1d2239c82d829e54a9ea5651662da17" category="list-text">选择表上方的 *Change SSD capacity management*。</block>
+  <block id="b97c770bb654f2ef0b93eb759a99c159" category="list-text">选择您的首选模式。</block>
+  <block id="c3c051399d43b90a41f5b4085ef45788" category="list-text">在编辑对话框中，根据需要调整阈值、回溯和前进参数。</block>
+  <block id="43c2e4748a7a87eb44a6cb86329b0750" category="paragraph">每个参数字段都包含一个工具提示，描述其目的和有效范围。该对话框根据您的选择显示当前值或默认值。</block>
+  <block id="3f254e874f94d9cc6daffdbea2c76012" category="list-text">选择 *Apply* 将更改应用于所有选定的文件系统。</block>
+  <block id="87163b97740368f6147eaa72bca1608a" category="paragraph">将更新所有选定文件系统的参数。处于 Recommend 或 Automate 模式的文件系统会立即使用新参数进行容量分析和决策。</block>
+  <block id="84a7874f129070a914f70dd3d70a6716" category="section-title">分析容量趋势和决策点</block>
+  <block id="452ce32deefedd3d20e8c210efca65d2" category="paragraph">使用 SSD 使用情况图表来了解容量行为随时间的变化，并识别容量管理模式。</block>
+  <block id="4dbca2bab9fb0222adee0d079e0d2127" category="paragraph">图表上的决策点表示何时：</block>
+  <block id="0db031b7f1f975d91c716c7b47a4eaf3" category="list-text">*推荐决策点*：容量推荐算法确定需要额外的 SSD 容量。如果 SSD 容量没有增加，这种情况可能每 30 分钟发生一次。</block>
+  <block id="9c655904bd0e04ac0ba04bb9ed012d78" category="list-text">*自动化决策点*：自动化系统试图增加 SSD 容量。这些点指示操作是成功还是失败。</block>
+  <block id="322cceacdd52c951c88a1d93df7f0dd8" category="list-text">在 *概述* 选项卡中，在表中选择一个文件系统名称。</block>
+  <block id="c7967065af6ac7703ee14f60f2812ccb" category="list-text">查看显示历史容量趋势的 SSD 使用情况图。</block>
+  <block id="6f6089a81e1a8064861733b4969654d6" category="list-text">选择不同的时间范围以查看不同时期的容量行为。</block>
+  <block id="8d33ce28efafbfe7600930c556bcfd55" category="list-text">将鼠标悬停在图表上的决策点上，可查看特定时刻的建议或自动化操作的详细信息。</block>
+  <block id="4d43a6d1e695bf0a99e5bc33d3ca3fda" category="list-text">使用图表中的见解：</block>
+  <block id="e307894bdae8efc4f4fdacf666cf2573" category="section-title">使用集群表</block>
+  <block id="2a6dc3e215954d784e0fad600db4c43e" category="paragraph">clusters 表提供了每个 FSx for ONTAP 文件系统的详细视图以及性能和使用指标。</block>
+  <block id="88dc1144edaa697995919551780b6e93" category="list-text">在 *概述* 选项卡中，查看集群表。</block>
+  <block id="8e6be07248fc78ed27f8d01305999436" category="list-text">使用搜索框按名称查找特定文件系统。</block>
+  <block id="692fa05a7000ba02729e6f466571ba2b" category="list-text">选择列标题以对数据进行排序。</block>
+  <block id="06a57d9cb1c2ba70fc4222d27e62067b" category="list-text">使用 *SSD 使用情况* 来识别接近容量限制的文件系统。</block>
+  <block id="0cb19f95e4c129ad241c7ecbba16421a" category="list-text">使用 *吞吐量使用率 (P99)* 将吞吐量需求与配置的吞吐量 SKU 进行比较。</block>
+  <block id="5d9b4714a7a0165dd3acdabe8fbfec83" category="paragraph">将鼠标悬停在吞吐量列标题上以获取计算详细信息。</block>
+  <block id="c5fbe288f3a29e2574124940a06509ca" category="list-text">要自定义列，请选择列设置图标并选择要显示的列。</block>
+  <block id="35b3a35f3ecc34588b8e96f244fd4a40" category="list-text">要导出数据，请选择导出图标以下载 CSV 文件。</block>
+  <block id="97edac0f494f26b7cf4c816f6bb1ae11" category="list-text">要执行批量操作，请使用复选框选择多个文件系统，然后选择 *编辑参数*。</block>
+  <block id="b2aeb761bc232400fd3df8f389115970" category="paragraph">使用概览控制面板时，请考虑以下建议：</block>
+  <block id="9bd5180502491de23c0440e89ab9a92d" category="list-text">*定期监控*：定期检查仪表板，以便在趋势成为问题之前识别它们。</block>
+  <block id="3750fdc2a9a668c13ca2e4e74624a749" category="list-text">*设置适当的阈值*：根据您的工作负载模式和容量规划偏好配置 SSD 管理阈值。</block>
+  <block id="0734af016893f7957fbac97ba51079d9" category="list-text">*有效使用过滤器*：将区域和帐户过滤器组合起来，专注于基础设施的特定子集。</block>
+  <block id="7fdb1bd2091944ecfd776dd4c28de6df" category="list-text">*及时查看建议*：按上次 SSD 增加时间戳或描述过滤集群表，以识别具有容量建议的文件系统。审查这些建议并采取行动，以防止容量限制。</block>
+  <block id="d78a2add44e4ba60b28e8e19d14d9f5e" category="list-text">*选择正确的模式*：当您想要控制容量决策时，请使用 Recommend 模式，或者使用 Automation 模式进行免提管理。</block>
+  <block id="fa0a8f5f3f5930dd398d7bc64cac0c7b" category="list-text">*监控决策点*：定期查看容量图上的决策点，以了解算法行为，并验证设置是否符合您的需求。</block>
+  <block id="5a0d2514d6e71270ef7be826a016140b" category="list-text">*利用批量编辑*：管理多个文件系统时，使用批量参数编辑来维护一致的容量管理策略。</block>
+  <block id="1fa1c236c7c4e85b71969a980c4956d3" category="summary">使用 Projects 仪表板监控存储使用情况，按项目或团队过滤数据，并分析卷性能以优化资源分配。</block>
+  <block id="dcc687e70127f35861ac1fa0778b7f6a" category="doc">使用 Workload Factory 中的 Projects 仪表板进行 EDA</block>
+  <block id="4c7d2551f52769c250f9fab0a6289702" category="paragraph">使用 Projects 仪表板监控 FSx for ONTAP 文件系统和卷的存储使用情况。按项目、团队或应用程序过滤数据，并分析汇总和单个卷性能，以便就容量规划和资源优化做出明智的决策。</block>
+  <block id="3a42e7d77c98eadb4829e0fd27cf4e82" category="inline-link-macro">已配置的自定义过滤器</block>
+  <block id="53f11ec9607ad6fab240d54051d120a3" category="paragraph">您应该拥有 <block ref="67b28fbfe439f0cd0c20d0391b336e4b" category="inline-link-macro-rx"></block> 来访问 Projects 仪表板。如果您尚未配置自定义筛选器，您仍然可以使用默认筛选器（文件系统、卷类型和时间范围）。</block>
+  <block id="285011d26b49da65c520f3b46f379e77" category="paragraph">您可以使用默认筛选器和您配置的任何自定义筛选器的组合来筛选仪表板上显示的信息。</block>
+  <block id="35d5788955b24565bda0cc3b7a05c1eb" category="list-text">从可用选项中选择要应用的筛选器：</block>
+  <block id="bc6ce3b77e237982da0bf7efc9592a11" category="list-text">默认筛选器（文件系统、卷类型、时间范围）</block>
+  <block id="73de028fbf0511151517cc094b13f1fd" category="list-text">您配置的任何自定义筛选器</block>
+  <block id="894a744c3b5a0e31b918c1a6cb8beebb" category="list-text">选择刷新图标以根据筛选器选择更新仪表板信息。</block>
+  <block id="5e17404dcc73fba76b9c1b4d1e91ee24" category="section-title">查看聚合卷指标</block>
+  <block id="c65020059f873181c54a9da47d36644e" category="paragraph">"总计"视图显示与所选筛选器匹配的所有卷的汇总指标。</block>
+  <block id="917d8665b0a19f0c6ca2d8c6ffcebc0b" category="list-text">在 *Project* 选项卡中，确保选择了 *Total* 选项卡（这是默认视图）。</block>
+  <block id="0edc759aed0aa13d642a5fcc5c6b439f" category="list-text">查看显示的指标：</block>
+  <block id="c08aa51f5dd683385bd6183a6a29ba37" category="list-text">跨所有卷的总容量</block>
+  <block id="5cf38d2339ecd95ae611864d1f2b32cc" category="list-text">聚合 IOPS</block>
+  <block id="a7b3fe4db7fb9963d4534f547ad0b7b1" category="list-text">聚合吞吐量</block>
+  <block id="b28f5915c68158c380e1db9a2f5837b0" category="list-text">使用此视图了解总体趋势并规划未来的容量需求。</block>
+  <block id="d53386b0691befba6e69a068093a0f4e" category="section-title">查看单个卷性能</block>
+  <block id="fa85c863fbfa45e42861e023fb56482d" category="paragraph">Volume 视图显示各个卷随时间的性能表现，显示每个指标的前 10 个卷。</block>
+  <block id="b2880e7bb61e946ab1fef7540da55d35" category="list-text">在 *Project* 选项卡中，选择 *Volume* 选项卡。</block>
+  <block id="641e309b6e1c47b2582f337f287f7c96" category="list-text">查看卷指标：</block>
+  <block id="8ba19ef5affd20c9df5744d67da98231" category="list-text">*卷已用容量*：显示当前已用容量最高的卷</block>
+  <block id="1a21640b898e08223523a18355209291" category="list-text">*IOPS*：显示选定时间段内平均 IOPS 最高的卷</block>
+  <block id="a1f09b2ba4cb89801fe2d81958d31299" category="list-text">*吞吐量*：显示所选时间段内平均吞吐量最高的卷</block>
+  <block id="9a721ee972e7d384ecc5b694bd5f09c1" category="list-text">将鼠标悬停在图形中的任何卷线上以查看详细信息：</block>
+  <block id="d012736c3cac6b88455b00f2d12ffe55" category="list-text">使用图例来识别特定的卷。当相同的卷出现在多个指标中时，仪表板使用一致的颜色编码，以便更轻松地跟踪卷。</block>
+  <block id="404e25100ef1045c5e6af3fdd0c1eba6" category="paragraph">这些交互式数据可帮助您：</block>
+  <block id="30ea3d0cec2833175017691c23c53af0" category="list-text">分析卷性能模式</block>
+  <block id="d73a9cdf3a6e29141fce2bc9f125bb07" category="list-text">识别潜在瓶颈</block>
+  <block id="e40b939fb972e0ff389ce79fb15fca8a" category="list-text">查找可能需要调整大小的卷</block>
+  <block id="f62ae674df132e5f97f87c3204876222" category="paragraph">使用项目仪表板时，请考虑以下建议：</block>
+  <block id="513968dc3eeb639c3ddeee3c4aac6967" category="list-text">*策略性地组合过滤器*：使用多个过滤器一起回答有关资源使用的具体业务问题。</block>
+  <block id="a9aeb15fa23ed8a62e0456923b63010f" category="list-text">*比较视图*：同时使用 Total 和 Volume 视图——Total 用于规划，Volume 用于故障排除。</block>
+  <block id="902d9a8c0dd7d6709dcba0746e055e08" category="list-text">*随时间跟踪*：使用不同的时间范围来了解性能模式是正常变化还是指示趋势。</block>
+  <block id="2a52fb0f6ee480cba21b7a07991dbf61" category="list-text">*文档基线*：记录卷的正常性能水平，以便快速识别异常。</block>
+  <block id="80a6d2fa6720dd17d46d9ba1715fdfd5" category="list-text">*根据洞察采取行动*：在问题影响工作负载之前，使用卷性能数据就资源分配、正确调整或优化做出主动决策。</block>
+  <block id="10836e9060848be17a14b99fc485975e" category="paragraph">Workload Factory 创建项目的新克隆，该克隆将作为新项目显示在"项目"页面上。</block>
+  <block id="92ee6e4d72d15689a675017ce0db2fa1" category="section-title">2026 年 5 月 31 日</block>
 </blocks>

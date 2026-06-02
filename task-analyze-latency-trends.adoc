@@ -17,7 +17,7 @@ summary: 使用交互式延迟图来分析一段时间内的卷延迟趋势，�
 
 == 开始之前
 
-您必须具有 link:task-monitor-latency.html["已配置延迟监控"] 并且至少检测到一个延迟事件。
+您必须具有 link:task-configure-latency-monitoring.html["已配置延迟监控"] 并且至少检测到一个延迟事件。
 
 
 

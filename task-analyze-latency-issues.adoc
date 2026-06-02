@@ -1,0 +1,144 @@
+---
+sidebar: sidebar 
+permalink: task-analyze-latency-issues.html 
+keywords: latency analysis, analyze latency, latency events, root cause analysis, QoS delay center, AI-agent analysis, latency troubleshooting, volume latency, basic analysis, affected clients, remediation steps 
+summary: 查看和分析延迟事件，以确定 FSx for ONTAP 卷的性能问题。使用自动化基本分析和可选的 AI 代理分析来确定根本原因和建议的补救措施。 
+---
+= 分析 Workload Factory for EDA 中的延迟问题
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+查看检测到的延迟事件，并使用自动分析工具来识别根本原因并解决 FSx for ONTAP 卷中的性能瓶颈。
+
+
+
+== 开始之前
+
+在可以查看和分析延迟事件之前，您必须具有 link:task-configure-latency-monitoring.html["已配置延迟监控"]。
+
+
+
+== 查看延迟事件
+
+延迟事件表提供了过去 72 小时内检测到的所有警告和关键事件的集中视图。
+
+.关于此任务
+* 仅显示每个卷的最新违规行为。如果某个卷经历了多次违规，则仅显示最近的事件。
+* 事件将在 72 小时后自动删除。
+* 最多显示 200 个事件。随着新事件的添加，旧事件将被删除。
+* 即使没有链接与文件系统关联，也会显示事件。查看基本分析详细信息和运行 AI 代理分析需要链接。
+
+
+.步骤
+. 使用以下任一方式登录 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主机体验"^]。
+. 选择菜单 image:workloads-menu-icon.png["汉堡菜单图标"]，然后选择 *EDA*。
+. 选择 *Latency* 选项卡。
+. 查看延迟事件表中每个事件的信息。
+. 要查看延迟事件的详细信息，请在 *Severity* 列中选择该事件。这将打开该事件的延迟分析面板。
+. 要对表格进行排序，请选择任意列标题。默认情况下，将首先显示按时间排序的关键事件，然后显示按时间排序的警告事件。
+. 要关闭一个或多个事件，请在每个事件旁边选择 image:icon-action.png["操作菜单图标"] *Dismiss*。
+. 要向表中添加列，请选择 image:column-icon.png["列图标"]，选择列，然后选择 *Apply*。
+. 要分析一段时间内的延迟趋势，请选择一个事件以打开延迟分析面板。使用 *Over time* 选项卡查看交互式延迟图。有关详细信息，请参阅 link:task-analyze-latency-trends.html["分析延迟趋势"]。
+
+
+
+
+== 分析延迟事件
+
+基本分析可帮助您快速确定延迟问题的根本原因，而无需手动调查。
+
+
+
+=== 延迟分析面板
+
+在 *严重性* 列中选择一个延迟事件，以打开该事件的延迟分析面板。该面板包括提供延迟事件不同视图的选项卡：
+
+* *概述*：显示基本分析结果，显示哪个组件导致了延迟
+* *随着时间的推移*：显示具有历史数据的交互式延迟图
+
+
+
+
+==== 概述选项卡
+
+*概述* 选项卡显示自动化基本分析的结果，确定导致延迟的组件。
+
+如果配置了 Amazon Bedrock 模型 ARN，*概述*选项卡还包括一个选项，用于对数据和群集场景运行 AI 代理分析。如果未配置 Bedrock，则选项卡将显示指向特定文件系统的 Storage workloads 配置页面的链接，您可以在其中配置 Bedrock 访问权限。
+
+
+
+==== 随时间变化选项卡
+
+*Over time* 选项卡显示一个交互式延迟图表，显示受影响卷随着时间推移的 CloudWatch 延迟指标。该图显示了读取或写入延迟，具体取决于触发事件的警报类型。您可以选择不同的时间范围（1H、3H、12H、24H、72H）来查看不同时间段的延迟行为。
+
+有关使用图形的详细说明，请参见 link:task-analyze-latency-trends.html["分析延迟趋势"]。
+
+
+
+=== 步骤
+
+. 在 *延迟* 选项卡中，找到要分析的事件。
+. 在 *Severity* 列中，选择一个延迟事件以打开该事件的分析面板。
++
+如果没有链接与文件系统关联，则会显示提示，要求您将链接与受影响的文件系统关联。选择提示以重定向到该文件系统的链接设置页面。
+
+. 查看 *Overview* 选项卡以了解基本分析结果并识别延迟源。
+. （可选）选择 *Over time* 选项卡以查看受影响卷的延迟趋势。
+. 如果延迟源需要更深入的调查（数据或集群场景），请运行 AI-agent 分析。
+
+
+
+
+== 运行 AI-agent 分析
+
+AI 代理分析提供更深入的调查，以确定具体的根本原因和潜在的补救措施。
+
+.开始之前
+在 Workload Factory 设置中配置 Amazon Bedrock 模型 ARN，请参见link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/requirements-knowledge-base.html#basic-genai-requirements["基本 GenAI 要求"^]。
+
+.关于此任务
+运行 AI-agent 分析时，系统会自动刷新基本分析数据，并将其用作 AI-agent 的输入。
+
+.步骤
+. 在 *延迟* 选项卡中，找到要分析的事件。
+. 在 *Severity* 列中，选择一个延迟事件以打开该事件的分析面板。
++
+如果没有链接与文件系统关联，则会显示提示，要求您将链接与受影响的文件系统关联。选择提示以重定向到该文件系统的链接设置页面。
+
+. 查看 *Overview* 选项卡以了解基本分析结果并识别延迟源。
+. 如果延迟源被识别为数据或集群，请选择 *分析* 以运行 AI-agent 分析。
+. 请查看 AI-agent 分析结果，包括：
++
+** 潜在根本原因解释
+** 受影响的 EC2 客户端列表
+** 建议的修复步骤
+
+
+. 实施建议的修正步骤以解决延迟问题。
+. 修复后，监控延迟事件表以验证问题已解决。
+
+
+
+
+== 最佳实践
+
+在分析延迟问题时，请考虑以下建议：
+
+* *监控趋势*：定期查看延迟事件表，以识别可能指示潜在配置问题的模式或反复出现的问题。
+* *战略性地使用 AI 代理分析*：对基本分析推荐的数据和集群场景运行 AI 代理分析。AI 代理分析为需要详细故障排除的复杂性能问题提供更深入的见解。
+* *审查被驳回的事件*：定期审查事件被驳回的原因，以确定阈值调整或基础设施改进的机会。
+
+
+有关分析延迟趋势的最佳实践，请参见 link:task-analyze-latency-trends.html#graph-interpretation["图形解释"]。
+
+
+
+== 相关信息
+
+* link:learn-latency-monitoring.html["了解延迟监控"]
+* link:task-configure-latency-monitoring.html["配置延迟监控"]
+* link:task-analyze-latency-trends.html["分析延迟趋势"]
+

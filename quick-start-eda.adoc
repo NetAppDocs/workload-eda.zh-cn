@@ -42,25 +42,35 @@ link:requirements-eda.html["了解更多关于EDA要求的信息"^]。
 启用概述仪表板以监控 FSx for ONTAP 集群的运行状况、容量和吞吐量。接受同意提示，允许 Workload Factory 开始收集 CloudWatch 指标。
 
 [role="quick-margin-para"]
-link:task-use-overview-dashboard.html["了解如何启用 Overview 控制面板"^]。
+link:task-activate-overview-dashboard.html["了解如何激活 Overview 控制面板"^]。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"] 配置 Project 仪表板
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"] 配置 Projects 仪表板
 [role="quick-margin-para"]
 配置项目仪表板以监控系统运行状况、性能和存储使用情况，使您能够有效优化 EDA 环境。
 
 [role="quick-margin-para"]
-link:task-configure-dashboard.html["了解如何配置 Project 仪表板"^]。
+link:task-configure-project-dashboard.html["了解如何配置 Projects 仪表板"^]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["六"] 为 ONTAP 延迟分析配置 FSx
 [role="quick-margin-para"]
 设置延迟阈值，以在影响模拟运行时间之前主动识别和解决性能问题。配置警告和关键警报，设置电子邮件或 SNS 通知以接收实时警报，利用自动化基本分析，并可选择通过配置 Amazon Bedrock 模型 ARN 为复杂场景启用 AI 代理分析。
 
 [role="quick-margin-para"]
-link:task-monitor-latency.html["了解如何配置延迟监控"^]。检测到事件后，您可以link:task-analyze-latency-trends.html["分析延迟趋势"^]使用交互式图形。
+link:task-configure-latency-monitoring.html["了解如何配置延迟监控"^]。检测到事件后，您可以link:task-analyze-latency-trends.html["分析延迟趋势"^]使用交互式图形。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png["七"] 与其他服务集成
 [role="quick-margin-para"]
-使用工作负载工厂 REST API 将 EDA 与其他服务（例如服务门户或 Perforce Helix Core）集成。
+使用 Workload Factory REST API 将 EDA 与其他服务（如服务门户或 Perforce Helix Core）集成。
 
 [role="quick-margin-para"]
 link:integrate-perforce.html["了解如何将 EDA 与 Perforce 集成"^]。
+
+
+
+== 接下来会发生什么？
+
+* link:task-configure-latency-monitoring.html["为 FSx for ONTAP 配置延迟监控"]
+* link:task-configure-project-dashboard.html["配置项目仪表板"]
+* link:learn-eda-workloads.html["了解 EDA 工作负载"]
+* link:get-help-eda.html["获取有关 EDA 的帮助"]
+

@@ -29,18 +29,30 @@ sidebar:
       url: "/quick-start-eda.html"
   - title: EDA 存储概述
     entries:
-    - title: 管理 EDA 存储操作
+    - title: 了解 Overview 控制面板
+      url: "/learn-overview-dashboard.html"
+    - title: 激活 Overview dashboard
+      url: "/task-activate-overview-dashboard.html"
+    - title: 使用 Overview 控制面板
       url: "/task-use-overview-dashboard.html"
   - title: FSx for ONTAP 延迟分析
     entries:
-    - title: 监控 FSx for ONTAP 卷延迟
-      url: "/task-monitor-latency.html"
+    - title: 了解延迟监控
+      url: "/learn-latency-monitoring.html"
+    - title: 配置延迟监控
+      url: "/task-configure-latency-monitoring.html"
+    - title: 分析延迟问题
+      url: "/task-analyze-latency-issues.html"
     - title: 分析延迟趋势
       url: "/task-analyze-latency-trends.html"
   - title: 项目使用情况分析
     entries:
-    - title: 分析项目存储使用情况
-      url: "/task-configure-dashboard.html"
+    - title: 了解 Projects 仪表板
+      url: "/learn-project-dashboard.html"
+    - title: 配置项目仪表板
+      url: "/task-configure-project-dashboard.html"
+    - title: 使用项目仪表板
+      url: "/task-use-project-dashboard.html"
   - title: 使用 Perforce 集成
     entries:
     - title: 了解 Perforce 集成

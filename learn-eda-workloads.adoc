@@ -48,7 +48,7 @@ EDA 中的持续集成和持续部署 (CI/CD) 是为软件构建者提供的快�
 
 == 使用 Workload Factory Codebox 实现自动化
 
-Workload factory 通过 _Codebox_ 引入了内置自动化功能。Codebox 提供以下自动化优势：
+Workload Factory 引入了带有 _Codebox_ 的内置自动化。Codebox 具有以下自动化优势：
 
 * *代码片段生成*：在资源创建期间生成基础设施即代码 (IaC) 片段，从而实现与现有编排工作流的无缝集成。
 * *基础设施即代码辅助工具*：Codebox 是一个基础设施即代码 (IaC) 辅助工具，可帮助开发人员和 DevOps 生成代码以执行 Workload Factory 支持的任何操作。
@@ -76,7 +76,6 @@ Workload factory 通过 _Codebox_ 引入了内置自动化功能。Codebox 提�
 以下 AWS 区域不受支持：
 
 * 中国地区
-* GovCloud（美国）区域
 * 秘密云
 * 绝密云
 
