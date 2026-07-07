@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: learn-latency-monitoring.html 
 keywords: latency analysis, CloudWatch alarms, volume latency, read latency, write latency, critical events, warning events, latency thresholds, IOPS thresholds, latency monitoring, FSx for ONTAP, root cause analysis, QoS delay center, automated analysis 
-summary: 了解 Workload Factory for EDA 中的延迟监控如何使用自动化基本分析和可选的 AI 代理分析，帮助您检测并分析 FSx for ONTAP 卷的性能问题。 
+summary: 了解 Workload Factory for EDA 中的延迟监控如何使用自动化基本分析和可选的 AI 分析，帮助您检测并分析 FSx for ONTAP 卷的性能问题。 
 ---
 = 了解 Workload Factory for EDA 中的延迟监控
 :allow-uri-read: 
@@ -11,21 +11,21 @@ summary: 了解 Workload Factory for EDA 中的延迟监控如何使用自动化
 
 
 [role="lead"]
-Workload Factory for EDA 中的延迟监控可帮助您主动识别和解决 FSx for ONTAP 卷中的性能瓶颈。系统使用 CloudWatch 指标监控读取和写入延迟，并提供自动化分析以帮助您了解性能问题的根本原因。
+Workload Factory for EDA 中的延迟监控可帮助您查找和修复 FSx for ONTAP 卷中的性能减慢问题。它使用 CloudWatch 指标跟踪读取和写入延迟，并自动分析数据以帮助确定性能问题的原因。
 
 
 
 == 延迟监控的工作原理
 
-延迟分析收集与您的 AWS 凭据关联的所有 FSx for ONTAP 卷上的读取和写入操作的 CloudWatch 指标。系统会根据可配置的阈值持续评估这些指标，以便及早发现性能问题。
+延迟分析收集连接到您的 AWS 帐户的所有 FSx for ONTAP 卷上的读取和写入活动的 CloudWatch 指标。它会根据定义的限制不断检查这些指标，以便及早发现性能问题。
 
-当检测到延迟事件时，Workload Factory 会使用 ONTAP QoS 延迟中心指标自动执行基本分析，以确定主要延迟因素。对于涉及数据或群集组件的更复杂场景，您可以选择运行 AI-agent 分析，以获取详细的根本原因解释、受影响的客户端列表和具体的补救步骤。
+如果延迟增加，Workload Factory 会自动查看 ONTAP QoS 延迟指标，以确定减速的主要原因。对于涉及数据或集群组件的更复杂问题，您可以运行可选的 AI 分析，提供可能的根本原因，识别受影响的客户端，并提出解决问题的步骤。
 
 
 
 === 警报生成
 
-当延迟阈值和 IOPS 阈值都在配置的时间范围内的所有数据点上被突破时，将生成警报。这种双条件方法通过确保在实际负载下保持较高的延迟来减少误报。
+只有当这些条件在整个选定的时间范围内均为真时，警报才会触发：延迟保持在阈值以上，且 IOPS 保持在阈值以上。同时满足这两个条件可确保仅在系统处理实际工作负载时出现高延迟，从而减少误报。
 
 您可以为以下项配置单独的阈值：
 
@@ -35,7 +35,7 @@ Workload Factory for EDA 中的延迟监控可帮助您主动识别和解决 FSx
 * 严重严重性
 
 
-所有检测到的事件都会显示在延迟事件表中，如果您已配置通知，则会收到电子邮件或 Amazon SNS 通知，其中包含有关受影响卷的详细信息。
+所有检测到的事件都会出现在延迟事件表中。如果设置了通知，您还会收到一封电子邮件或 Amazon SNS 消息，其中包含有关受影响卷的详细信息。
 
 
 
@@ -84,27 +84,28 @@ Workload Factory 提供两个级别的分析，以帮助您解决延迟问题。
 
 === 基本分析
 
-检测到延迟事件时，Workload Factory 会使用 ONTAP QoS 延迟中心指标自动运行基本分析，以确定导致延迟的组件（例如，FlexCache、容量池、QoS 限制、磁盘、数据、集群或其他子系统）。此分析无需人工调查即可快速识别延迟源。
-
-当您已将链接与 FSx for ONTAP 文件系统关联时，基本分析可用于所有延迟事件。如果没有链接，事件仍然可以被检测到，但分析提供的见解有限。
+当延迟事件发生时，Workload Factory 会自动运行基本分析以查找原因。它使用 ONTAP QoS 延迟中心指标来查看哪个组件负责导致速度减慢，例如 FlexCache、容量池、QoS 限制、磁盘、数据、集群或其他子系统。这可以快速识别延迟的来源，而无需手动调查。
 
 
-NOTE: 由于不同的收集方法，ONTAP QoS 分析的延迟值与 CloudWatch 数据之间可能存在轻微差异。基本分析使用 ONTAP 数据进行根本原因识别。
+NOTE: 只有当链接与 FSx for ONTAP 文件系统关联时，才能看到组件细分。如果没有链接，您仍然可以查看延迟、IOPS 和吞吐量的图形。
+
+
+NOTE: ONTAP QoS 分析和 CloudWatch 的延迟值可能略有不同，因为它们以不同的方式收集数据。基本分析使用 ONTAP 数据来确定根本原因。
 
 
 
-=== AI 代理分析
+=== AI 分析
 
-虽然基本分析确定了延迟源，但涉及数据或集群组件的复杂场景通常需要更深入的调查。AI 代理分析通过识别霸道卷、非最优配置或基本分析无法检测的横向扩展要求等问题，提供了更深入的故障排除。
+虽然基本分析可以识别延迟的来源，但涉及数据或集群组件的更复杂情况通常需要更深入的调查。AI 分析通过发现卷过载、配置不当或需要添加更多容量等基本分析可能遗漏的问题，提供更深入的故障排除。
 
-当您运行 AI-agent 分析时，系统提供：
+运行 AI 分析时，系统提供：
 
 * *潜在根本原因*：导致延迟问题的详细说明
 * *受影响的客户端*：受延迟影响的 EC2 实例名称列表
 * *潜在的补救措施*：两个或多个具体措施来解决问题
 
 
-AI 代理分析需要在 Workload Factory 设置中配置 Amazon Bedrock 模型 ARN。如果未配置 Bedrock，您仍然可以使用延迟监控和自动化基本分析。
+AI 分析需要在 Workload Factory 设置中提供 Amazon Bedrock 模型 ARN。如果未设置 Bedrock，您仍然可以使用延迟监控和基本自动化分析。
 
 
 

@@ -20,7 +20,7 @@ AWS凭证和权限:: 您需要向 Workload Factory 添加具有读/写权限的 
 目前不支持 _Basic_ 模式和 _Read-only_ 模式权限。
 
 
-NOTE: 使用延迟监控功能也需要 AWS 凭证，该功能会收集 CloudWatch 指标用于卷性能分析。要接收延迟事件的通知，请在 Workload Factory 设置中配置通知偏好。如需为复杂延迟场景启用可选的 AI-agent 分析，还必须提供 Amazon Bedrock 模型 ARN。link:learn-latency-monitoring.html["了解延迟监控"]。
+NOTE: 还需要 AWS 凭据才能使用延迟监控功能，该功能收集用于卷性能分析的 CloudWatch 指标。要接收延迟事件的通知，请在 Workload Factory 设置中配置通知首选项。要为复杂的延迟场景启用可选的 AI 分析，您还必须提供 Amazon Bedrock 模型 ARN。link:learn-latency-monitoring.html["了解延迟监控"]。
 
 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["了解如何向 Workload Factory 添加 AWS 凭证"^]
 

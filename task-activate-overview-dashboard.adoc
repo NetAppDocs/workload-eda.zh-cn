@@ -11,7 +11,7 @@ summary: 激活概述仪表板，开始为您的 FSx for ONTAP 文件系统收�
 
 
 [role="lead"]
-激活概述仪表板，开始收集 FSx for ONTAP 文件系统的 CloudWatch 指标。激活后，仪表板可集中监控群集运行状况、容量和吞吐量。
+激活概述仪表板，开始收集适用于 ONTAP 文件系统的 FSx 的 CloudWatch 指标。通过控制面板，您可以在一个位置查看集群运行状况、容量和吞吐量。
 
 
 
@@ -33,10 +33,10 @@ summary: 激活概述仪表板，开始为您的 FSx for ONTAP 文件系统收�
 
 == 激活信息板
 
-在 Workload Factory 确认具有查看权限的凭据后，您必须激活仪表板，以开始为 FSx for ONTAP 文件系统收集 CloudWatch 指标。
+Workload Factory 使用查看权限验证凭据后，激活仪表板以开始收集适用于 ONTAP 文件系统的 FSx 的 CloudWatch 指标。
 
 
-NOTE: 在您提供同意后，收集指标可能需要一些时间。正在进行初始收集时，仪表板会通知您。
+NOTE: 同意后，收集指标可能需要一些时间。正在进行首次收集时，仪表板将通知您。
 
 .步骤
 . 使用以下任一方式登录 link:https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["主机体验"^]。
@@ -48,7 +48,7 @@ NOTE: 在您提供同意后，收集指标可能需要一些时间。正在进�
 
 
 .结果
-Workload Factory 开始收集与您配置的 AWS 凭据相关联的所有 FSx for ONTAP 文件系统的 CloudWatch 指标。当指标可用时，控制面板会填充。如果收集仍在进行中，则会显示通知。
+Workload Factory 开始收集链接到您的 AWS 凭据的所有 FSx for ONTAP 文件系统的 CloudWatch 指标。当指标可用时，控制面板会自动填充。数据收集仍在进行时，系统会显示通知。
 
 
 

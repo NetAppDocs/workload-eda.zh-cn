@@ -23,15 +23,15 @@ https://docs.netapp.com/us-en/workload-eda/task-use-overview-dashboard.html#capa
 
 === 自动 AI 延迟分析
 
-延迟分析现在包括 AI 代理分析。
+延迟分析现在包括 AI 分析。
 
-对于涉及数据或集群延迟的复杂场景，您可以调用 AI-agent 分析以接收：
+对于涉及数据或集群延迟的复杂场景，您可以调用 AI 分析来接收：
 
 * 详细的根本原因识别
 * 受影响的 EC2 客户端列表
 * 特定修复步骤
 
 
-AI 代理分析需要 Amazon Bedrock 模型 ARN 配置，并且在基本分析建议进行更深入调查的情况下可按需提供。AI 代理可以识别欺凌卷、非最佳挂载点配置、FlexGroup 重新平衡需求和横向扩展要求等问题。
+AI 分析需要 Amazon Bedrock 模型 ARN 配置，并且在基本分析建议进行更深入调查的情况下可按需提供。AI 代理可以识别欺凌卷、非最佳挂载点配置、FlexGroup 重新平衡需求和横向扩展要求等问题。
 
-https://docs.netapp.com/us-en/workload-eda/task-monitor-latency.html#run-ai-agent-analysis["详细了解 AI 代理分析"^]。
+https://docs.netapp.com/us-en/workload-eda/task-monitor-latency.html#run-ai-agent-analysis["详细了解人工智能分析"^].
