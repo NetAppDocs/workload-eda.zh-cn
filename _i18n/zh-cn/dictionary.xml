@@ -875,7 +875,6 @@
   <block id="c8cc2ccf33cdc30737f78ff90de2445d" category="paragraph">延迟分析收集连接到您的 AWS 帐户的所有 FSx for ONTAP 卷上的读取和写入活动的 CloudWatch 指标。它会根据定义的限制不断检查这些指标，以便及早发现性能问题。</block>
   <block id="590fb1ff71e09ae10025da434d4a576d" category="paragraph">如果延迟增加，Workload Factory 会自动查看 ONTAP QoS 延迟指标，以确定减速的主要原因。对于涉及数据或集群组件的更复杂问题，您可以运行可选的 AI 分析，提供可能的根本原因，识别受影响的客户端，并提出解决问题的步骤。</block>
   <block id="f5c07c8cce2b621540390923f8c67ffc" category="paragraph">只有当这些条件在整个选定的时间范围内均为真时，警报才会触发：延迟保持在阈值以上，且 IOPS 保持在阈值以上。同时满足这两个条件可确保仅在系统处理实际工作负载时出现高延迟，从而减少误报。</block>
-  <block id="7719c0ad2aed2107222044fb60d905ae" category="paragraph">所有检测到的事件都会出现在延迟事件表中。如果设置了通知，您还会收到一封电子邮件或 Amazon SNS 消息，其中包含有关受影响卷的详细信息。</block>
   <block id="dc61eabb4b4720779ffd0ea863639346" category="paragraph">当延迟事件发生时，Workload Factory 会自动运行基本分析以查找原因。它使用 ONTAP QoS 延迟中心指标来查看哪个组件负责导致速度减慢，例如 FlexCache、容量池、QoS 限制、磁盘、数据、集群或其他子系统。这可以快速识别延迟的来源，而无需手动调查。</block>
   <block id="8eb98f7a0459d22ab367426190a3fb48" category="admonition">只有当链接与 FSx for ONTAP 文件系统关联时，才能看到组件细分。如果没有链接，您仍然可以查看延迟、IOPS 和吞吐量的图形。</block>
   <block id="eb40849137a407e18ca35f8df5165003" category="admonition">ONTAP QoS 分析和 CloudWatch 的延迟值可能略有不同，因为它们以不同的方式收集数据。基本分析使用 ONTAP 数据来确定根本原因。</block>
@@ -992,7 +991,6 @@
   <block id="59cbd9a4d580062062bfc4ff383f14c2" category="paragraph">设置读取和写入的警告和临界限制。系统会持续检查这些限制，并在达到限制时发送警报。</block>
   <block id="11fda7252f626757b0488cd577f27860" category="admonition">将关键事件阈值设置为高于警告阈值。否则，无法保存配置。</block>
   <block id="5a1211a74ff4c3bb3c0672678c971e1f" category="paragraph">Workload Factory 收集链接到您的 AWS 凭据的所有 FSx for ONTAP 卷的延迟指标。它至少每 20 分钟收集一次这些指标。超出设置阈值的卷将显示在延迟事件表中。</block>
-  <block id="14bf5360fe55779f5e2e14b0c58169e4" category="paragraph">设置电子邮件或 Amazon SNS 通知，以便在检测到高延迟时收到警报。每次卷超过您设置的阈值时，您都会收到通知，以便立即了解是否存在性能问题。</block>
   <block id="d1b1c2aa5d228f69be0ebddab772256e" category="admonition">如果受影响的卷超过 10 个，电子邮件将显示前 10 个卷，并显示受影响的其他卷的数量。您可以在 Workload Factory 控制台中查看所有受影响的卷。</block>
   <block id="95ae0d98cc5a0df87238eb0392c461da" category="paragraph">设置后，您可以随时更改阈值。</block>
   <block id="f40c1de6b7f8b45f157d4a9ef124471c" category="admonition">将临界阈值设置为高于警告阈值。如果将临界阈值设置为较低，则系统会显示错误。</block>
@@ -1051,4 +1049,16 @@
   <block id="06557d42c1d11c10994b04fb503bc5ea" category="list-text">记录正常性能水平，以便日后更容易发现异常行为。</block>
   <block id="910779fa193225b42eb7f118f9e0fbf8" category="list-text">在工作负载受到影响之前，使用从数据中获得的信息来调整资源、调整卷大小或提高性能。</block>
   <block id="52c4cfa377c69894b03ee8c538f7d3c7" category="section-title">2026年7月5日</block>
+  <block id="7e2652d4b25a337c594774fc14c2ab17" category="section-title">设置延迟通知频率</block>
+  <block id="39b4011c4c170e1b29e7d8710812c644" category="paragraph">现在，您可以选择接收延迟违规电子邮件通知的频率：</block>
+  <block id="9b4c72b587622d268ed8a5a315219fb5" category="list-text">*每天提醒我（推荐）*：当任何 FSx for ONTAP 文件系统出现新问题时，您将收到通知。</block>
+  <block id="b1960d91c54aac51310626fca3cc3b48" category="paragraph">如果同一个文件系统在一天内出现多个延迟问题，您只会收到一封电子邮件。</block>
+  <block id="a6f20e83b8038d1aeb40bd01b25f763e" category="paragraph">在发送文件系统的延迟警报后，Workload Factory 等待 24 小时后再为该文件系统发送另一个警报。</block>
+  <block id="e2a4178b795c9afb4497b6549895fe0f" category="list-text">*任何延迟违规通知（每 20 分钟一次）*：检测到违规时收到通知，最多每 20 分钟一次。</block>
+  <block id="943fb48a5bde64c680308a09af0a0832" category="paragraph">默认情况下，每日通知处于启用状态，以减少电子邮件数量，同时仍提醒您注意延迟问题。您可以在设置延迟监控或编辑阈值设置时更改通知首选项。</block>
+  <block id="496e68c00adfe40e8730acfccde74f6b" category="paragraph"><block ref="9cf52e304b2518ca53073fc069c5a89c" category="inline-link-rx"></block>。</block>
+  <block id="c078c522f0c0f69cbe3ee348a3929074" category="paragraph">所有检测到的事件都会显示在延迟事件表中。如果设置了通知，您还会收到一封电子邮件或 Amazon SNS 消息，其中包含有关受影响卷的详细信息。您可以控制接收通知的频率——每天按文件系统接收，或每 20 分钟接收一次。</block>
+  <block id="eeaf9b0486df56b5ef23ab55b9b5c590" category="paragraph">设置电子邮件或 Amazon SNS 通知，以便在检测到高延迟时收到警报。您可以通过两个选项控制通知频率：</block>
+  <block id="f0ac07f7c61e9a1057c26af44dc07e0f" category="list-text">*每天提醒我（推荐）*：在任何文件系统中发生新的违规行为时收到通知。发送文件系统通知后，等待 24 小时后再发送相同文件系统的通知。</block>
+  <block id="787290df504f1549bf1bea416b297658" category="list-text">*通知任何延迟违规（每 20 分钟）*：检测到违规时，最多每 20 分钟收到一次通知。</block>
 </blocks>
