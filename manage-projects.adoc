@@ -15,6 +15,7 @@ summary: 在 Workload Factory for Databases 中管理 Microsoft SQL Server 实�
 
 
 
+[[create-a-project]]
 == 创建项目
 
 您可以创建一个新的 EDA 项目，以便利用 FSx for ONTAP 文件系统的数据保护功能来保护您的代码和制品。.步骤
@@ -70,6 +71,7 @@ summary: 在 Workload Factory for Databases 中管理 Microsoft SQL Server 实�
 
 
 
+[[view-existing-projects]]
 == 查看现有项目
 
 您可以按照以下步骤查看在NetApp Workload Factory for EDA 中创建的现有项目。
@@ -84,6 +86,7 @@ summary: 在 Workload Factory for Databases 中管理 Microsoft SQL Server 实�
 
 
 
+[[edit-a-project]]
 == 编辑项目
 
 您可以随时编辑项目的设置。
@@ -100,6 +103,7 @@ summary: 在 Workload Factory for Databases 中管理 Microsoft SQL Server 实�
 
 
 
+[[view-a-projects-workspaces]]
 == 查看项目的工作区
 
 项目的克隆或快照称为工作区。创建工作区后，只要项目运行策略允许，工作区就会一直保留。您可以按照以下步骤查看项目的现有工作区。
@@ -116,6 +120,7 @@ summary: 在 Workload Factory for Databases 中管理 Microsoft SQL Server 实�
 
 
 
+[[delete-a-project]]
 == 删除项目
 
 按照以下步骤，即可在不再需要时删除项目。

@@ -15,12 +15,14 @@ summary: 使用概述仪表板监控集群运行状况，查看容量建议，�
 
 
 
+[[before-you-begin]]
 == 开始之前
 
 您必须具有 link:task-activate-overview-dashboard.html["已激活 Overview dashboard"]，然后才能使用它来监控文件系统。
 
 
 
+[[filter-the-dashboard]]
 == 筛选仪表板
 
 使用仪表板顶端的筛选器查看特定的文件系统。筛选器适用于延迟、利用率、ONTAP 事件部分和集群表。
@@ -41,6 +43,7 @@ summary: 使用概述仪表板监控集群运行状况，查看容量建议，�
 
 
 
+[[view-cluster-health-status]]
 == 查看集群运行状况状态
 
 在控制面板的顶端，您可以看到所选文件系统的运行状况和活动摘要。仅当至少一个 FSx for ONTAP 链接连接到您的文件系统时，才会显示此内容。
@@ -72,6 +75,7 @@ ONTAP 事件视图卡按类别（容量、可用性和保护以及安全性和�
 
 
 
+[[view-and-apply-capacity-recommendations]]
 == 查看和应用容量建议
 
 Workload Factory 会自动为每个 FSx for ONTAP 文件系统运行容量建议。您可以通过筛选 Clusters 表来查找包含建议的文件系统。
@@ -98,6 +102,7 @@ Workload Factory 会自动为每个 FSx for ONTAP 文件系统运行容量建议
 
 
 
+[[change-ssd-management-mode]]
 == 更改 SSD 管理模式
 
 对于每个文件系统，选择 SSD 容量的管理方式：接收手动建议或允许自动扩展。
@@ -134,6 +139,7 @@ SSD 管理模式包括：
 
 
 
+[[bulk-edit-ssd-management-parameters]]
 == 批量编辑 SSD 管理参数
 
 同时更改多个文件系统的 SSD 容量设置，以便在集群中应用相同的设置。
@@ -166,6 +172,7 @@ TIP: 您可以选择单个文件系统，也可以使用标题复选框来选择
 
 
 
+[[analyze-capacity-trends-and-decision-points]]
 == 分析容量趋势和决策点
 
 使用 SSD 使用情况图表可查看存储使用情况如何随时间变化并发现规律。
@@ -195,6 +202,7 @@ TIP: 您可以选择单个文件系统，也可以使用标题复选框来选择
 
 
 
+[[use-the-clusters-table]]
 == 使用集群表
 
 集群表提供了每个 FSx for ONTAP 文件系统的详细视图以及性能和使用指标。
@@ -215,6 +223,7 @@ TIP: 您可以选择单个文件系统，也可以使用标题复选框来选择
 
 
 
+[[best-practices]]
 == 最佳实践
 
 使用概览控制面板时，请考虑以下建议：
@@ -230,6 +239,7 @@ TIP: 您可以选择单个文件系统，也可以使用标题复选框来选择
 
 
 
+[[related-information]]
 == 相关信息
 
 * link:learn-overview-dashboard.html["了解 Overview 控制面板"]

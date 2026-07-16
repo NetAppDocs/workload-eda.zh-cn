@@ -4,6 +4,7 @@
 
 
 
+[[builders-workload-initial-release]]
 === 构建器工作负载初始版本
 
 BlueXP Workload Factory for Builders 简化了软件版本的使用和访问，无需自定义工具或脚本。它使您能够以即时克隆的形式使用软件版本，并与 Perforce Helix Core 集成，作为您开发过程的便捷工作空间，从而节省时间和资源。

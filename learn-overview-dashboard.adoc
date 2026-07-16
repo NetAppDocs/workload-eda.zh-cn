@@ -15,6 +15,7 @@ Overview 仪表板为 IT 管理员提供了一个监控多个 FSx for ONTAP 文�
 
 
 
+[[overview]]
 == 概述
 
 概述仪表板收集与您配置的 AWS 凭据相关联的所有 FSx for ONTAP 文件系统的 CloudWatch 指标。
@@ -36,10 +37,12 @@ Overview 仪表板为 IT 管理员提供了一个监控多个 FSx for ONTAP 文�
 
 
 
+[[dashboard-components]]
 == 信息板组件
 
 
 
+[[cluster-health-status]]
 === 集群运行状况状态
 
 集群运行状况显示所选文件系统中活动的快速视图。仅当至少有一个 FSx for ONTAP 链接连接到您的文件系统时，才会显示此内容。
@@ -53,6 +56,7 @@ Overview 仪表板为 IT 管理员提供了一个监控多个 FSx for ONTAP 文�
 
 
 
+[[clusters-table]]
 === Clusters 表
 
 clusters 表提供了每个 FSx for ONTAP 文件系统的详细视图，按您的活动区域和 AWS 账户选择进行筛选。数据来自 CloudWatch 指标。
@@ -68,10 +72,12 @@ clusters 表提供了每个 FSx for ONTAP 文件系统的详细视图，按您�
 
 
 
+[[ssd-capacity-management]]
 == SSD 容量管理
 
 
 
+[[management-modes]]
 === 管理模式
 
 *自动化*:: 当使用量达到设定限制时，Workload Factory 会自动添加更多 SSD 空间。它可以自行处理，因此无需手动操作。这适用于偏好自动管理的环境。
@@ -81,6 +87,7 @@ clusters 表提供了每个 FSx for ONTAP 文件系统的详细视图，按您�
 
 
 
+[[capacity-recommendations]]
 === 容量建议
 
 当 Workload Factory 处于 Automate 或 Recommend 模式时，它会自动检查每个 FSx for ONTAP 文件系统，并运行容量推荐算法。系统每 24 小时扫描一次，以查看是否应调整 SSD 容量。
@@ -96,6 +103,7 @@ clusters 表提供了每个 FSx for ONTAP 文件系统的详细视图，按您�
 
 
 
+[[ssd-management-parameters]]
 === SSD 管理参数
 
 参数控制容量管理系统如何分析 SSD 使用情况并采取相应措施：
@@ -109,6 +117,7 @@ clusters 表提供了每个 FSx for ONTAP 文件系统的详细视图，按您�
 
 
 
+[[understanding-capacity-decision-points]]
 === 了解容量决策点
 
 SSD 使用图标记了系统何时提出容量建议或采取自动操作。这些标记显示了容量管理算法在一段时间内的行为。
@@ -128,6 +137,7 @@ SSD 使用图标记了系统何时提出容量建议或采取自动操作。这�
 
 
 
+[[related-information]]
 == 相关信息
 
 * link:task-activate-overview-dashboard.html["激活 Overview dashboard"]

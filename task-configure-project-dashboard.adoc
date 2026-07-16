@@ -15,12 +15,14 @@ summary: 为项目仪表板配置自定义筛选器，以按业务结构（如�
 
 
 
+[[before-you-begin]]
 == 开始之前
 
 要使用自定义筛选器，请根据需要将 AWS 标记添加到 FSx for ONTAP 卷中，例如项目、团队或业务部门的标记。
 
 
 
+[[configure-custom-filters]]
 == 配置自定义过滤器
 
 
@@ -63,6 +65,7 @@ NOTE: 筛选条件按您设置的顺序显示在控制面板上。将您最常�
 
 
 
+[[related-information]]
 == 相关信息
 
 * link:learn-project-dashboard.html["了解 Projects 仪表板"]

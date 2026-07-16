@@ -15,12 +15,14 @@ summary: 配置延迟监控阈值和通知设置，以检测和响应 FSx for ON
 
 
 
+[[before-you-begin]]
 == 开始之前
 
 在配置延迟监控之前，请确保满足下列要求。
 
 
 
+[[aws-credentials-and-permissions]]
 === AWS凭证和权限
 
 您必须将 AWS 凭据添加到具有读/写权限的 Workload Factory。延迟监控功能需要访问与您的 AWS 凭据关联的所有 FSx for ONTAP 卷的 CloudWatch 指标。
@@ -31,12 +33,14 @@ _Basic_ 模式和 _Read-only_ 模式权限不支持延迟监控。
 
 
 
+[[fsx-for-ontap-file-system]]
 === FSx for ONTAP文件系统
 
 您需要在 AWS 环境中至少部署一个带有卷的 FSx for ONTAP 文件系统。
 
 
 
+[[link-to-fsx-for-ontap]]
 === 链接到 FSx for ONTAP
 
 要查看基本分析中的组件细分，必须将链接与 FSx for ONTAP 文件系统相关联。如果没有链接，您仍然可以查看延迟、IOPS 和吞吐量图表。如果尚未关联任何链接，请在 EDA 中选择*关联链接*，选择是否创建新链接或关联现有链接，然后选择*继续*以自动转到 Storage workloads 中的链接创建页面。
@@ -45,6 +49,7 @@ _Basic_ 模式和 _Read-only_ 模式权限不支持延迟监控。
 
 
 
+[[amazon-bedrock-model-arn-optional]]
 === Amazon Bedrock 模型 ARN（可选）
 
 （可选）要使用 AI 分析，请在 Workload Factory 设置中提供 Amazon Bedrock 模型 ARN。没有它，您仍然可以使用延迟监控和基本分析。
@@ -53,12 +58,14 @@ _Basic_ 模式和 _Read-only_ 模式权限不支持延迟监控。
 
 
 
+[[notification-configuration-optional]]
 === 通知配置（可选）
 
 要在检测到延迟事件时接收电子邮件或 Amazon SNS 通知，请在 Workload Factory 设置中配置通知首选项。有关详细信息，请参见 <<配置延迟通知>>。
 
 
 
+[[configure-latency-thresholds]]
 == 配置延迟阈值
 
 设置读取和写入的警告和临界限制。系统会持续检查这些限制，并在达到限制时发送警报。
@@ -89,6 +96,7 @@ Workload Factory 收集链接到您的 AWS 凭据的所有 FSx for ONTAP 卷的�
 
 
 
+[[configure-latency-notifications]]
 == 配置延迟通知
 
 设置电子邮件或 Amazon SNS 通知，以便在检测到高延迟时收到警报。您可以通过两个选项控制通知频率：
@@ -112,6 +120,7 @@ NOTE: 如果受影响的卷超过 10 个，电子邮件将显示前 10 个卷，
 
 
 
+[[manage-latency-configuration]]
 == 管理延迟配置
 
 设置后，您可以随时更改阈值。
@@ -128,6 +137,7 @@ NOTE: 将临界阈值设置为高于警告阈值。如果将临界阈值设置�
 
 
 
+[[best-practices]]
 == 最佳实践
 
 在配置延迟监控时，请考虑以下建议：
@@ -141,6 +151,7 @@ NOTE: 将临界阈值设置为高于警告阈值。如果将临界阈值设置�
 
 
 
+[[related-information]]
 == 相关信息
 
 * link:learn-latency-monitoring.html["了解延迟监控"]

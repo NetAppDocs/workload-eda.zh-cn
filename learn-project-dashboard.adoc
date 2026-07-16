@@ -15,6 +15,7 @@ summary: 了解 Workload Factory for EDA 中的项目仪表板如何帮助您监
 
 
 
+[[how-the-projects-dashboard-works]]
 == 项目仪表板的工作方式
 
 "项目"仪表板显示链接到您的 AWS 凭据的所有 FSx for ONTAP 卷的 CloudWatch 指标。您可以使用 AWS 标签创建最多五个筛选器，以按项目、团队、应用程序或其他类别组织和查看数据。
@@ -32,6 +33,7 @@ summary: 了解 Workload Factory for EDA 中的项目仪表板如何帮助您监
 
 
 
+[[cloudwatch-metrics-collected]]
 === 收集的 CloudWatch 指标
 
 仪表板将收集并显示以下 CloudWatch 指标：
@@ -44,6 +46,7 @@ summary: 了解 Workload Factory for EDA 中的项目仪表板如何帮助您监
 
 
 
+[[custom-filters]]
 == 自定义筛选器
 
 自定义筛选器可帮助您整理仪表板数据，以匹配组织的工作方式。按项目、团队或成本中心设置筛选器，这样您就可以快速找到所需的数据，而无需对不相关的信息进行分类。这样可以更轻松地规划容量、跟踪成本并监控性能。
@@ -59,6 +62,7 @@ summary: 了解 Workload Factory for EDA 中的项目仪表板如何帮助您监
 
 
 
+[[aws-tags]]
 === AWS 标记
 
 AWS 标记是 AWS 资源的元数据。它们可以帮助您以不同的方式对 AWS 资源进行分类，例如按项目、应用程序或业务部门进行分类。
@@ -69,12 +73,14 @@ AWS 标记是 AWS 资源的元数据。它们可以帮助您以不同的方式�
 
 
 
+[[volume-details]]
 == 卷详细信息
 
 控制面板提供查看模式，可帮助您分析不同详细信息级别的存储指标。
 
 
 
+[[total-view]]
 === 总视图
 
 "总计"视图（默认）显示与所选筛选器匹配的所有卷的合并指标。它可以快速概述整体存储性能，包括总容量、IOPS 和吞吐量。
@@ -88,6 +94,7 @@ AWS 标记是 AWS 资源的元数据。它们可以帮助您以不同的方式�
 
 
 
+[[volume-view]]
 === 卷视图
 
 卷视图显示各个卷随时间的性能变化。它显示每个指标的前 10 个卷。这有助于您了解哪些卷在选定时间段内使用的资源最多，以及它们的行为方式。
@@ -133,6 +140,7 @@ NOTE: 控制面板仅显示每个指标的前 10 个卷。如果您有超过 10 
 
 
 
+[[related-information]]
 == 相关信息
 
 * link:task-configure-project-dashboard.html["配置项目仪表板"]

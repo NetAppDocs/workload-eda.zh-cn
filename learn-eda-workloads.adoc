@@ -17,6 +17,7 @@ EDA 中的持续集成和持续部署 (CI/CD) 是为软件构建者提供的快�
 
 
 
+[[what-is-cicd]]
 == 什么是 CI/CD？
 
 通过使用 CI/CD，您可以简化开发人员管理和交互其软件不同版本的方式。它与 Perforce Helix Core 配合使用，可立即克隆软件版本并创建用于开发、QA 和 CI/CD 的工作区。
@@ -27,6 +28,7 @@ EDA 中的持续集成和持续部署 (CI/CD) 是为软件构建者提供的快�
 
 
 
+[[cicd-features]]
 == CI/CD 功能
 
 * 创建、编辑和删除项目。看 link:manage-projects.html["项目管理"]。
@@ -40,12 +42,14 @@ EDA 中的持续集成和持续部署 (CI/CD) 是为软件构建者提供的快�
 
 
 
+[[projects-and-workspaces-in-eda]]
 == EDA 中的项目和工作区
 
 您可以创建一个项目，并分配一个卷来表示您的软件环境及其工件。每次创建新版本的软件时，都需要重新同步卷数据并创建项目快照，以将卷状态标记为已知版本。项目源卷可能会进行滚动更新，并有多个快照来标记多个版本。您可以立即将每个快照用作即时克隆，即可供开发人员、QA 或构建流程使用的专用或共享可编辑存储库。在特定软件版本中，克隆体就是一个工作区。
 
 
 
+[[automation-with-workload-factory-codebox]]
 == 使用 Workload Factory Codebox 实现自动化
 
 Workload Factory 引入了带有 _Codebox_ 的内置自动化。Codebox 具有以下自动化优势：
@@ -57,18 +61,21 @@ Workload Factory 引入了带有 _Codebox_ 的内置自动化。Codebox 具有�
 
 
 
+[[cost]]
 == 成本
 
 使用 Workload Factory 的 CI/CD 功能是完全免费的。
 
 
 
+[[licensing]]
 == 许可
 
 使用 Workload Factory 的 CI/CD 功能无需获得NetApp的特殊许可。
 
 
 
+[[regions]]
 == 区域
 
 在所有支持 FSx for ONTAP 的商业区域，EDA 均受支持。 https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/["查看支持的亚马逊区域。"^]
@@ -82,6 +89,7 @@ Workload Factory 引入了带有 _Codebox_ 的内置自动化。Codebox 具有�
 
 
 
+[[getting-help]]
 == 获取帮助
 
 Amazon FSx for NetApp ONTAP是 AWS 第一方解决方案。如需帮助，请使用 AWS 管理控制台中的支持中心提交案例。选择“FSx for ONTAP”及其类别，然后提供所需信息。

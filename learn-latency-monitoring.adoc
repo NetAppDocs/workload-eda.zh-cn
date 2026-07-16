@@ -15,6 +15,7 @@ Workload Factory for EDA 中的延迟监控可帮助您查找和修复 FSx for O
 
 
 
+[[how-latency-monitoring-works]]
 == 延迟监控的工作原理
 
 延迟分析收集连接到您的 AWS 帐户的所有 FSx for ONTAP 卷上的读取和写入活动的 CloudWatch 指标。它会根据定义的限制不断检查这些指标，以便及早发现性能问题。
@@ -23,6 +24,7 @@ Workload Factory for EDA 中的延迟监控可帮助您查找和修复 FSx for O
 
 
 
+[[alert-generation]]
 === 警报生成
 
 只有当这些条件在整个选定的时间范围内均为真时，警报才会触发：延迟保持在阈值以上，且 IOPS 保持在阈值以上。同时满足这两个条件可确保仅在系统处理实际工作负载时出现高延迟，从而减少误报。
@@ -39,12 +41,14 @@ Workload Factory for EDA 中的延迟监控可帮助您查找和修复 FSx for O
 
 
 
+[[understanding-alerts]]
 == 了解警报
 
 了解如何触发警报有助于您配置适当的阈值并解释结果。
 
 
 
+[[metrics-collected]]
 === 收集的指标
 
 系统会收集每个卷的以下 CloudWatch 指标：
@@ -55,6 +59,7 @@ Workload Factory for EDA 中的延迟监控可帮助您查找和修复 FSx for O
 
 
 
+[[alert-trigger-conditions]]
 === 警报触发条件
 
 当满足以下所有条件时，将触发警报：
@@ -68,6 +73,7 @@ Workload Factory for EDA 中的延迟监控可帮助您查找和修复 FSx for O
 
 
 
+[[event-severity]]
 === 事件严重性
 
 * *警告事件*：表示可能需要注意的延迟升高
@@ -76,12 +82,14 @@ Workload Factory for EDA 中的延迟监控可帮助您查找和修复 FSx for O
 
 
 
+[[latency-analysis]]
 == 延迟分析
 
 Workload Factory 提供两个级别的分析，以帮助您解决延迟问题。
 
 
 
+[[basic-analysis]]
 === 基本分析
 
 当延迟事件发生时，Workload Factory 会自动运行基本分析以查找原因。它使用 ONTAP QoS 延迟中心指标来查看哪个组件负责导致速度减慢，例如 FlexCache、容量池、QoS 限制、磁盘、数据、集群或其他子系统。这可以快速识别延迟的来源，而无需手动调查。
@@ -94,6 +102,7 @@ NOTE: ONTAP QoS 分析和 CloudWatch 的延迟值可能略有不同，因为它�
 
 
 
+[[ai-analysis]]
 === AI 分析
 
 虽然基本分析可以识别延迟的来源，但涉及数据或集群组件的更复杂情况通常需要更深入的调查。AI 分析通过发现卷过载、配置不当或需要添加更多容量等基本分析可能遗漏的问题，提供更深入的故障排除。
@@ -109,6 +118,7 @@ AI 分析需要在 Workload Factory 设置中提供 Amazon Bedrock 模型 ARN。
 
 
 
+[[related-information]]
 == 相关信息
 
 * link:task-configure-latency-monitoring.html["配置延迟监控"]

@@ -15,12 +15,14 @@ summary: 激活概述仪表板，开始为您的 FSx for ONTAP 文件系统收�
 
 
 
+[[before-you-begin]]
 == 开始之前
 
 在激活仪表板之前，请确保满足下列要求。
 
 
 
+[[aws-credentials-with-view-permissions]]
 === 具有查看权限的 AWS 凭据
 
 您必须至少使用常规存储的读取（查看）权限在 Workload Factory 中配置 AWS 凭据。不支持 _Basic_ 凭据。
@@ -31,6 +33,7 @@ summary: 激活概述仪表板，开始为您的 FSx for ONTAP 文件系统收�
 
 
 
+[[activate-the-dashboard]]
 == 激活信息板
 
 Workload Factory 使用查看权限验证凭据后，激活仪表板以开始收集适用于 ONTAP 文件系统的 FSx 的 CloudWatch 指标。
@@ -52,6 +55,7 @@ Workload Factory 开始收集链接到您的 AWS 凭据的所有 FSx for ONTAP �
 
 
 
+[[next-steps]]
 == 后续步骤
 
 激活控制面板后，您可以：
@@ -63,6 +67,7 @@ Workload Factory 开始收集链接到您的 AWS 凭据的所有 FSx for ONTAP �
 
 
 
+[[related-information]]
 == 相关信息
 
 * link:learn-overview-dashboard.html["了解 Overview 控制面板"]

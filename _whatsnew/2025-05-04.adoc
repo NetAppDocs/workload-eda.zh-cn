@@ -4,6 +4,7 @@
 
 
 
+[[updated-permissions-terminology-in-workload-factory-for-eda]]
 === 更新了 Workload Factory for EDA 中的权限术语
 
 Workload Factory 用户界面和文档现在使用“只读”来指代读取权限，使用“读/写”来指代自动化权限。

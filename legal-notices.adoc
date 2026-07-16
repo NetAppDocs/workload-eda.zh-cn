@@ -15,12 +15,14 @@ summary:
 
 
 
+[[copyright]]
 == 版权
 
 link:https://www.netapp.com/company/legal/copyright/["https://www.netapp.com/company/legal/copyright/"^]
 
 
 
+[[trademarks]]
 == 商标
 
 NETAPP、NETAPP 徽标以及NetApp商标页面上列出的标记均为NetApp, Inc. 的商标。其他公司和产品名称可能是其各自所有者的商标。
@@ -29,6 +31,7 @@ link:https://www.netapp.com/company/legal/trademarks/["https://www.netapp.com/co
 
 
 
+[[patents]]
 == 专利
 
 NetApp目前拥有的专利列表可在以下网址找到：
@@ -37,12 +40,14 @@ link:https://www.netapp.com/pdf.html?item=/media/11887-patentspage.pdf["https://
 
 
 
+[[privacy-policy]]
 == 隐私政策
 
 link:https://www.netapp.com/company/legal/privacy-policy/["https://www.netapp.com/company/legal/privacy-policy/"^]
 
 
 
+[[open-source]]
 == 开源
 
 通知文件提供有关NetApp软件中使用的第三方版权和许可的信息。

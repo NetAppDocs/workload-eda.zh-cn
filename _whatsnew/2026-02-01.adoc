@@ -4,6 +4,7 @@
 
 
 
+[[enhanced-dashboard-filtering-with-customizable-tags-in-eda-workloads]]
 === 通过 EDA 工作负载中的可定制标记增强仪表板过滤
 
 现在，您可以根据 AWS 标签在 EDA 仪表板上配置最多五个自定义过滤器。每个自定义过滤器都包括标签名称、AWS 标签键和选择类型（单选或多选）。
@@ -16,6 +17,7 @@ https://docs.netapp.com/us-en/workload-eda/task-configure-dashboard.html["详细
 
 
 
+[[volume-details-view-for-granular-performance-analysis]]
 === 用于细粒度性能分析的卷详细信息视图
 
 仪表板现在提供两种查看模式：总视图和卷视图。总视图显示所有卷的汇总指标，而卷视图显示前 10 个卷在一段时间内的单个性能。
@@ -26,6 +28,7 @@ https://docs.netapp.com/us-en/workload-eda/task-configure-dashboard.html#view-vo
 
 
 
+[[latency-analysis-for-proactive-performance-monitoring]]
 === 用于主动性能监控的延迟分析
 
 延迟分析使您能够监控整个 FSx for ONTAP 文件系统的卷读取和写入延迟。您可以配置可自定义的警告和关键事件阈值，以便在影响 EDA 工作负载之前主动识别性能瓶颈。

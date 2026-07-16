@@ -15,12 +15,14 @@ summary: 使用 Projects 仪表板监控存储使用情况，按项目或团队�
 
 
 
+[[before-you-begin]]
 == 开始之前
 
 您应该拥有 link:task-configure-project-dashboard.html["已配置的自定义过滤器"] 来访问 Projects 仪表板。如果您尚未配置自定义筛选器，您仍然可以使用默认筛选器（文件系统、卷类型和时间范围）。
 
 
 
+[[filter-the-dashboard]]
 == 筛选仪表板
 
 筛选使您可以专注于特定的存储资源组。这样可以更轻松地发现趋势、发现问题并为利益相关者创建报告。通过同时使用多个过滤器，您可以回答有针对性的问题，例如："ASIC 项目团队使用了多少存储空间？"或"美国西部地区哪些卷的 IOPS 最高？"
@@ -44,12 +46,14 @@ summary: 使用 Projects 仪表板监控存储使用情况，按项目或团队�
 
 
 
+[[view-volume-details]]
 == 查看卷详细信息
 
 查看总卷性能和单个卷有助于规划容量和提高性能。"总计"视图显示总体趋势。"卷"视图可帮助您查找可能需要注意、调整或更多资源的特定卷。
 
 
 
+[[view-aggregated-volume-metrics]]
 === 查看聚合卷指标
 
 "总计"视图显示与筛选器匹配的所有卷的综合指标。
@@ -68,6 +72,7 @@ summary: 使用 Projects 仪表板监控存储使用情况，按项目或团队�
 
 
 
+[[view-individual-volume-performance]]
 === 查看单个卷性能
 
 卷视图显示每个卷在一段时间内的性能表现。它突出显示每个指标的前 10 个卷。
@@ -106,6 +111,7 @@ NOTE: 如果您的卷数超过 10 个，则其余部分将不会显示在详细�
 
 
 
+[[best-practices]]
 == 最佳实践
 
 使用项目仪表板时，请考虑以下建议：
@@ -120,6 +126,7 @@ NOTE: 如果您的卷数超过 10 个，则其余部分将不会显示在详细�
 
 
 
+[[related-information]]
 == 相关信息
 
 * link:learn-project-dashboard.html["了解 Projects 仪表板"]

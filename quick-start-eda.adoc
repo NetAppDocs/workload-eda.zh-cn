@@ -67,6 +67,7 @@ link:integrate-perforce.html["了解如何将 EDA 与 Perforce 集成"^]。
 
 
 
+[[whats-next]]
 == 接下来会发生什么？
 
 * link:task-configure-latency-monitoring.html["为 FSx for ONTAP 配置延迟监控"]
