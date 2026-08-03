@@ -25,7 +25,7 @@ summary: 激活概述仪表板，开始为您的 FSx for ONTAP 文件系统收�
 [[aws-credentials-with-view-permissions]]
 === 具有查看权限的 AWS 凭据
 
-您必须至少使用常规存储的读取（查看）权限在 Workload Factory 中配置 AWS 凭据。不支持 _Basic_ 凭据。
+您必须至少使用常规存储的读取（查看）权限在 Workload Factory 中配置 AWS 凭据。不支持 _Basic_ 凭据，因为它们不包括 CloudWatch 指标的必要读取权限。
 
 如果您尚未配置具有查看权限的凭据，则在打开"概述"选项卡时将重定向到 AWS 凭据设置页面。
 
@@ -61,15 +61,7 @@ Workload Factory 开始收集链接到您的 AWS 凭据的所有 FSx for ONTAP �
 激活控制面板后，您可以：
 
 * link:task-use-overview-dashboard.html["使用 Overview 控制面板"] 监控集群运行状况和容量
-* 配置 SSD 容量管理模式（Automate、Recommend 或 None）
+* link:task-use-overview-dashboard.html#change-ssd-management-mode["启用并配置 SSD 容量管理模式"] （推荐、自动化或无）
+* link:task-use-overview-dashboard.html#change-throughput-management-mode["启用并配置吞吐量管理模式"] （推荐、自动化或无）
 * 设置筛选器以专注于特定区域或 AWS 帐户
-
-
-
-
-[[related-information]]
-== 相关信息
-
-* link:learn-overview-dashboard.html["了解 Overview 控制面板"]
-* link:task-use-overview-dashboard.html["使用 Overview 控制面板"]
 

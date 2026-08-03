@@ -11,6 +11,8 @@ indexpage:
       url: "/learn-eda.html"
     - title: 快速启动
       url: "/quick-start-eda.html"
+    - title: 要求
+      url: "/requirements-eda.html"
   - title: EDA 存储概述
     links:
     - title: 了解 Overview 控制面板
@@ -39,8 +41,6 @@ indexpage:
     links:
     - title: 了解 Perforce 集成
       url: "/learn-eda-workloads.html"
-    - title: 要求
-      url: "/requirements-eda.html"
     - title: 使用 Codebox 实现自动化
       url: "/automate-codebox.html"
   - title: 知识和支持

@@ -25,11 +25,10 @@ summary: 查看和分析延迟事件，以查找 FSx for ONTAP 卷的性能问�
 [[view-volumes-with-latency-above-threshold]]
 == 查看延迟高于阈值的卷
 
-"延迟高于阈值的卷"表显示过去 72 小时内违反警告或严重延迟阈值的卷。
+"延迟高于阈值的卷"表显示违反警告或严重延迟阈值的卷。
 
 .关于此任务
 * 仅显示每个卷的最新违规行为。相同卷的早期违规行为不会显示。
-* 事件将在 72 小时后自动删除。
 * 最多显示 200 个事件。随着新事件的添加，旧事件将被删除。
 * 即使没有文件系统链接，也会出现事件。要查看基本分析详细信息或运行 AI 分析，需要链接。
 
@@ -51,8 +50,10 @@ summary: 查看和分析延迟事件，以查找 FSx for ONTAP 卷的性能问�
 [[analyze-a-latency-event]]
 == 分析延迟事件
 
-.开始之前
-在 Workload Factory 设置中配置 Amazon Bedrock 模型 ARN，请参见link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/requirements-knowledge-base.html#basic-genai-requirements["基本 GenAI 要求"^]。
+延迟分析可帮助您快速找到导致速度下降的原因，而无需手动调查。
+
+
+NOTE: 要使用 AI 分析，必须启用 NetApp 托管 AI。有关详细信息，请参阅 link:https://docs.netapp.com/us-en/workload-setup-admin/manage-genai-features.html["管理 AI 功能"^]。
 
 基本分析可帮助您快速找到导致速度变慢的原因，而无需手动调查。
 
@@ -63,7 +64,7 @@ summary: 查看和分析延迟事件，以查找 FSx for ONTAP 卷的性能问�
 
 在 *严重性* 列中选择一个延迟事件，以打开该事件的延迟分析面板。该面板包括提供延迟事件不同视图的选项卡。
 
-如果配置了 Amazon Bedrock 模型 ARN，则可以对数据和集群场景运行 AI 分析。如果未配置 Bedrock，则会提供指向该文件系统的 Storage Workloads 配置页面的链接，您可以在其中设置 Bedrock 访问权限。
+AI 分析的可用性取决于您的帐户设置。如果启用了 NetApp 托管的 AI，则无需设置 Bedrock 即可运行 AI 分析。如果达到每月信用额度限制或您的管理员禁用了 AI 功能，则 AI 分析不可用。
 
 * *Basic*：显示自动分析的结果。如果链接到文件系统，它会显示组件的细分，并显示导致延迟的组件。如果不存在链接，系统会提示您添加链接。此时将显示受影响卷的 CloudWatch 指标交互式延迟图。它显示读取或写入指标，具体取决于触发事件的警报。您可以选择不同的时间范围，并使用筛选器查看所有、读取、写入或元数据操作。
 * *AI analysis*：显示更深入的调查，以确定特定的根本原因和潜在的补救步骤。
@@ -80,7 +81,7 @@ summary: 查看和分析延迟事件，以查找 FSx for ONTAP 卷的性能问�
 . 在 *延迟* 选项卡中，找到要分析的事件。
 . 在 *Severity* 列中，选择一个延迟事件以打开该事件的分析面板。
 . 查看*基本*选项卡。如果链接已连接，请打开组件细分，查看延迟的来源。如果没有链接，请选择提示以链接一个链接，以便分析组件。
-. 在 *AI analysis* 选项卡中，选择 *Analyze* 以查看更深入调查的结果，例如可能的数据或集群问题。这有助于确定具体的根本原因和可能的补救措施。
+. 在 *AI analysis* 选项卡中，选择 *Analyze*（如果可用）以查看更深入调查的结果，例如可能的数据或集群问题。这有助于确定具体的根本原因和可能的补救措施。
 +
 查看结果，包括：
 

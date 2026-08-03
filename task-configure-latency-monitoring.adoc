@@ -29,7 +29,7 @@ summary: 配置延迟监控阈值和通知设置，以检测和响应 FSx for ON
 
 _Basic_ 模式和 _Read-only_ 模式权限不支持延迟监控。
 
-如果您尚未配置 AWS 凭据，请参见 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["添加 AWS 凭据"^]。
+如果您尚未配置 AWS 凭据，请参阅 link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["添加 AWS 凭据"^]。
 
 
 
@@ -45,16 +45,14 @@ _Basic_ 模式和 _Read-only_ 模式权限不支持延迟监控。
 
 要查看基本分析中的组件细分，必须将链接与 FSx for ONTAP 文件系统相关联。如果没有链接，您仍然可以查看延迟、IOPS 和吞吐量图表。如果尚未关联任何链接，请在 EDA 中选择*关联链接*，选择是否创建新链接或关联现有链接，然后选择*继续*以自动转到 Storage workloads 中的链接创建页面。
 
-有关创建和关联链接的说明，请参见 link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["创建链接"^]。
+要查看创建和关联链接的说明，请参阅 link:https://docs.netapp.com/us-en/workload-fsx-ontap/create-link.html["创建链接"^]。
 
 
 
-[[amazon-bedrock-model-arn-optional]]
-=== Amazon Bedrock 模型 ARN（可选）
+[[turn-on-ai-settings]]
+=== 开启 AI 设置
 
-（可选）要使用 AI 分析，请在 Workload Factory 设置中提供 Amazon Bedrock 模型 ARN。没有它，您仍然可以使用延迟监控和基本分析。
-
-有关更多详细信息，请参见 link:https://docs.netapp.com/us-en/workload-genai/knowledge-base/requirements-knowledge-base.html#basic-genai-requirements["基本 GenAI 要求"^]。
+如果您的账号管理员已关闭 AI 功能，您将看到一条消息，无法使用 AI 分析功能。请联系管理员或参阅 link:https://docs.netapp.com/us-en/workload-setup-admin/manage-genai-features.html["了解人工智能管理"^]。
 
 
 
@@ -92,7 +90,7 @@ NOTE: 您在 EDA 中设置的延迟阈值默认应用于您的整个帐户。您
 
 
 .结果
-Workload Factory 收集链接到您的 AWS 凭据的所有 FSx for ONTAP 卷的延迟指标。它至少每 20 分钟收集一次这些指标。超出设置阈值的卷将显示在延迟事件表中。
+Workload Factory 收集链接到您的 AWS 凭据的所有 FSx for ONTAP 卷的延迟指标。超出设置阈值的卷将显示在延迟事件表中。
 
 
 
@@ -116,7 +114,7 @@ NOTE: 如果受影响的卷超过 10 个，电子邮件将显示前 10 个卷，
 * *Amazon SNS*：发布到您配置的 SNS 主题，以便与其他系统集成
 
 
-要启用通知，请参见 link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.html#wf-console-email-notifications["配置通知设置"]。
+要启用通知，请参阅 link:https://docs.netapp.com/us-en/workload-setup-admin/configure-notifications.html#wf-console-email-notifications["配置通知设置"]。
 
 
 

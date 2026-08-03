@@ -34,7 +34,7 @@ summary: 在 Workload Factory for Databases 中管理 Microsoft SQL Server 实�
 ... *区域*：选择此 FSx for ONTAP 文件系统所驻留的区域。
 ... *FSx for ONTAP 文件系统*：选择要与此项目一起使用的 FSx for ONTAP 文件系统。
 +
-您只能选择配置有链接的文件系统 https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["了解有关链接的更多信息"^]。
+您只能选择配置有链接的文件系统。link:https://docs.netapp.com/us-en/workload-fsx-ontap/links-overview.html["了解有关链接的更多信息"^].
 
 ... *选择一个卷*：选择一个卷来存储项目；EDA 使用此卷作为软件存储库。
 +

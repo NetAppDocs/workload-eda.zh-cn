@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: learn-overview-dashboard.html 
-keywords: cluster overview, cluster dashboard, FSx for ONTAP, cluster health, EMS events, latency events, SSD management, capacity automation, capacity recommendations, decision points 
+keywords: cluster overview, cluster dashboard, FSx for ONTAP, cluster health, EMS events, latency events, SSD management, throughput management, capacity automation, capacity recommendations, decision points 
 summary: 了解 Workload Factory for EDA 中的 Overview 仪表板如何帮助您大规模监控 FSx for ONTAP 集群运行状况、容量和吞吐量。 
 ---
 = 了解 Workload Factory for EDA 中的 Overview 仪表板
@@ -22,7 +22,7 @@ Overview 仪表板为 IT 管理员提供了一个监控多个 FSx for ONTAP 文�
 
 其中包括：
 
-* *集群运行状况*：顶部的摘要突出显示了整个文件系统的延迟事件、SSD 使用情况、容量建议和 ONTAP EMS 事件。
+* *集群运行状况*：顶部摘要重点显示了整个文件系统的延迟事件、SSD 使用情况、吞吐量模式状态、容量建议和 ONTAP EMS 事件。
 * *集群表*：显示每个集群的使用情况和性能的可搜索表。您可以对数据进行筛选和排序，在页面之间移动，并将其导出为 CSV 文件。
 
 
@@ -50,7 +50,14 @@ Overview 仪表板为 IT 管理员提供了一个监控多个 FSx for ONTAP 文�
 健康状态包括以下方面：
 
 *延迟*:: 显示在所选文件系统中发现的延迟事件数。仅在启用延迟监控时才会显示此信息。
-*SSD 容量管理*:: 显示 SSD 使用率超过 80% 的文件系统数量和具有活动容量建议的文件系统数量。这有助于您快速识别可能需要注意容量的文件系统。
+*文件系统弹性*::
++
+--
+* *SSD capacity*：显示有多少文件系统使用 Automate、Recommend 或 None 来管理 SSD 容量。
+* *吞吐量*：显示有多少文件系统使用 Automate、Recommend 或 None 来管理吞吐量。
+
+
+--
 *ONTAP 事件*:: 显示检测到的 EMS 事件数量，按容量、可用性和保护以及安全性和其他分类。
 
 
@@ -70,6 +77,8 @@ clusters 表提供了每个 FSx for ONTAP 文件系统的详细视图，按您�
 * 选择多个集群进行批量参数更新
 
 
+选择文件系统以打开集群详细信息，包括集群信息、SSD 容量值和 SSD 随时间推移的容量图表。
+
 
 
 [[ssd-capacity-management]]
@@ -80,26 +89,10 @@ clusters 表提供了每个 FSx for ONTAP 文件系统的详细视图，按您�
 [[management-modes]]
 === 管理模式
 
+*仅通知（推荐模式）*:: Workload Factory 会分析您如何使用 SSD，并建议何时增加容量。您查看这些建议，并决定是否应用它们。这使您能够完全控制容量变更，同时仍可受益于自动化分析。
 *自动化*:: 当使用量达到设定限制时，Workload Factory 会自动添加更多 SSD 空间。它可以自行处理，因此无需手动操作。这适用于偏好自动管理的环境。
-*推荐*:: Workload Factory 会分析您如何使用 SSD，并建议何时增加容量。您查看这些建议，并决定是否应用它们。这使您能够完全控制容量变更，同时仍可受益于自动化分析。
-*无*:: 系统不提出容量建议或采取自动操作。如果要自己管理容量，请使用此选项。
+*无*:: 如果未启用 SSD 容量管理，则系统不会提出容量建议或采取自动操作。如果要自己管理容量，请使用此选项。
 
-
-
-
-[[capacity-recommendations]]
-=== 容量建议
-
-当 Workload Factory 处于 Automate 或 Recommend 模式时，它会自动检查每个 FSx for ONTAP 文件系统，并运行容量推荐算法。系统每 24 小时扫描一次，以查看是否应调整 SSD 容量。
-
-确定建议后：
-
-* 您会根据您的 Workload Factory 通知设置收到即时通知。
-* 通过使用 **Last SSD increase timestamp** 或 **Last SSD increase description** 列筛选集群表来识别具有建议的文件系统。
-* 该界面显示当前具有活动建议的文件系统的总数。
-
-
-该建议解释了建议的更改及其背后的原因，例如：_我们建议根据您的文件系统 SSD 使用模式增加 SSD 大小。_
 
 
 
@@ -110,10 +103,63 @@ clusters 表提供了每个 FSx for ONTAP 文件系统的详细视图，按您�
 
 *阈值* (10-90%):: 触发容量建议或自动化操作的 SSD 使用百分比。例如，阈值为 80% 意味着 SSD 使用率达到 80% 时会出现建议或操作。此设置在 Recommend 和 Automate 模式下均可用。
 *回顾* (1-200 小时):: 用于分析历史 SSD 使用模式的时间段。更长的回顾期为容量决策提供了更多的历史背景。仅在 Automate 模式下可用。
-*提前* (1-200 小时):: 用于预测未来容量需求的时间段。更长的未来时期计划未来的产能增长。仅在 Automate 模式下可用。
+*Lookahead* （1-200 小时）:: 用于预测未来容量需求的时间段。更长的未来时期计划未来的产能增长。仅在 Automate 模式下可用。
 
 
 您可以为每个文件系统单独设置这些参数，也可以使用批量编辑将相同的设置应用于多个文件系统。
+
+
+
+[[throughput-management]]
+== 吞吐量管理
+
+您可以为一个或多个文件系统配置弹性吞吐量增加行为。
+
+
+
+[[management-modes]]
+=== 管理模式
+
+*仅通知（推荐模式）*:: Workload Factory 评估吞吐量压力，并为您提供应用建议。
+*自动化*:: Workload Factory 在满足配置条件时自动提高吞吐量。
+*无*:: 如果未启用吞吐量管理，系统不会提出建议或采取自动操作。如果要自己管理容量，请使用此选项。
+
+
+
+
+[[throughput-parameters]]
+=== 吞吐量参数
+
+吞吐量配置对话框包括：
+
+* *利用率阈值*（50-100%，默认 80%）：触发建议或自动化的吞吐量利用率百分比。
+
+
+高级吞吐量参数在可扩展的*高级配置*部分中提供。
+
+* *评估时段（小时）* （12-72 小时，默认 24 小时）
+* *Breached metrics (%)* （默认 66%）：用于确定违规的百分比阈值
+* *连续违规窗口（小时）* （1-5 小时，默认 2）
+* *连续违规指标（%）*（默认 95%）
+* *最小延迟（毫秒）*（默认 10 毫秒）
+* *最大吞吐量 SKU* (默认为 None)
+
+
+
+
+[[file-system-elasticity-recommendations]]
+== 文件系统弹性建议
+
+当 Workload Factory 处于 Automate 或 Recommend 模式时，它会自动检查每个 FSx for ONTAP 文件系统，并运行容量推荐算法。系统会定期扫描，以查看是否应调整 SSD 容量或吞吐量。
+
+确定建议后：
+
+* 您会根据您的 Workload Factory 通知设置收到即时通知。
+* 通过筛选 Clusters 表来识别包含建议的文件系统。
+* 该界面显示当前具有活动建议的文件系统的总数。
+
+
+该建议解释了建议的更改及其背后的原因，例如：_我们建议根据您的文件系统 SSD 使用模式增加 SSD 大小。_
 
 
 
@@ -122,7 +168,7 @@ clusters 表提供了每个 FSx for ONTAP 文件系统的详细视图，按您�
 
 SSD 使用图标记了系统何时提出容量建议或采取自动操作。这些标记显示了容量管理算法在一段时间内的行为。
 
-*建议决策点*:: 当系统检测到需要更多 SSD 容量时出现。如果容量未增加，这些点可能每 30 分钟出现一次。图表尽可能显示每个决策点。如果所选时间范围过于密集，则将这些点分组在一起。
+*建议决策点*:: 当系统检测到需要更多 SSD 容量时出现。如果未增加容量，这些点可能每 30 分钟出现一次。图表会尽可能显示每个决策点。如果所选时间范围过于密集，则这些点将被归为一组。
 *自动化决策点*:: 当自动化系统尝试增加 SSD 容量时出现。它们显示操作是成功还是失败。
 
 
