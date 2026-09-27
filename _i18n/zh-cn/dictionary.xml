@@ -453,7 +453,6 @@
   <block id="7b0ddde1961cce4426c7f0cf5da65e0d" category="doc">EDA 容量建议</block>
   <block id="edb815136867c3359e368e3f925ae387" category="paragraph">Workload Factory 现在会自动分析 EDA 库存中每个 FSx for ONTAP 集群的 SSD 容量，并在需要调整时生成容量建议。该算法为每个集群每 24 小时运行一次。</block>
   <block id="1f9c155d60450baccee27bca630b6497" category="paragraph">确定建议后：</block>
-  <block id="8d65ccbe024d7453ace82bd13b7980d8" category="list-text">您会立即收到电子邮件或 WAD 通知（不包含在每周摘要中）。</block>
   <block id="8e5fe5a1e14c6d69b9c457c33f0204a7" category="list-text">在 Clusters 表中，受影响的集群上出现一个灯泡指示器。</block>
   <block id="c38bddc25aeb4374d71816e0b71a53a0" category="list-text">概览控制面板上的摘要显示了有活动建议的集群总数。</block>
   <block id="1471ae7120155f3a06fa9c0a62a7f3f5" category="paragraph">选择具有活动建议的集群以查看建议，该建议解释了建议的更改和推理。</block>
@@ -1093,4 +1092,5 @@
   <block id="0ecfcdfed86b687b39299cccc3380def" category="list-text">**选择正确的模式**：如果要自己批准容量或吞吐量更改，请使用 **Recommend** 模式。如果您希望系统自动管理容量或吞吐量，请使用 **Automate** 模式。</block>
   <block id="88a7c4b8bd498e193a117097af5581b1" category="list-text">**批量编辑**：管理多个文件系统时，请使用批量编辑以保持设置一致。</block>
   <block id="951a51b60db3d63eb71726cd5fe6fbad" category="section-title">2026年8月3日</block>
+  <block id="73c57946c156d22b4a35f2e089180ab4" category="list-text">您会立即收到电子邮件或架构完善通知（不包含在每周摘要中）。</block>
 </blocks>
