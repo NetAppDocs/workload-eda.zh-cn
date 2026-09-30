@@ -621,11 +621,6 @@
   <block id="fa0b4e3f4266abe4ec93e3058cfcd2aa" category="section-title">了解容量决策点</block>
   <block id="c27f88e562f3ed3c4000570673348297" category="list-text">*建议决策点*</block>
   <block id="153ea1a28a0f56dba57777e1680e1f76" category="list-text">*自动化决策点*</block>
-  <block id="8aa0b0a22cf225f503177c8f1de7df3c" category="list-text">了解需要调整容量的频率</block>
-  <block id="dc036d0aefd6c43f7e0e90f879128e16" category="list-text">评估自动化或推荐模式是否更适合您的工作负载模式</block>
-  <block id="274e06045627d8934cd9bb52e8c64f53" category="list-text">识别重复性容量限制</block>
-  <block id="38e979158d55ae25a36aba4d97b0a8b4" category="list-text">根据增长趋势规划未来的容量需求</block>
-  <block id="2814ccd9bf1ef1faffa5931e29ee7f74" category="list-text">对失败的自动化尝试进行故障排除</block>
   <block id="0a77401b929110d42e7c36ac77c37872" category="inline-link-macro">激活 Overview dashboard</block>
   <block id="b20e509aee340813d832ff54146a6123" category="list-text"><block ref="b20e509aee340813d832ff54146a6123" category="inline-link-macro-rx"></block></block>
   <block id="a35e94495c93c5d785f8b1240c15be6a" category="inline-link-macro">使用 Overview 控制面板</block>
@@ -739,21 +734,9 @@
   <block id="76a0ca3e805dbf2778413ce26855f65b" category="paragraph">该图还显示推荐决策点和自动化决策点（如果启用了自动化模式）。将鼠标悬停在任何决策点上，以查看此时有关容量建议或自动化操作的详细信息。</block>
   <block id="37b5b20fd94de2275a255ae79e7ac8f0" category="list-text">要应用推荐，请按照推荐消息中提供的指导进行操作。</block>
   <block id="95138c66b91ee03084dfba9068536d5e" category="section-title">更改 SSD 管理模式</block>
-  <block id="6d8ccfb06da581a2d86feacefa3b4869" category="inline-image-macro">操作菜单图标</block>
-  <block id="c9eecdb0eb0ca75174ea4d40e628f365" category="list-text">在 Clusters 表中找到文件系统名称。在其旁边，打开 <block ref="db26b5e8c520e1d883813594c799d7f7" category="inline-image-macro-rx" type="image"></block> 并选择 *更改 SSD 容量管理*。</block>
   <block id="b689124bbd04a08329d8f616990fa06d" category="list-text">选择您的首选模式：</block>
-  <block id="cc009bfb1b3b40af528a54a164d8b953" category="list-text">从 *概述* 选项卡中，选择要在表中编辑的文件系统。</block>
-  <block id="8cd7391e66f29fd726ffdf9a59961f54" category="admonition">您可以选择单个文件系统，也可以使用标题复选框来选择所有可见的文件系统。</block>
-  <block id="b97c770bb654f2ef0b93eb759a99c159" category="list-text">选择您的首选模式。</block>
-  <block id="43c2e4748a7a87eb44a6cb86329b0750" category="paragraph">每个参数字段都包含一个工具提示，描述其目的和有效范围。该对话框根据您的选择显示当前值或默认值。</block>
-  <block id="3f254e874f94d9cc6daffdbea2c76012" category="list-text">选择 *Apply* 将更改应用于所有选定的文件系统。</block>
   <block id="84a7874f129070a914f70dd3d70a6716" category="section-title">分析容量趋势和决策点</block>
   <block id="4dbca2bab9fb0222adee0d079e0d2127" category="paragraph">图表上的决策点表示何时：</block>
-  <block id="322cceacdd52c951c88a1d93df7f0dd8" category="list-text">在 *概述* 选项卡中，在表中选择一个文件系统名称。</block>
-  <block id="c7967065af6ac7703ee14f60f2812ccb" category="list-text">查看显示历史容量趋势的 SSD 使用情况图。</block>
-  <block id="6f6089a81e1a8064861733b4969654d6" category="list-text">选择不同的时间范围以查看不同时期的容量行为。</block>
-  <block id="8d33ce28efafbfe7600930c556bcfd55" category="list-text">将鼠标悬停在图表上的决策点上，可查看特定时刻的建议或自动化操作的详细信息。</block>
-  <block id="4d43a6d1e695bf0a99e5bc33d3ca3fda" category="list-text">使用图表中的见解：</block>
   <block id="e307894bdae8efc4f4fdacf666cf2573" category="section-title">使用集群表</block>
   <block id="88dc1144edaa697995919551780b6e93" category="list-text">在 *概述* 选项卡中，查看集群表。</block>
   <block id="8e6be07248fc78ed27f8d01305999436" category="list-text">使用搜索框按名称查找特定文件系统。</block>
@@ -827,7 +810,6 @@
   <block id="a3eb814e72de4d40c0767efe37beafe1" category="list-text">该界面显示当前具有活动建议的文件系统的总数。</block>
   <block id="f7f59f0b5632d026e80fe90b1eec8f63" category="list-text">触发容量建议或自动化操作的 SSD 使用百分比。例如，阈值为 80% 意味着 SSD 使用率达到 80% 时会出现建议或操作。此设置在 Recommend 和 Automate 模式下均可用。</block>
   <block id="d5a40446a028d90d5bf46fe40624722d" category="paragraph">您可以为每个文件系统单独设置这些参数，也可以使用批量编辑将相同的设置应用于多个文件系统。</block>
-  <block id="1b07a2acaea0fa364496ba3afb977975" category="paragraph">SSD 使用图标记了系统何时提出容量建议或采取自动操作。这些标记显示了容量管理算法在一段时间内的行为。</block>
   <block id="47daf1022723b90d90f96e2d735e2267" category="list-text">当自动化系统尝试增加 SSD 容量时出现。它们显示操作是成功还是失败。</block>
   <block id="5d75c0e68111b8bb5d2e043a495c6e39" category="paragraph">使用 SSD 使用历史记录图表：</block>
   <block id="9515f88eb47a770a2eae21e430e5b3ff" category="list-text">查看您需要更改存储空间大小的频率</block>
@@ -1008,7 +990,6 @@
   <block id="929261095300bce39be28cdc60e46b85" category="list-text">*文件系统弹性*</block>
   <block id="20ed77fd0e548f70d1a8b8bd340ed628" category="list-text">*SSD capacity*：显示有多少文件系统使用 Automate、Recommend 或 None 来管理 SSD 容量。</block>
   <block id="f811d9a1edf56398351dffaef0b6506e" category="list-text">*吞吐量*：显示有多少文件系统使用 Automate、Recommend 或 None 来管理吞吐量。</block>
-  <block id="94e78450902ff8802101a87715f2120e" category="paragraph">选择文件系统以打开集群详细信息，包括集群信息、SSD 容量值和 SSD 随时间推移的容量图表。</block>
   <block id="7ae10da71cdf204162f214a176b66232" category="list-text">*仅通知（推荐模式）*</block>
   <block id="a50d39f8ae7bb4152ca8de0ad153c7d5" category="list-text">如果未启用 SSD 容量管理，则系统不会提出容量建议或采取自动操作。如果要自己管理容量，请使用此选项。</block>
   <block id="f015d9c2fdd7ed0dc64dd7b4f0a18c1f" category="list-text">*Lookahead* （1-200 小时）</block>
@@ -1028,7 +1009,6 @@
   <block id="622a5b145e5cdfd92b8124baf3f8e5d7" category="list-text">*最小延迟（毫秒）*（默认 10 毫秒）</block>
   <block id="4067af77fe7df9f9047c8c4eeb9490b5" category="list-text">*最大吞吐量 SKU* (默认为 None)</block>
   <block id="e4612c732ae1c64db60c83cb8cae8381" category="section-title">文件系统弹性建议</block>
-  <block id="cc8b8287cb9875fcd93e6deecaaa1c10" category="paragraph">当 Workload Factory 处于 Automate 或 Recommend 模式时，它会自动检查每个 FSx for ONTAP 文件系统，并运行容量推荐算法。系统会定期扫描，以查看是否应调整 SSD 容量或吞吐量。</block>
   <block id="1c5b8d97751372161e201f333f1b4f62" category="list-text">通过筛选 Clusters 表来识别包含建议的文件系统。</block>
   <block id="25dc82340ec038ecbda8ab79823e242a" category="list-text">当系统检测到需要更多 SSD 容量时出现。如果未增加容量，这些点可能每 30 分钟出现一次。图表会尽可能显示每个决策点。如果所选时间范围过于密集，则这些点将被归为一组。</block>
   <block id="d5781ee1e2ae2729d18fc69fc41ec67a" category="paragraph">您只能选择配置有链接的文件系统。<block ref="959c1faca1dbb57f8dac1b5058bf9c58" category="inline-link-macro-rx"></block>.</block>
@@ -1064,7 +1044,6 @@
   <block id="33c83a7b34dbfa47935b0be5b097865d" category="list-text">请查看推荐和图表。</block>
   <block id="fd896caec9b1904e01ed5b6a90b096d9" category="paragraph">该图表显示了当前的使用情况以及历史趋势。</block>
   <block id="7269a303313716fe145ba2b18acc49d7" category="list-text">在图表的右上角，选择时间范围以更改显示的时间段。</block>
-  <block id="c7ac58faf1984cf107f3421908d2207c" category="list-text">选择 *Enable SSD capacity management*，然后选择 *Apply*。</block>
   <block id="da35cbad278570472c076b6042a5b528" category="list-text">配置 SSD 容量管理参数：</block>
   <block id="166c4a53ef8fc50b9b03ca91c1c677bc" category="list-text">*阈值 (%)*：触发建议的 SSD 使用百分比</block>
   <block id="87ad0cdc7f64b3a67d168c0b688707d9" category="list-text">*Lookback (%)*：用于分析的历史使用数据周期</block>
@@ -1073,19 +1052,11 @@
   <block id="86161e58ce8677bff58de719cb9f29a8" category="paragraph">对于每个文件系统，选择如何管理吞吐量增加。</block>
   <block id="441fc54d05bba2a603a05c500cf068c7" category="list-text">在*概述*选项卡中，在集群表中选择一个或多个文件系统。</block>
   <block id="0231f044766e71e4fe49a62ba8e8bbbe" category="list-text">选择*更改吞吐量管理*。</block>
-  <block id="652aab445f49bb41fa3e8774b5719cf2" category="list-text">选择*启用吞吐量管理*，然后选择*应用*。</block>
-  <block id="16393cf33b95f8ff007d76d513b875d7" category="list-text">在对话框中，配置吞吐量管理参数：</block>
   <block id="083678f0efe5919237188ee0ee5d0b90" category="list-text">*评估窗口（小时）*：分析吞吐量模式的时间段</block>
   <block id="ed38b15c549d9cd41a86a3787f5fee23" category="list-text">*Breached metrics (%)*：用于确定违规行为的百分比阈值</block>
-  <block id="5e1e1daa7e6d115a54180e147895003e" category="list-text">*连续违规窗口（小时）*：行动前连续违规的持续时间</block>
   <block id="91455d18a42b79b1a34df0d97bfbaffd" category="list-text">*最小延迟（毫秒）*：用于确定吞吐量增加的延迟阈值</block>
   <block id="0a2daf37cc4cac8c9a3da95290e9a399" category="list-text">*最大吞吐量 (SKU)*：允许的最大吞吐量 SKU</block>
   <block id="6b482ace535080820ca5dea3bb557cb6" category="paragraph">选定的文件系统立即切换到新的吞吐量模式。</block>
-  <block id="be76a5f710c434b57d7bb9106913548d" category="section-title">批量编辑管理参数</block>
-  <block id="399db4c92643ea16a6e10865b34f5b4f" category="paragraph">同时更改多个文件系统的设置，以便在集群中应用相同的设置。</block>
-  <block id="93343e8a72e86eb0283fa9c6fb77b48b" category="list-text">选择表上方的 *Change SSD capacity management* 或 *Change throughput management*。</block>
-  <block id="a707a072d0b2b11d2c3e5a2160f9cd48" category="list-text">在"编辑"对话框中，根据需要调整参数。</block>
-  <block id="80c68bda2149e685b2c9d4a63c1abe0b" category="paragraph">将更新所有选定文件系统的参数。处于"推荐"或"自动化"模式下的文件系统将立即使用新参数进行分析和决策。</block>
   <block id="232af3ec8ca37d39f0b49ddb6c81830a" category="list-text">*推荐决策点*：容量推荐算法确定需要额外的 SSD 容量。</block>
   <block id="0d606a9207ef786e2b3dc99ea3fe3ad8" category="list-text">**设置明确的阈值**：选择适合您的工作负载和容量计划的 SSD 使用阈值和吞吐量参数。</block>
   <block id="c6e183b5112db7515b7bc4904a3b374b" category="list-text">**快速查看建议**：筛选集群表以查找具有容量或吞吐量建议的文件系统。检查并采取措施，以避免空间耗尽。</block>
@@ -1093,4 +1064,30 @@
   <block id="88a7c4b8bd498e193a117097af5581b1" category="list-text">**批量编辑**：管理多个文件系统时，请使用批量编辑以保持设置一致。</block>
   <block id="951a51b60db3d63eb71726cd5fe6fbad" category="section-title">2026年8月3日</block>
   <block id="73c57946c156d22b4a35f2e089180ab4" category="list-text">您会立即收到电子邮件或架构完善通知（不包含在每周摘要中）。</block>
+  <block id="08b543f700a568688a9f78d874d0ce8b" category="doc">增强的SSD容量通知</block>
+  <block id="f37e9239265205bdf39af7b4def6f75a" category="paragraph">SSD 容量管理通知现在包括用于排查自动化故障的详细错误消息。系统会针对以下情况发送通知：容量增加成功、增加操作期间出现错误、容量检查失败、阈值警告以及相关建议。错误详细信息包括具体的故障原因，例如缺少权限、正在进行并发更新、AWS 冷却期或 CloudWatch 指标检索问题。</block>
+  <block id="4a3354724a06bbb8040fa512f39a5e07" category="inline-link-macro">了解SSD容量管理</block>
+  <block id="3e69b701694082d892b97eb050525650" category="paragraph"><block ref="bc2811c6501476df42adeca777dc6dd3" category="inline-link-macro-rx"></block>。</block>
+  <block id="b1b09cb9ca77b33ed95a7406fab56623" category="section-title">延迟图的周时间范围</block>
+  <block id="a5ff2097c50c86e897e35110fe5629d9" category="paragraph">除了现有选项（1小时、3小时、12小时、24小时、72小时）之外，延迟分析图表现在还支持1周的时间范围。使用周视图识别卷延迟行为的长期模式和趋势。</block>
+  <block id="8d6933264e6e5f9ec4a93a7936daf177" category="inline-link-macro">了解延迟趋势分析</block>
+  <block id="f00c9e117aa43f7e65780e53b18b74a8" category="paragraph"><block ref="8280dff077bedc5ff5df29e3a9ab24f4" category="inline-link-macro-rx"></block>。</block>
+  <block id="dad79f11b2960d3be921e97689e00796" category="section-title">改进了界面中的文件系统可见性</block>
+  <block id="856b733ee2011b50fb74e26e28353b8c" category="paragraph">Workload Factory 现在可让您在界面中更清晰地查看文件系统。您可以直接从文件系统概述中查看 SSD 容量和吞吐量使用趋势、工作负载摘要和详细配置信息。</block>
+  <block id="05d2715aacab706b61cab6ab5eae577f" category="paragraph">选择文件系统以查看集群详细信息，包括集群信息、SSD 容量和图形。在集群详细信息视图中，使用 *Throughput* 和 *SSD Capacity* 选项来切换视图。</block>
+  <block id="44ad493c3ed3456875890a0633967832" category="paragraph">吞吐量视图显示客户端吞吐量和资源利用率。SSD 容量视图显示 SSD 使用趋势和容量建议。</block>
+  <block id="0575d3bb4ddf703c8919e95c56fd6669" category="paragraph">当 Workload Factory 处于 Automate 或 Recommend 模式时，它会自动检查每个 FSx for ONTAP 文件系统并建议容量更改。它定期扫描系统以确定是否应调整 SSD 容量或吞吐量。启用管理后，文件系统详细信息页面将显示 SSD 容量和吞吐量，以及历史趋势和建议的调整点。</block>
+  <block id="3b39aa368232f477c3b4544b63a58a94" category="paragraph">SSD 使用情况图表显示系统何时建议更改容量或进行自动调整。这些标记指示系统如何随时间管理容量。如果 SSD 容量管理已关闭，则图表仅显示过去的使用情况，不会显示建议或自动操作。</block>
+  <block id="cc23b0ef8b8c73f4efb0ced4281250f3" category="list-text">在集群表中找到并选择文件系统名称，然后选择*更改 SSD 容量管理*。</block>
+  <block id="d9a44929e0eea557983dbb6917008a70" category="list-text">选择*Enable throughput management*。</block>
+  <block id="1cbae666f242dee35d801763ff6c587f" category="list-text">在*利用率阈值（%）*中，设置触发建议或自动化操作的利用率级别。</block>
+  <block id="e920df7cb27871af178ff85a428a8b4e" category="list-text">在*高级配置*中，配置吞吐量管理参数：</block>
+  <block id="39122245b5363dc3871538d2ef59784e" category="list-text">*连续违规窗口（小时）*：行动前连续违规的持续时间</block>
+  <block id="a9d111294543c201d767519d991c1b8d" category="list-text">*连续违规指标 (%)*：用于确定连续违规的百分比阈值</block>
+  <block id="d385fd0ac858ff17553d407851f64c48" category="paragraph">如果关闭 SSD 容量管理，图表将仅显示过去的使用情况，而不会显示建议或自动化决策。</block>
+  <block id="1de4de358ec9c3a1cd36180e2c13a443" category="list-text">从*概述*选项卡中，在表格中选择一个文件系统名称。在集群详细信息视图中，选择*吞吐量*或*SSD 容量*选项以切换图形显示。</block>
+  <block id="a01346bc61a98c025144199b0893e264" category="paragraph">如果选择*吞吐量*，图表会显示客户端吞吐量和利用率，因此您可以将需求与配置的吞吐量级别和阈值进行比较。</block>
+  <block id="e56ecd5b4053d7385c23bb7c3422bdd5" category="paragraph">如果选择 *SSD 容量*，图表将显示 SSD 使用情况，包括历史容量趋势和容量决策点。</block>
+  <block id="d73906b15c9fc84c1806084ce8720a42" category="paragraph">选择不同的时间范围以查看不同时期的吞吐量或容量趋势。将鼠标悬停在图表上的决策点上，可查看特定时刻的建议或自动化操作的详细信息。使用图表中的见解可以：* 了解需要调整容量的频率 * 评估自动化或推荐模式是否更适合您的工作负载模式 * 识别重复性容量限制 * 根据增长趋势规划未来容量需求 * 对失败的自动化尝试进行故障排除</block>
+  <block id="301497b54979bb49bba5249c4f44b4ad" category="section-title">2026年9月27日</block>
 </blocks>
