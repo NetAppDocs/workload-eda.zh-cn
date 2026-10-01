@@ -15,8 +15,8 @@ summary: 了解 Workload Factory for EDA 的最新功能。
 
 
 
-[[27-september-2026]]
-== 2026年9月27日
+[[30-september-2026]]
+== 2026年9月30日
 
 
 

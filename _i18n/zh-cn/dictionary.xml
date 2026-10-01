@@ -1089,5 +1089,5 @@
   <block id="a01346bc61a98c025144199b0893e264" category="paragraph">如果选择*吞吐量*，图表会显示客户端吞吐量和利用率，因此您可以将需求与配置的吞吐量级别和阈值进行比较。</block>
   <block id="e56ecd5b4053d7385c23bb7c3422bdd5" category="paragraph">如果选择 *SSD 容量*，图表将显示 SSD 使用情况，包括历史容量趋势和容量决策点。</block>
   <block id="d73906b15c9fc84c1806084ce8720a42" category="paragraph">选择不同的时间范围以查看不同时期的吞吐量或容量趋势。将鼠标悬停在图表上的决策点上，可查看特定时刻的建议或自动化操作的详细信息。使用图表中的见解可以：* 了解需要调整容量的频率 * 评估自动化或推荐模式是否更适合您的工作负载模式 * 识别重复性容量限制 * 根据增长趋势规划未来容量需求 * 对失败的自动化尝试进行故障排除</block>
-  <block id="301497b54979bb49bba5249c4f44b4ad" category="section-title">2026年9月27日</block>
+  <block id="74bc5d714652a3ae18c64ee93e4ba085" category="section-title">2026年9月30日</block>
 </blocks>
